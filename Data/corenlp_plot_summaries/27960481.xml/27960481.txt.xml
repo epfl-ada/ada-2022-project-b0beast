@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Popeye</word>
+            <lemma>Popeye</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+          </token>
+          <token id="2">
+            <word>challenges</word>
+            <lemma>challenge</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>Bluto</word>
+            <lemma>Bluto</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>23</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>24</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>boxing</word>
+            <lemma>boxing</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>match</word>
+            <lemma>match</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>;</word>
+            <lemma>;</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>:</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>Wimpy</word>
+            <lemma>Wimpy</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>is</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>timekeeper</word>
+            <lemma>timekeeper</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>66</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (S (NP (NNP Popeye)) (VP (VBZ challenges) (NP (NP (NNP Bluto)) (PP (IN in) (NP (DT a) (NN boxing) (NN match)))))) (: ;) (S (NP (NNP Wimpy)) (VP (VBZ is) (NP (DT the) (NN timekeeper)))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nsubj">
+            <governor idx="2">challenges</governor>
+            <dependent idx="1">Popeye</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">challenges</governor>
+            <dependent idx="3">Bluto</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">Bluto</governor>
+            <dependent idx="4">in</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">match</governor>
+            <dependent idx="5">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">match</governor>
+            <dependent idx="6">boxing</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">in</governor>
+            <dependent idx="7">match</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="12">timekeeper</governor>
+            <dependent idx="9">Wimpy</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="12">timekeeper</governor>
+            <dependent idx="10">is</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">timekeeper</governor>
+            <dependent idx="11">the</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="2">challenges</governor>
+            <dependent idx="12">timekeeper</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nsubj">
+            <governor idx="2">challenges</governor>
+            <dependent idx="1">Popeye</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">challenges</governor>
+            <dependent idx="3">Bluto</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">match</governor>
+            <dependent idx="5">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">match</governor>
+            <dependent idx="6">boxing</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="3">Bluto</governor>
+            <dependent idx="7">match</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="12">timekeeper</governor>
+            <dependent idx="9">Wimpy</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="12">timekeeper</governor>
+            <dependent idx="10">is</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">timekeeper</governor>
+            <dependent idx="11">the</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="2">challenges</governor>
+            <dependent idx="12">timekeeper</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nsubj">
+            <governor idx="2">challenges</governor>
+            <dependent idx="1">Popeye</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">challenges</governor>
+            <dependent idx="3">Bluto</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">match</governor>
+            <dependent idx="5">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">match</governor>
+            <dependent idx="6">boxing</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="3">Bluto</governor>
+            <dependent idx="7">match</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="12">timekeeper</governor>
+            <dependent idx="9">Wimpy</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="12">timekeeper</governor>
+            <dependent idx="10">is</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">timekeeper</governor>
+            <dependent idx="11">the</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="2">challenges</governor>
+            <dependent idx="12">timekeeper</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>Popeye</word>
+            <lemma>Popeye</lemma>
+            <CharacterOffsetBegin>68</CharacterOffsetBegin>
+            <CharacterOffsetEnd>74</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+          </token>
+          <token id="2">
+            <word>gets</word>
+            <lemma>get</lemma>
+            <CharacterOffsetBegin>75</CharacterOffsetBegin>
+            <CharacterOffsetEnd>79</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>pounded</word>
+            <lemma>pound</lemma>
+            <CharacterOffsetBegin>80</CharacterOffsetBegin>
+            <CharacterOffsetEnd>87</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>mercilessly</word>
+            <lemma>mercilessly</lemma>
+            <CharacterOffsetBegin>88</CharacterOffsetBegin>
+            <CharacterOffsetEnd>99</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>until</word>
+            <lemma>until</lemma>
+            <CharacterOffsetBegin>100</CharacterOffsetBegin>
+            <CharacterOffsetEnd>105</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>Olive</word>
+            <lemma>olive</lemma>
+            <CharacterOffsetBegin>106</CharacterOffsetBegin>
+            <CharacterOffsetEnd>111</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>comes</word>
+            <lemma>come</lemma>
+            <CharacterOffsetBegin>112</CharacterOffsetBegin>
+            <CharacterOffsetEnd>117</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>by</word>
+            <lemma>by</lemma>
+            <CharacterOffsetBegin>118</CharacterOffsetBegin>
+            <CharacterOffsetEnd>120</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>with</word>
+            <lemma>with</lemma>
+            <CharacterOffsetBegin>121</CharacterOffsetBegin>
+            <CharacterOffsetEnd>125</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>126</CharacterOffsetBegin>
+            <CharacterOffsetEnd>127</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>can</word>
+            <lemma>can</lemma>
+            <CharacterOffsetBegin>128</CharacterOffsetBegin>
+            <CharacterOffsetEnd>131</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>132</CharacterOffsetBegin>
+            <CharacterOffsetEnd>134</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>spinach</word>
+            <lemma>spinach</lemma>
+            <CharacterOffsetBegin>135</CharacterOffsetBegin>
+            <CharacterOffsetEnd>142</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="14">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>142</CharacterOffsetBegin>
+            <CharacterOffsetEnd>143</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNP Popeye)) (VP (VBZ gets) (S (VP (VBN pounded) (ADVP (RB mercilessly)) (SBAR (IN until) (S (NP (JJ Olive)) (VP (VBZ comes) (PP (IN by) (IN with) (NP (NP (DT a) (NN can)) (PP (IN of) (NP (NN spinach))))))))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nsubj">
+            <governor idx="2">gets</governor>
+            <dependent idx="1">Popeye</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">gets</governor>
+            <dependent idx="3">pounded</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">pounded</governor>
+            <dependent idx="4">mercilessly</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="7">comes</governor>
+            <dependent idx="5">until</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">comes</governor>
+            <dependent idx="6">Olive</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="3">pounded</governor>
+            <dependent idx="7">comes</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="9">with</governor>
+            <dependent idx="8">by</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="7">comes</governor>
+            <dependent idx="9">with</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">can</governor>
+            <dependent idx="10">a</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="9">with</governor>
+            <dependent idx="11">can</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="11">can</governor>
+            <dependent idx="12">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="12">of</governor>
+            <dependent idx="13">spinach</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nsubj">
+            <governor idx="2">gets</governor>
+            <dependent idx="1">Popeye</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">gets</governor>
+            <dependent idx="3">pounded</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">pounded</governor>
+            <dependent idx="4">mercilessly</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="7">comes</governor>
+            <dependent idx="5">until</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">comes</governor>
+            <dependent idx="6">Olive</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="3">pounded</governor>
+            <dependent idx="7">comes</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="7">comes</governor>
+            <dependent idx="8">by</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">can</governor>
+            <dependent idx="10">a</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="7">comes</governor>
+            <dependent idx="11">can</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="11">can</governor>
+            <dependent idx="13">spinach</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nsubj">
+            <governor idx="2">gets</governor>
+            <dependent idx="1">Popeye</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">gets</governor>
+            <dependent idx="3">pounded</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">pounded</governor>
+            <dependent idx="4">mercilessly</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="7">comes</governor>
+            <dependent idx="5">until</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">comes</governor>
+            <dependent idx="6">Olive</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="3">pounded</governor>
+            <dependent idx="7">comes</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="7">comes</governor>
+            <dependent idx="8">by</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">can</governor>
+            <dependent idx="10">a</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="7">comes</governor>
+            <dependent idx="11">can</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="11">can</governor>
+            <dependent idx="13">spinach</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+    </sentences>
+    <coreference>
+      <coreference>
+        <mention representative="true">
+          <sentence>1</sentence>
+          <start>1</start>
+          <end>2</end>
+          <head>1</head>
+        </mention>
+        <mention>
+          <sentence>2</sentence>
+          <start>1</start>
+          <end>2</end>
+          <head>1</head>
+        </mention>
+      </coreference>
+    </coreference>
+  </document>
+</root>

@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>A</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>college</word>
+            <lemma>college</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>student</word>
+            <lemma>student</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>discovers</word>
+            <lemma>discover</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>her</word>
+            <lemma>she</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>dorm</word>
+            <lemma>dorm</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>was</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>once</word>
+            <lemma>once</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>PAST_REF</NormalizedNER>
+            <Timex tid="t1" type="DATE">PAST_REF</Timex>
+          </token>
+          <token id="9">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>notorious</word>
+            <lemma>notorious</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>57</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>asylum</word>
+            <lemma>asylum</lemma>
+            <CharacterOffsetBegin>58</CharacterOffsetBegin>
+            <CharacterOffsetEnd>64</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>65</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (DT A) (NN college) (NN student)) (VP (VBZ discovers) (SBAR (S (NP (PRP$ her) (NN dorm)) (VP (VBD was) (ADVP (RB once)) (NP (DT a) (JJ notorious) (NN asylum)))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="det">
+            <governor idx="3">student</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">student</governor>
+            <dependent idx="2">college</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">discovers</governor>
+            <dependent idx="3">student</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="6">dorm</governor>
+            <dependent idx="5">her</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">asylum</governor>
+            <dependent idx="6">dorm</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="11">asylum</governor>
+            <dependent idx="7">was</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="11">asylum</governor>
+            <dependent idx="8">once</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">asylum</governor>
+            <dependent idx="9">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">asylum</governor>
+            <dependent idx="10">notorious</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="4">discovers</governor>
+            <dependent idx="11">asylum</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="det">
+            <governor idx="3">student</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">student</governor>
+            <dependent idx="2">college</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">discovers</governor>
+            <dependent idx="3">student</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="6">dorm</governor>
+            <dependent idx="5">her</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">asylum</governor>
+            <dependent idx="6">dorm</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="11">asylum</governor>
+            <dependent idx="7">was</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="11">asylum</governor>
+            <dependent idx="8">once</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">asylum</governor>
+            <dependent idx="9">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">asylum</governor>
+            <dependent idx="10">notorious</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="4">discovers</governor>
+            <dependent idx="11">asylum</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="det">
+            <governor idx="3">student</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">student</governor>
+            <dependent idx="2">college</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">discovers</governor>
+            <dependent idx="3">student</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="6">dorm</governor>
+            <dependent idx="5">her</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">asylum</governor>
+            <dependent idx="6">dorm</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="11">asylum</governor>
+            <dependent idx="7">was</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="11">asylum</governor>
+            <dependent idx="8">once</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">asylum</governor>
+            <dependent idx="9">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">asylum</governor>
+            <dependent idx="10">notorious</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="4">discovers</governor>
+            <dependent idx="11">asylum</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>-LCB-</word>
+            <lemma>-lcb-</lemma>
+            <CharacterOffsetBegin>65</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>-LRB-</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>-LCB-</word>
+            <lemma>-lcb-</lemma>
+            <CharacterOffsetBegin>66</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>-LRB-</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>IMDB</word>
+            <lemma>imdb</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>71</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="4">
+            <word>title</word>
+            <lemma>title</lemma>
+            <CharacterOffsetBegin>72</CharacterOffsetBegin>
+            <CharacterOffsetEnd>77</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>|</word>
+            <lemma>|</lemma>
+            <CharacterOffsetBegin>77</CharacterOffsetBegin>
+            <CharacterOffsetEnd>78</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>NUMBER</NER>
+            <NormalizedNER>804443.0</NormalizedNER>
+          </token>
+          <token id="6">
+            <word>0804443</word>
+            <lemma>0804443</lemma>
+            <CharacterOffsetBegin>78</CharacterOffsetBegin>
+            <CharacterOffsetEnd>85</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>NUMBER</NER>
+            <NormalizedNER>804443.0</NormalizedNER>
+          </token>
+          <token id="7">
+            <word>|</word>
+            <lemma>|</lemma>
+            <CharacterOffsetBegin>85</CharacterOffsetBegin>
+            <CharacterOffsetEnd>86</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>titlewww.thejohnsonian.com</word>
+            <lemma>titlewww.thejohnsonian.com</lemma>
+            <CharacterOffsetBegin>86</CharacterOffsetBegin>
+            <CharacterOffsetEnd>112</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>Winthrop</word>
+            <lemma>Winthrop</lemma>
+            <CharacterOffsetBegin>113</CharacterOffsetBegin>
+            <CharacterOffsetEnd>121</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>changes</word>
+            <lemma>change</lemma>
+            <CharacterOffsetBegin>122</CharacterOffsetBegin>
+            <CharacterOffsetEnd>129</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>name</word>
+            <lemma>name</lemma>
+            <CharacterOffsetBegin>130</CharacterOffsetBegin>
+            <CharacterOffsetEnd>134</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>135</CharacterOffsetBegin>
+            <CharacterOffsetEnd>138</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>film</word>
+            <lemma>film</lemma>
+            <CharacterOffsetBegin>139</CharacterOffsetBegin>
+            <CharacterOffsetEnd>143</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="14">
+            <word>-RRB-</word>
+            <lemma>-rrb-</lemma>
+            <CharacterOffsetBegin>143</CharacterOffsetBegin>
+            <CharacterOffsetEnd>144</CharacterOffsetEnd>
+            <POS>-RRB-</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (PRN (-LRB- -LCB-) (NP (NP (NP (-LRB- -LCB-) (NN IMDB) (NN title) (CD |)) (ADJP (CD 0804443) (NN |))) (SBAR (S (NP (NNP titlewww.thejohnsonian.com) (NNP Winthrop)) (VP (VBZ changes) (NP (NN name))))) (PP (IN for) (NP (NN film)))) (-RRB- -RRB-))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="4">title</governor>
+            <dependent idx="3">IMDB</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="4">title</governor>
+            <dependent idx="5">|</dependent>
+          </dep>
+          <dep type="number">
+            <governor idx="7">|</governor>
+            <dependent idx="6">0804443</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">title</governor>
+            <dependent idx="7">|</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">Winthrop</governor>
+            <dependent idx="8">titlewww.thejohnsonian.com</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">changes</governor>
+            <dependent idx="9">Winthrop</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="4">title</governor>
+            <dependent idx="10">changes</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="10">changes</governor>
+            <dependent idx="11">name</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">title</governor>
+            <dependent idx="12">for</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="12">for</governor>
+            <dependent idx="13">film</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="4">title</governor>
+            <dependent idx="3">IMDB</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="4">title</governor>
+            <dependent idx="5">|</dependent>
+          </dep>
+          <dep type="number">
+            <governor idx="7">|</governor>
+            <dependent idx="6">0804443</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">title</governor>
+            <dependent idx="7">|</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">Winthrop</governor>
+            <dependent idx="8">titlewww.thejohnsonian.com</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">changes</governor>
+            <dependent idx="9">Winthrop</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="4">title</governor>
+            <dependent idx="10">changes</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="10">changes</governor>
+            <dependent idx="11">name</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="4">title</governor>
+            <dependent idx="13">film</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="4">title</governor>
+            <dependent idx="3">IMDB</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="4">title</governor>
+            <dependent idx="5">|</dependent>
+          </dep>
+          <dep type="number">
+            <governor idx="7">|</governor>
+            <dependent idx="6">0804443</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">title</governor>
+            <dependent idx="7">|</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">Winthrop</governor>
+            <dependent idx="8">titlewww.thejohnsonian.com</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">changes</governor>
+            <dependent idx="9">Winthrop</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="4">title</governor>
+            <dependent idx="10">changes</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="10">changes</governor>
+            <dependent idx="11">name</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="4">title</governor>
+            <dependent idx="13">film</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+    </sentences>
+    <coreference>
+      <coreference>
+        <mention representative="true">
+          <sentence>1</sentence>
+          <start>9</start>
+          <end>12</end>
+          <head>11</head>
+        </mention>
+        <mention>
+          <sentence>1</sentence>
+          <start>5</start>
+          <end>7</end>
+          <head>6</head>
+        </mention>
+      </coreference>
+    </coreference>
+  </document>
+</root>

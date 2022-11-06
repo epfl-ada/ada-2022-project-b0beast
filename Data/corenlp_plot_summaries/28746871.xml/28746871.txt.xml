@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>A</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>man</word>
+            <lemma>man</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>goes</word>
+            <lemma>go</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>round</word>
+            <lemma>round</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>marrying</word>
+            <lemma>marry</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>VBG</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>wealthy</word>
+            <lemma>wealthy</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>woman</word>
+            <lemma>woman</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>CC</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>then</word>
+            <lemma>then</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>murdering</word>
+            <lemma>murder</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>VBG</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>them</word>
+            <lemma>they</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>64</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>65</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (DT A) (NN man)) (VP (VBZ goes) (ADJP (JJ round) (S (S (VP (VBG marrying) (NP (JJ wealthy) (NN woman)))) (, ,) (CC and) (S (VP (ADVP (RB then)) (VBG murdering) (NP (PRP them))))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="det">
+            <governor idx="2">man</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">goes</governor>
+            <dependent idx="2">man</dependent>
+          </dep>
+          <dep type="acomp">
+            <governor idx="3">goes</governor>
+            <dependent idx="4">round</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">round</governor>
+            <dependent idx="5">marrying</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">woman</governor>
+            <dependent idx="6">wealthy</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">marrying</governor>
+            <dependent idx="7">woman</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="5">marrying</governor>
+            <dependent idx="9">and</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="11">murdering</governor>
+            <dependent idx="10">then</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="5">marrying</governor>
+            <dependent idx="11">murdering</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="11">murdering</governor>
+            <dependent idx="12">them</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="det">
+            <governor idx="2">man</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">goes</governor>
+            <dependent idx="2">man</dependent>
+          </dep>
+          <dep type="acomp">
+            <governor idx="3">goes</governor>
+            <dependent idx="4">round</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">round</governor>
+            <dependent idx="5">marrying</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">woman</governor>
+            <dependent idx="6">wealthy</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">marrying</governor>
+            <dependent idx="7">woman</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="11">murdering</governor>
+            <dependent idx="10">then</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="5">marrying</governor>
+            <dependent idx="11">murdering</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="11">murdering</governor>
+            <dependent idx="12">them</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="det">
+            <governor idx="2">man</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">goes</governor>
+            <dependent idx="2">man</dependent>
+          </dep>
+          <dep type="acomp">
+            <governor idx="3">goes</governor>
+            <dependent idx="4">round</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">round</governor>
+            <dependent idx="5">marrying</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">woman</governor>
+            <dependent idx="6">wealthy</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">marrying</governor>
+            <dependent idx="7">woman</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="11">murdering</governor>
+            <dependent idx="10">then</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">round</governor>
+            <dependent idx="11">murdering</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="5">marrying</governor>
+            <dependent idx="11">murdering</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="11">murdering</governor>
+            <dependent idx="12">them</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>However</word>
+            <lemma>however</lemma>
+            <CharacterOffsetBegin>66</CharacterOffsetBegin>
+            <CharacterOffsetEnd>73</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>73</CharacterOffsetBegin>
+            <CharacterOffsetEnd>74</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>his</word>
+            <lemma>he</lemma>
+            <CharacterOffsetBegin>75</CharacterOffsetBegin>
+            <CharacterOffsetEnd>78</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>third</word>
+            <lemma>third</lemma>
+            <CharacterOffsetBegin>79</CharacterOffsetBegin>
+            <CharacterOffsetEnd>84</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>ORDINAL</NER>
+            <NormalizedNER>3.0</NormalizedNER>
+          </token>
+          <token id="5">
+            <word>wife</word>
+            <lemma>wife</lemma>
+            <CharacterOffsetBegin>85</CharacterOffsetBegin>
+            <CharacterOffsetEnd>89</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>has</word>
+            <lemma>have</lemma>
+            <CharacterOffsetBegin>90</CharacterOffsetBegin>
+            <CharacterOffsetEnd>93</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>married</word>
+            <lemma>marry</lemma>
+            <CharacterOffsetBegin>94</CharacterOffsetBegin>
+            <CharacterOffsetEnd>101</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>him</word>
+            <lemma>he</lemma>
+            <CharacterOffsetBegin>102</CharacterOffsetBegin>
+            <CharacterOffsetEnd>105</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>with</word>
+            <lemma>with</lemma>
+            <CharacterOffsetBegin>106</CharacterOffsetBegin>
+            <CharacterOffsetEnd>110</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>similar</word>
+            <lemma>similar</lemma>
+            <CharacterOffsetBegin>111</CharacterOffsetBegin>
+            <CharacterOffsetEnd>118</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>intentions</word>
+            <lemma>intention</lemma>
+            <CharacterOffsetBegin>119</CharacterOffsetBegin>
+            <CharacterOffsetEnd>129</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>129</CharacterOffsetBegin>
+            <CharacterOffsetEnd>130</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (ADVP (RB However)) (, ,) (NP (PRP$ his) (JJ third) (NN wife)) (VP (VBZ has) (VP (VBN married) (NP (PRP him)) (PP (IN with) (NP (JJ similar) (NNS intentions))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="advmod">
+            <governor idx="7">married</governor>
+            <dependent idx="1">However</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="5">wife</governor>
+            <dependent idx="3">his</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">wife</governor>
+            <dependent idx="4">third</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">married</governor>
+            <dependent idx="5">wife</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="7">married</governor>
+            <dependent idx="6">has</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="7">married</governor>
+            <dependent idx="8">him</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="7">married</governor>
+            <dependent idx="9">with</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">intentions</governor>
+            <dependent idx="10">similar</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="9">with</governor>
+            <dependent idx="11">intentions</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="advmod">
+            <governor idx="7">married</governor>
+            <dependent idx="1">However</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="5">wife</governor>
+            <dependent idx="3">his</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">wife</governor>
+            <dependent idx="4">third</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">married</governor>
+            <dependent idx="5">wife</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="7">married</governor>
+            <dependent idx="6">has</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="7">married</governor>
+            <dependent idx="8">him</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">intentions</governor>
+            <dependent idx="10">similar</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="7">married</governor>
+            <dependent idx="11">intentions</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="advmod">
+            <governor idx="7">married</governor>
+            <dependent idx="1">However</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="5">wife</governor>
+            <dependent idx="3">his</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">wife</governor>
+            <dependent idx="4">third</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">married</governor>
+            <dependent idx="5">wife</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="7">married</governor>
+            <dependent idx="6">has</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="7">married</governor>
+            <dependent idx="8">him</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">intentions</governor>
+            <dependent idx="10">similar</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="7">married</governor>
+            <dependent idx="11">intentions</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+    </sentences>
+    <coreference>
+      <coreference>
+        <mention representative="true">
+          <sentence>1</sentence>
+          <start>1</start>
+          <end>3</end>
+          <head>2</head>
+        </mention>
+        <mention>
+          <sentence>2</sentence>
+          <start>3</start>
+          <end>4</end>
+          <head>3</head>
+        </mention>
+        <mention>
+          <sentence>2</sentence>
+          <start>8</start>
+          <end>9</end>
+          <head>8</head>
+        </mention>
+      </coreference>
+    </coreference>
+  </document>
+</root>

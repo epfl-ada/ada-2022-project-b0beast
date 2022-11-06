@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Charlie</word>
+            <lemma>Charlie</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+          </token>
+          <token id="2">
+            <word>is</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>released</word>
+            <lemma>release</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>from</word>
+            <lemma>from</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>prison</word>
+            <lemma>prison</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>CC</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>immediately</word>
+            <lemma>immediately</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>swindled</word>
+            <lemma>swindle</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>by</word>
+            <lemma>by</lemma>
+            <CharacterOffsetBegin>57</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>61</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>fake</word>
+            <lemma>fake</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>person</word>
+            <lemma>person</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>73</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>73</CharacterOffsetBegin>
+            <CharacterOffsetEnd>74</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNP Charlie)) (VP (VBZ is) (VP (VP (VBN released) (PP (IN from) (NP (NN prison)))) (CC and) (VP (ADVP (RB immediately)) (VBN swindled) (PP (IN by) (NP (DT a) (JJ fake) (NN person)))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nsubjpass">
+            <governor idx="3">released</governor>
+            <dependent idx="1">Charlie</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="3">released</governor>
+            <dependent idx="2">is</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">released</governor>
+            <dependent idx="4">from</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">from</governor>
+            <dependent idx="5">prison</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="3">released</governor>
+            <dependent idx="6">and</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="8">swindled</governor>
+            <dependent idx="7">immediately</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="3">released</governor>
+            <dependent idx="8">swindled</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="8">swindled</governor>
+            <dependent idx="9">by</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">person</governor>
+            <dependent idx="10">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">person</governor>
+            <dependent idx="11">fake</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="9">by</governor>
+            <dependent idx="12">person</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nsubjpass">
+            <governor idx="3">released</governor>
+            <dependent idx="1">Charlie</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="3">released</governor>
+            <dependent idx="2">is</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="3">released</governor>
+            <dependent idx="5">prison</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="8">swindled</governor>
+            <dependent idx="7">immediately</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="3">released</governor>
+            <dependent idx="8">swindled</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">person</governor>
+            <dependent idx="10">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">person</governor>
+            <dependent idx="11">fake</dependent>
+          </dep>
+          <dep type="prep_by">
+            <governor idx="8">swindled</governor>
+            <dependent idx="12">person</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nsubjpass">
+            <governor idx="3">released</governor>
+            <dependent idx="1">Charlie</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="8">swindled</governor>
+            <dependent idx="1">Charlie</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="3">released</governor>
+            <dependent idx="2">is</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="3">released</governor>
+            <dependent idx="5">prison</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="8">swindled</governor>
+            <dependent idx="7">immediately</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="3">released</governor>
+            <dependent idx="8">swindled</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">person</governor>
+            <dependent idx="10">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">person</governor>
+            <dependent idx="11">fake</dependent>
+          </dep>
+          <dep type="prep_by">
+            <governor idx="8">swindled</governor>
+            <dependent idx="12">person</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>A</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>75</CharacterOffsetBegin>
+            <CharacterOffsetEnd>76</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>fellow</word>
+            <lemma>fellow</lemma>
+            <CharacterOffsetBegin>77</CharacterOffsetBegin>
+            <CharacterOffsetEnd>83</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>ex-convict</word>
+            <lemma>ex-convict</lemma>
+            <CharacterOffsetBegin>84</CharacterOffsetBegin>
+            <CharacterOffsetEnd>94</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>convinces</word>
+            <lemma>convince</lemma>
+            <CharacterOffsetBegin>95</CharacterOffsetBegin>
+            <CharacterOffsetEnd>104</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>Charlie</word>
+            <lemma>Charlie</lemma>
+            <CharacterOffsetBegin>105</CharacterOffsetBegin>
+            <CharacterOffsetEnd>112</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+          </token>
+          <token id="6">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>113</CharacterOffsetBegin>
+            <CharacterOffsetEnd>115</CharacterOffsetEnd>
+            <POS>TO</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>help</word>
+            <lemma>help</lemma>
+            <CharacterOffsetBegin>116</CharacterOffsetBegin>
+            <CharacterOffsetEnd>120</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>burglarize</word>
+            <lemma>burglarize</lemma>
+            <CharacterOffsetBegin>121</CharacterOffsetBegin>
+            <CharacterOffsetEnd>131</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>132</CharacterOffsetBegin>
+            <CharacterOffsetEnd>133</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>house</word>
+            <lemma>house</lemma>
+            <CharacterOffsetBegin>134</CharacterOffsetBegin>
+            <CharacterOffsetEnd>139</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>139</CharacterOffsetBegin>
+            <CharacterOffsetEnd>140</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (DT A) (JJ fellow) (NN ex-convict)) (VP (VBZ convinces) (S (NP (NNP Charlie)) (VP (TO to) (VP (VB help) (VP (VB burglarize) (NP (DT a) (NN house))))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="det">
+            <governor idx="3">ex-convict</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">ex-convict</governor>
+            <dependent idx="2">fellow</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">convinces</governor>
+            <dependent idx="3">ex-convict</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">help</governor>
+            <dependent idx="5">Charlie</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="7">help</governor>
+            <dependent idx="6">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="4">convinces</governor>
+            <dependent idx="7">help</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="7">help</governor>
+            <dependent idx="8">burglarize</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">house</governor>
+            <dependent idx="9">a</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="8">burglarize</governor>
+            <dependent idx="10">house</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="det">
+            <governor idx="3">ex-convict</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">ex-convict</governor>
+            <dependent idx="2">fellow</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">convinces</governor>
+            <dependent idx="3">ex-convict</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">help</governor>
+            <dependent idx="5">Charlie</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="7">help</governor>
+            <dependent idx="6">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="4">convinces</governor>
+            <dependent idx="7">help</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="7">help</governor>
+            <dependent idx="8">burglarize</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">house</governor>
+            <dependent idx="9">a</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="8">burglarize</governor>
+            <dependent idx="10">house</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="det">
+            <governor idx="3">ex-convict</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">ex-convict</governor>
+            <dependent idx="2">fellow</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">convinces</governor>
+            <dependent idx="3">ex-convict</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">help</governor>
+            <dependent idx="5">Charlie</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="7">help</governor>
+            <dependent idx="6">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="4">convinces</governor>
+            <dependent idx="7">help</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="7">help</governor>
+            <dependent idx="8">burglarize</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">house</governor>
+            <dependent idx="9">a</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="8">burglarize</governor>
+            <dependent idx="10">house</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+    </sentences>
+    <coreference>
+      <coreference>
+        <mention representative="true">
+          <sentence>1</sentence>
+          <start>1</start>
+          <end>2</end>
+          <head>1</head>
+        </mention>
+        <mention>
+          <sentence>2</sentence>
+          <start>5</start>
+          <end>6</end>
+          <head>5</head>
+        </mention>
+      </coreference>
+    </coreference>
+  </document>
+</root>

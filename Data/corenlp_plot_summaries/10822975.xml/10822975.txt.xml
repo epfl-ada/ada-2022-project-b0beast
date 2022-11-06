@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Sam</word>
+            <lemma>Sam</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+          </token>
+          <token id="2">
+            <word>Damon</word>
+            <lemma>Damon</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+          </token>
+          <token id="3">
+            <word>is</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>good</word>
+            <lemma>good</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>family</word>
+            <lemma>family</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>man</word>
+            <lemma>man</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>CC</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>praiseworthy</word>
+            <lemma>praiseworthy</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>warrior</word>
+            <lemma>warrior</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>57</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNP Sam) (NNP Damon)) (VP (VBZ is) (NP (NP (DT a) (JJ good) (NN family) (NN man)) (CC and) (NP (JJ praiseworthy) (NN warrior)))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="2">Damon</governor>
+            <dependent idx="1">Sam</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">man</governor>
+            <dependent idx="2">Damon</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="7">man</governor>
+            <dependent idx="3">is</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">man</governor>
+            <dependent idx="4">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">man</governor>
+            <dependent idx="5">good</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">man</governor>
+            <dependent idx="6">family</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="7">man</governor>
+            <dependent idx="8">and</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">warrior</governor>
+            <dependent idx="9">praiseworthy</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="7">man</governor>
+            <dependent idx="10">warrior</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="2">Damon</governor>
+            <dependent idx="1">Sam</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">man</governor>
+            <dependent idx="2">Damon</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="7">man</governor>
+            <dependent idx="3">is</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">man</governor>
+            <dependent idx="4">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">man</governor>
+            <dependent idx="5">good</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">man</governor>
+            <dependent idx="6">family</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">warrior</governor>
+            <dependent idx="9">praiseworthy</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="7">man</governor>
+            <dependent idx="10">warrior</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="2">Damon</governor>
+            <dependent idx="1">Sam</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">man</governor>
+            <dependent idx="2">Damon</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="7">man</governor>
+            <dependent idx="3">is</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">man</governor>
+            <dependent idx="4">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">man</governor>
+            <dependent idx="5">good</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">man</governor>
+            <dependent idx="6">family</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">warrior</governor>
+            <dependent idx="9">praiseworthy</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="7">man</governor>
+            <dependent idx="10">warrior</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>Courtney</word>
+            <lemma>Courtney</lemma>
+            <CharacterOffsetBegin>58</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+          </token>
+          <token id="2">
+            <word>Massengale</word>
+            <lemma>Massengale</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>77</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+          </token>
+          <token id="3">
+            <word>is</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>79</CharacterOffsetBegin>
+            <CharacterOffsetEnd>81</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>82</CharacterOffsetBegin>
+            <CharacterOffsetEnd>85</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>opposite</word>
+            <lemma>opposite</lemma>
+            <CharacterOffsetBegin>86</CharacterOffsetBegin>
+            <CharacterOffsetEnd>94</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>97</CharacterOffsetBegin>
+            <CharacterOffsetEnd>98</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>womanizing</word>
+            <lemma>womanize</lemma>
+            <CharacterOffsetBegin>99</CharacterOffsetBegin>
+            <CharacterOffsetEnd>109</CharacterOffsetEnd>
+            <POS>VBG</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>109</CharacterOffsetBegin>
+            <CharacterOffsetEnd>110</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>self-aggrandizing</word>
+            <lemma>self-aggrandizing</lemma>
+            <CharacterOffsetBegin>111</CharacterOffsetBegin>
+            <CharacterOffsetEnd>128</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>conniver</word>
+            <lemma>conniver</lemma>
+            <CharacterOffsetBegin>129</CharacterOffsetBegin>
+            <CharacterOffsetEnd>137</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>137</CharacterOffsetBegin>
+            <CharacterOffsetEnd>138</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNP Courtney) (NNP Massengale)) (VP (VBZ is) (NP (DT the) (JJ opposite)) (NP (DT a) (ADJP (VBG womanizing)) (, ,) (ADJP (JJ self-aggrandizing)) (NN conniver))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="2">Massengale</governor>
+            <dependent idx="1">Courtney</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">opposite</governor>
+            <dependent idx="2">Massengale</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="5">opposite</governor>
+            <dependent idx="3">is</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">opposite</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">conniver</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">conniver</governor>
+            <dependent idx="7">womanizing</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">conniver</governor>
+            <dependent idx="9">self-aggrandizing</dependent>
+          </dep>
+          <dep type="attr">
+            <governor idx="5">opposite</governor>
+            <dependent idx="10">conniver</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="2">Massengale</governor>
+            <dependent idx="1">Courtney</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">opposite</governor>
+            <dependent idx="2">Massengale</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="5">opposite</governor>
+            <dependent idx="3">is</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">opposite</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">conniver</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">conniver</governor>
+            <dependent idx="7">womanizing</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">conniver</governor>
+            <dependent idx="9">self-aggrandizing</dependent>
+          </dep>
+          <dep type="attr">
+            <governor idx="5">opposite</governor>
+            <dependent idx="10">conniver</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="2">Massengale</governor>
+            <dependent idx="1">Courtney</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">opposite</governor>
+            <dependent idx="2">Massengale</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="5">opposite</governor>
+            <dependent idx="3">is</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">opposite</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">conniver</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">conniver</governor>
+            <dependent idx="7">womanizing</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">conniver</governor>
+            <dependent idx="9">self-aggrandizing</dependent>
+          </dep>
+          <dep type="attr">
+            <governor idx="5">opposite</governor>
+            <dependent idx="10">conniver</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+    </sentences>
+    <coreference>
+      <coreference>
+        <mention representative="true">
+          <sentence>1</sentence>
+          <start>1</start>
+          <end>3</end>
+          <head>2</head>
+        </mention>
+        <mention>
+          <sentence>1</sentence>
+          <start>4</start>
+          <end>11</end>
+          <head>7</head>
+        </mention>
+        <mention>
+          <sentence>1</sentence>
+          <start>4</start>
+          <end>8</end>
+          <head>7</head>
+        </mention>
+      </coreference>
+      <coreference>
+        <mention representative="true">
+          <sentence>2</sentence>
+          <start>1</start>
+          <end>3</end>
+          <head>2</head>
+        </mention>
+        <mention>
+          <sentence>2</sentence>
+          <start>6</start>
+          <end>11</end>
+          <head>10</head>
+        </mention>
+      </coreference>
+    </coreference>
+  </document>
+</root>

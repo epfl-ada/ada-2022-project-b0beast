@@ -1,0 +1,1000 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>An</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>2</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>interstellar</word>
+            <lemma>interstellar</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>expedition</word>
+            <lemma>expedition</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>is</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>sent</word>
+            <lemma>send</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>TO</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>study</word>
+            <lemma>study</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>strange</word>
+            <lemma>strange</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>planet</word>
+            <lemma>planet</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>far</word>
+            <lemma>far</lemma>
+            <CharacterOffsetBegin>61</CharacterOffsetBegin>
+            <CharacterOffsetEnd>64</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>from</word>
+            <lemma>from</lemma>
+            <CharacterOffsetBegin>65</CharacterOffsetBegin>
+            <CharacterOffsetEnd>69</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>Earth</word>
+            <lemma>Earth</lemma>
+            <CharacterOffsetBegin>70</CharacterOffsetBegin>
+            <CharacterOffsetEnd>75</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>LOCATION</NER>
+          </token>
+          <token id="14">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>75</CharacterOffsetBegin>
+            <CharacterOffsetEnd>76</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (DT An) (JJ interstellar) (NN expedition)) (VP (VBZ is) (VP (VBN sent) (S (VP (TO to) (VP (VB study) (NP (DT a) (JJ strange) (NN planet)) (ADVP (RB far) (PP (IN from) (NP (NNP Earth))))))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="det">
+            <governor idx="3">expedition</governor>
+            <dependent idx="1">An</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">expedition</governor>
+            <dependent idx="2">interstellar</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="5">sent</governor>
+            <dependent idx="3">expedition</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="5">sent</governor>
+            <dependent idx="4">is</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="7">study</governor>
+            <dependent idx="6">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="5">sent</governor>
+            <dependent idx="7">study</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">planet</governor>
+            <dependent idx="8">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">planet</governor>
+            <dependent idx="9">strange</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="7">study</governor>
+            <dependent idx="10">planet</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="7">study</governor>
+            <dependent idx="11">far</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="11">far</governor>
+            <dependent idx="12">from</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="12">from</governor>
+            <dependent idx="13">Earth</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="det">
+            <governor idx="3">expedition</governor>
+            <dependent idx="1">An</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">expedition</governor>
+            <dependent idx="2">interstellar</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="5">sent</governor>
+            <dependent idx="3">expedition</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="5">sent</governor>
+            <dependent idx="4">is</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="7">study</governor>
+            <dependent idx="6">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="5">sent</governor>
+            <dependent idx="7">study</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">planet</governor>
+            <dependent idx="8">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">planet</governor>
+            <dependent idx="9">strange</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="7">study</governor>
+            <dependent idx="10">planet</dependent>
+          </dep>
+          <dep type="prep_far_from">
+            <governor idx="7">study</governor>
+            <dependent idx="13">Earth</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="det">
+            <governor idx="3">expedition</governor>
+            <dependent idx="1">An</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">expedition</governor>
+            <dependent idx="2">interstellar</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="5">sent</governor>
+            <dependent idx="3">expedition</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="5">sent</governor>
+            <dependent idx="4">is</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="7">study</governor>
+            <dependent idx="6">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="5">sent</governor>
+            <dependent idx="7">study</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">planet</governor>
+            <dependent idx="8">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">planet</governor>
+            <dependent idx="9">strange</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="7">study</governor>
+            <dependent idx="10">planet</dependent>
+          </dep>
+          <dep type="prep_far_from">
+            <governor idx="7">study</governor>
+            <dependent idx="13">Earth</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>Despite</word>
+            <lemma>despite</lemma>
+            <CharacterOffsetBegin>77</CharacterOffsetBegin>
+            <CharacterOffsetEnd>84</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>85</CharacterOffsetBegin>
+            <CharacterOffsetEnd>88</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>fact</word>
+            <lemma>fact</lemma>
+            <CharacterOffsetBegin>89</CharacterOffsetBegin>
+            <CharacterOffsetEnd>93</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>that</word>
+            <lemma>that</lemma>
+            <CharacterOffsetBegin>94</CharacterOffsetBegin>
+            <CharacterOffsetEnd>98</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>creatures</word>
+            <lemma>creature</lemma>
+            <CharacterOffsetBegin>99</CharacterOffsetBegin>
+            <CharacterOffsetEnd>108</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>from</word>
+            <lemma>from</lemma>
+            <CharacterOffsetBegin>109</CharacterOffsetBegin>
+            <CharacterOffsetEnd>113</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>various</word>
+            <lemma>various</lemma>
+            <CharacterOffsetBegin>114</CharacterOffsetBegin>
+            <CharacterOffsetEnd>121</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>Earth</word>
+            <lemma>Earth</lemma>
+            <CharacterOffsetBegin>122</CharacterOffsetBegin>
+            <CharacterOffsetEnd>127</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>LOCATION</NER>
+          </token>
+          <token id="9">
+            <word>time</word>
+            <lemma>time</lemma>
+            <CharacterOffsetBegin>128</CharacterOffsetBegin>
+            <CharacterOffsetEnd>132</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>periods</word>
+            <lemma>period</lemma>
+            <CharacterOffsetBegin>133</CharacterOffsetBegin>
+            <CharacterOffsetEnd>140</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>appear</word>
+            <lemma>appear</lemma>
+            <CharacterOffsetBegin>141</CharacterOffsetBegin>
+            <CharacterOffsetEnd>147</CharacterOffsetEnd>
+            <POS>VBP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>148</CharacterOffsetBegin>
+            <CharacterOffsetEnd>150</CharacterOffsetEnd>
+            <POS>TO</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>inhabit</word>
+            <lemma>inhabit</lemma>
+            <CharacterOffsetBegin>151</CharacterOffsetBegin>
+            <CharacterOffsetEnd>158</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="14">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>159</CharacterOffsetBegin>
+            <CharacterOffsetEnd>162</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="15">
+            <word>world</word>
+            <lemma>world</lemma>
+            <CharacterOffsetBegin>163</CharacterOffsetBegin>
+            <CharacterOffsetEnd>168</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="16">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>169</CharacterOffsetBegin>
+            <CharacterOffsetEnd>170</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="17">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>171</CharacterOffsetBegin>
+            <CharacterOffsetEnd>174</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="18">
+            <word>stone-age-level</word>
+            <lemma>stone-age-level</lemma>
+            <CharacterOffsetBegin>175</CharacterOffsetBegin>
+            <CharacterOffsetEnd>190</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="19">
+            <word>natives</word>
+            <lemma>native</lemma>
+            <CharacterOffsetBegin>191</CharacterOffsetBegin>
+            <CharacterOffsetEnd>198</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="20">
+            <word>also</word>
+            <lemma>also</lemma>
+            <CharacterOffsetBegin>199</CharacterOffsetBegin>
+            <CharacterOffsetEnd>203</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="21">
+            <word>possess</word>
+            <lemma>possess</lemma>
+            <CharacterOffsetBegin>204</CharacterOffsetBegin>
+            <CharacterOffsetEnd>211</CharacterOffsetEnd>
+            <POS>VBP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="22">
+            <word>swords</word>
+            <lemma>sword</lemma>
+            <CharacterOffsetBegin>212</CharacterOffsetBegin>
+            <CharacterOffsetEnd>218</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="23">
+            <word>made</word>
+            <lemma>make</lemma>
+            <CharacterOffsetBegin>219</CharacterOffsetBegin>
+            <CharacterOffsetEnd>223</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="24">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>224</CharacterOffsetBegin>
+            <CharacterOffsetEnd>226</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="25">
+            <word>metal</word>
+            <lemma>metal</lemma>
+            <CharacterOffsetBegin>227</CharacterOffsetBegin>
+            <CharacterOffsetEnd>232</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="26">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>232</CharacterOffsetBegin>
+            <CharacterOffsetEnd>233</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="27">
+            <word>even</word>
+            <lemma>even</lemma>
+            <CharacterOffsetBegin>234</CharacterOffsetBegin>
+            <CharacterOffsetEnd>238</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="28">
+            <word>though</word>
+            <lemma>though</lemma>
+            <CharacterOffsetBegin>239</CharacterOffsetBegin>
+            <CharacterOffsetEnd>245</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="29">
+            <word>their</word>
+            <lemma>they</lemma>
+            <CharacterOffsetBegin>246</CharacterOffsetBegin>
+            <CharacterOffsetEnd>251</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+            <NER>O</NER>
+          </token>
+          <token id="30">
+            <word>civilization</word>
+            <lemma>civilization</lemma>
+            <CharacterOffsetBegin>252</CharacterOffsetBegin>
+            <CharacterOffsetEnd>264</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="31">
+            <word>should</word>
+            <lemma>should</lemma>
+            <CharacterOffsetBegin>265</CharacterOffsetBegin>
+            <CharacterOffsetEnd>271</CharacterOffsetEnd>
+            <POS>MD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="32">
+            <word>have</word>
+            <lemma>have</lemma>
+            <CharacterOffsetBegin>272</CharacterOffsetBegin>
+            <CharacterOffsetEnd>276</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="33">
+            <word>no</word>
+            <lemma>no</lemma>
+            <CharacterOffsetBegin>277</CharacterOffsetBegin>
+            <CharacterOffsetEnd>279</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="34">
+            <word>knowledge</word>
+            <lemma>knowledge</lemma>
+            <CharacterOffsetBegin>280</CharacterOffsetBegin>
+            <CharacterOffsetEnd>289</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="35">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>290</CharacterOffsetBegin>
+            <CharacterOffsetEnd>292</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="36">
+            <word>such</word>
+            <lemma>such</lemma>
+            <CharacterOffsetBegin>293</CharacterOffsetBegin>
+            <CharacterOffsetEnd>297</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="37">
+            <word>advanced</word>
+            <lemma>advanced</lemma>
+            <CharacterOffsetBegin>298</CharacterOffsetBegin>
+            <CharacterOffsetEnd>306</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="38">
+            <word>weaponry</word>
+            <lemma>weaponry</lemma>
+            <CharacterOffsetBegin>307</CharacterOffsetBegin>
+            <CharacterOffsetEnd>315</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="39">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>315</CharacterOffsetBegin>
+            <CharacterOffsetEnd>316</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (PP (IN Despite) (NP (NP (DT the) (NN fact)) (SBAR (IN that) (S (NP (NP (NNS creatures)) (PP (IN from) (NP (JJ various) (NNP Earth) (NN time) (NNS periods)))) (VP (VBP appear) (S (VP (TO to) (VP (VB inhabit) (NP (DT the) (NN world)))))))))) (, ,) (NP (DT the) (JJ stone-age-level) (NNS natives)) (ADVP (RB also)) (VP (VBP possess) (S (NP (NNS swords)) (VP (VBN made) (PP (IN of) (NP (NN metal))))) (, ,) (SBAR (RB even) (IN though) (S (NP (PRP$ their) (NN civilization)) (VP (MD should) (VP (VB have) (NP (NP (DT no) (NN knowledge)) (PP (IN of) (NP (JJ such) (JJ advanced) (NN weaponry))))))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="prep">
+            <governor idx="21">possess</governor>
+            <dependent idx="1">Despite</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">fact</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="1">Despite</governor>
+            <dependent idx="3">fact</dependent>
+          </dep>
+          <dep type="complm">
+            <governor idx="11">appear</governor>
+            <dependent idx="4">that</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">appear</governor>
+            <dependent idx="5">creatures</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">creatures</governor>
+            <dependent idx="6">from</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">periods</governor>
+            <dependent idx="7">various</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">periods</governor>
+            <dependent idx="8">Earth</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">periods</governor>
+            <dependent idx="9">time</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">from</governor>
+            <dependent idx="10">periods</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">fact</governor>
+            <dependent idx="11">appear</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="13">inhabit</governor>
+            <dependent idx="12">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="11">appear</governor>
+            <dependent idx="13">inhabit</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="15">world</governor>
+            <dependent idx="14">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="13">inhabit</governor>
+            <dependent idx="15">world</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="19">natives</governor>
+            <dependent idx="17">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="19">natives</governor>
+            <dependent idx="18">stone-age-level</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="21">possess</governor>
+            <dependent idx="19">natives</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="21">possess</governor>
+            <dependent idx="20">also</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="23">made</governor>
+            <dependent idx="22">swords</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="21">possess</governor>
+            <dependent idx="23">made</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="23">made</governor>
+            <dependent idx="24">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="24">of</governor>
+            <dependent idx="25">metal</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="32">have</governor>
+            <dependent idx="27">even</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="32">have</governor>
+            <dependent idx="28">though</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="30">civilization</governor>
+            <dependent idx="29">their</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="32">have</governor>
+            <dependent idx="30">civilization</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="32">have</governor>
+            <dependent idx="31">should</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="21">possess</governor>
+            <dependent idx="32">have</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="34">knowledge</governor>
+            <dependent idx="33">no</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="32">have</governor>
+            <dependent idx="34">knowledge</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="34">knowledge</governor>
+            <dependent idx="35">of</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="38">weaponry</governor>
+            <dependent idx="36">such</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="38">weaponry</governor>
+            <dependent idx="37">advanced</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="35">of</governor>
+            <dependent idx="38">weaponry</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="det">
+            <governor idx="3">fact</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="prep_despite">
+            <governor idx="21">possess</governor>
+            <dependent idx="3">fact</dependent>
+          </dep>
+          <dep type="complm">
+            <governor idx="11">appear</governor>
+            <dependent idx="4">that</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">appear</governor>
+            <dependent idx="5">creatures</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">periods</governor>
+            <dependent idx="7">various</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">periods</governor>
+            <dependent idx="8">Earth</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">periods</governor>
+            <dependent idx="9">time</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="5">creatures</governor>
+            <dependent idx="10">periods</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">fact</governor>
+            <dependent idx="11">appear</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="13">inhabit</governor>
+            <dependent idx="12">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="11">appear</governor>
+            <dependent idx="13">inhabit</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="15">world</governor>
+            <dependent idx="14">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="13">inhabit</governor>
+            <dependent idx="15">world</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="19">natives</governor>
+            <dependent idx="17">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="19">natives</governor>
+            <dependent idx="18">stone-age-level</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="21">possess</governor>
+            <dependent idx="19">natives</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="21">possess</governor>
+            <dependent idx="20">also</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="23">made</governor>
+            <dependent idx="22">swords</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="21">possess</governor>
+            <dependent idx="23">made</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="23">made</governor>
+            <dependent idx="25">metal</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="32">have</governor>
+            <dependent idx="27">even</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="32">have</governor>
+            <dependent idx="28">though</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="30">civilization</governor>
+            <dependent idx="29">their</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="32">have</governor>
+            <dependent idx="30">civilization</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="32">have</governor>
+            <dependent idx="31">should</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="21">possess</governor>
+            <dependent idx="32">have</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="34">knowledge</governor>
+            <dependent idx="33">no</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="32">have</governor>
+            <dependent idx="34">knowledge</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="38">weaponry</governor>
+            <dependent idx="36">such</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="38">weaponry</governor>
+            <dependent idx="37">advanced</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="34">knowledge</governor>
+            <dependent idx="38">weaponry</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="det">
+            <governor idx="3">fact</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="prep_despite">
+            <governor idx="21">possess</governor>
+            <dependent idx="3">fact</dependent>
+          </dep>
+          <dep type="complm">
+            <governor idx="11">appear</governor>
+            <dependent idx="4">that</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">appear</governor>
+            <dependent idx="5">creatures</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">periods</governor>
+            <dependent idx="7">various</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">periods</governor>
+            <dependent idx="8">Earth</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">periods</governor>
+            <dependent idx="9">time</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="5">creatures</governor>
+            <dependent idx="10">periods</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">fact</governor>
+            <dependent idx="11">appear</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="13">inhabit</governor>
+            <dependent idx="12">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="11">appear</governor>
+            <dependent idx="13">inhabit</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="15">world</governor>
+            <dependent idx="14">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="13">inhabit</governor>
+            <dependent idx="15">world</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="19">natives</governor>
+            <dependent idx="17">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="19">natives</governor>
+            <dependent idx="18">stone-age-level</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="21">possess</governor>
+            <dependent idx="19">natives</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="21">possess</governor>
+            <dependent idx="20">also</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="23">made</governor>
+            <dependent idx="22">swords</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="21">possess</governor>
+            <dependent idx="23">made</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="23">made</governor>
+            <dependent idx="25">metal</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="32">have</governor>
+            <dependent idx="27">even</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="32">have</governor>
+            <dependent idx="28">though</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="30">civilization</governor>
+            <dependent idx="29">their</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="32">have</governor>
+            <dependent idx="30">civilization</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="32">have</governor>
+            <dependent idx="31">should</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="21">possess</governor>
+            <dependent idx="32">have</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="34">knowledge</governor>
+            <dependent idx="33">no</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="32">have</governor>
+            <dependent idx="34">knowledge</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="38">weaponry</governor>
+            <dependent idx="36">such</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="38">weaponry</governor>
+            <dependent idx="37">advanced</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="34">knowledge</governor>
+            <dependent idx="38">weaponry</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+    </sentences>
+    <coreference>
+      <coreference>
+        <mention representative="true">
+          <sentence>1</sentence>
+          <start>13</start>
+          <end>14</end>
+          <head>13</head>
+        </mention>
+        <mention>
+          <sentence>2</sentence>
+          <start>8</start>
+          <end>9</end>
+          <head>8</head>
+        </mention>
+      </coreference>
+      <coreference>
+        <mention representative="true">
+          <sentence>2</sentence>
+          <start>5</start>
+          <end>11</end>
+          <head>5</head>
+        </mention>
+        <mention>
+          <sentence>2</sentence>
+          <start>29</start>
+          <end>30</end>
+          <head>29</head>
+        </mention>
+      </coreference>
+    </coreference>
+  </document>
+</root>

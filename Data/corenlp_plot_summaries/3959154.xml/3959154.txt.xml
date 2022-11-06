@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Two</word>
+            <lemma>two</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>NUMBER</NER>
+            <NormalizedNER>2.0</NormalizedNER>
+          </token>
+          <token id="2">
+            <word>sailors</word>
+            <lemma>sailor</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>sneak</word>
+            <lemma>sneak</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>VBP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>talking</word>
+            <lemma>talk</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>VBG</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>duck</word>
+            <lemma>duck</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>aboard</word>
+            <lemma>aboard</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>their</word>
+            <lemma>they</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>ship</word>
+            <lemma>ship</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (CD Two) (NNS sailors)) (VP (VBP sneak) (NP (NP (DT a) (VBG talking) (NN duck)) (PP (IN aboard) (NP (PRP$ their) (NN ship))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="num">
+            <governor idx="2">sailors</governor>
+            <dependent idx="1">Two</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">sneak</governor>
+            <dependent idx="2">sailors</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">duck</governor>
+            <dependent idx="4">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">duck</governor>
+            <dependent idx="5">talking</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">sneak</governor>
+            <dependent idx="6">duck</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">duck</governor>
+            <dependent idx="7">aboard</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="9">ship</governor>
+            <dependent idx="8">their</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="7">aboard</governor>
+            <dependent idx="9">ship</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="num">
+            <governor idx="2">sailors</governor>
+            <dependent idx="1">Two</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">sneak</governor>
+            <dependent idx="2">sailors</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">duck</governor>
+            <dependent idx="4">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">duck</governor>
+            <dependent idx="5">talking</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">sneak</governor>
+            <dependent idx="6">duck</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="9">ship</governor>
+            <dependent idx="8">their</dependent>
+          </dep>
+          <dep type="prep_aboard">
+            <governor idx="6">duck</governor>
+            <dependent idx="9">ship</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="num">
+            <governor idx="2">sailors</governor>
+            <dependent idx="1">Two</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">sneak</governor>
+            <dependent idx="2">sailors</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">duck</governor>
+            <dependent idx="4">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">duck</governor>
+            <dependent idx="5">talking</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">sneak</governor>
+            <dependent idx="6">duck</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="9">ship</governor>
+            <dependent idx="8">their</dependent>
+          </dep>
+          <dep type="prep_aboard">
+            <governor idx="6">duck</governor>
+            <dependent idx="9">ship</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>Complications</word>
+            <lemma>complication</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>65</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>ensue</word>
+            <lemma>ensue</lemma>
+            <CharacterOffsetBegin>66</CharacterOffsetBegin>
+            <CharacterOffsetEnd>71</CharacterOffsetEnd>
+            <POS>VBP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>71</CharacterOffsetBegin>
+            <CharacterOffsetEnd>72</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNS Complications)) (VP (VBP ensue)) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nsubj">
+            <governor idx="2">ensue</governor>
+            <dependent idx="1">Complications</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nsubj">
+            <governor idx="2">ensue</governor>
+            <dependent idx="1">Complications</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nsubj">
+            <governor idx="2">ensue</governor>
+            <dependent idx="1">Complications</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="3">
+        <tokens>
+          <token id="1">
+            <word>The</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>73</CharacterOffsetBegin>
+            <CharacterOffsetEnd>76</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>duck</word>
+            <lemma>duck</lemma>
+            <CharacterOffsetBegin>77</CharacterOffsetBegin>
+            <CharacterOffsetEnd>81</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>waddles</word>
+            <lemma>waddle</lemma>
+            <CharacterOffsetBegin>82</CharacterOffsetBegin>
+            <CharacterOffsetEnd>89</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>all</word>
+            <lemma>all</lemma>
+            <CharacterOffsetBegin>90</CharacterOffsetBegin>
+            <CharacterOffsetEnd>93</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>over</word>
+            <lemma>over</lemma>
+            <CharacterOffsetBegin>94</CharacterOffsetBegin>
+            <CharacterOffsetEnd>98</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>99</CharacterOffsetBegin>
+            <CharacterOffsetEnd>102</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>ship</word>
+            <lemma>ship</lemma>
+            <CharacterOffsetBegin>103</CharacterOffsetBegin>
+            <CharacterOffsetEnd>107</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>until</word>
+            <lemma>until</lemma>
+            <CharacterOffsetBegin>108</CharacterOffsetBegin>
+            <CharacterOffsetEnd>113</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>he</word>
+            <lemma>he</lemma>
+            <CharacterOffsetBegin>114</CharacterOffsetBegin>
+            <CharacterOffsetEnd>116</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>escapes</word>
+            <lemma>escape</lemma>
+            <CharacterOffsetBegin>117</CharacterOffsetBegin>
+            <CharacterOffsetEnd>124</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>124</CharacterOffsetBegin>
+            <CharacterOffsetEnd>125</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (DT The) (NN duck)) (VP (VBZ waddles) (NP (NP (DT all)) (PP (IN over) (NP (DT the) (NN ship)))) (SBAR (IN until) (S (NP (PRP he)) (VP (VBZ escapes))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="det">
+            <governor idx="2">duck</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">waddles</governor>
+            <dependent idx="2">duck</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">waddles</governor>
+            <dependent idx="4">all</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">all</governor>
+            <dependent idx="5">over</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">ship</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">over</governor>
+            <dependent idx="7">ship</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="10">escapes</governor>
+            <dependent idx="8">until</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">escapes</governor>
+            <dependent idx="9">he</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="3">waddles</governor>
+            <dependent idx="10">escapes</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="det">
+            <governor idx="2">duck</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">waddles</governor>
+            <dependent idx="2">duck</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">waddles</governor>
+            <dependent idx="4">all</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">ship</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="prep_over">
+            <governor idx="4">all</governor>
+            <dependent idx="7">ship</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="10">escapes</governor>
+            <dependent idx="8">until</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">escapes</governor>
+            <dependent idx="9">he</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="3">waddles</governor>
+            <dependent idx="10">escapes</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="det">
+            <governor idx="2">duck</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">waddles</governor>
+            <dependent idx="2">duck</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">waddles</governor>
+            <dependent idx="4">all</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">ship</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="prep_over">
+            <governor idx="4">all</governor>
+            <dependent idx="7">ship</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="10">escapes</governor>
+            <dependent idx="8">until</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">escapes</governor>
+            <dependent idx="9">he</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="3">waddles</governor>
+            <dependent idx="10">escapes</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+    </sentences>
+    <coreference>
+      <coreference>
+        <mention representative="true">
+          <sentence>1</sentence>
+          <start>1</start>
+          <end>3</end>
+          <head>2</head>
+        </mention>
+        <mention>
+          <sentence>1</sentence>
+          <start>8</start>
+          <end>9</end>
+          <head>8</head>
+        </mention>
+      </coreference>
+      <coreference>
+        <mention representative="true">
+          <sentence>1</sentence>
+          <start>4</start>
+          <end>10</end>
+          <head>6</head>
+        </mention>
+        <mention>
+          <sentence>3</sentence>
+          <start>1</start>
+          <end>3</end>
+          <head>2</head>
+        </mention>
+      </coreference>
+      <coreference>
+        <mention representative="true">
+          <sentence>1</sentence>
+          <start>8</start>
+          <end>10</end>
+          <head>9</head>
+        </mention>
+        <mention>
+          <sentence>3</sentence>
+          <start>6</start>
+          <end>8</end>
+          <head>7</head>
+        </mention>
+      </coreference>
+    </coreference>
+  </document>
+</root>

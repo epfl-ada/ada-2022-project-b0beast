@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>A</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>bank</word>
+            <lemma>bank</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>manager</word>
+            <lemma>manager</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>'s</word>
+            <lemma>'s</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>POS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>prim</word>
+            <lemma>prim</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>CC</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>uptight</word>
+            <lemma>uptight</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>Secretary</word>
+            <lemma>Secretary</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>suddenly</word>
+            <lemma>suddenly</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>blossoms</word>
+            <lemma>blossom</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>61</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>61</CharacterOffsetBegin>
+            <CharacterOffsetEnd>62</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (DT A) (NN bank)) (NP (NP (NP (NP (NN manager) (POS 's)) (ADJP (JJ prim) (CC and) (JJ uptight)) (NNP Secretary)) (ADVP (RB suddenly))) (NP (NNS blossoms))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="det">
+            <governor idx="2">bank</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="8">Secretary</governor>
+            <dependent idx="3">manager</dependent>
+          </dep>
+          <dep type="possessive">
+            <governor idx="3">manager</governor>
+            <dependent idx="4">'s</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">Secretary</governor>
+            <dependent idx="5">prim</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="5">prim</governor>
+            <dependent idx="6">and</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="5">prim</governor>
+            <dependent idx="7">uptight</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">bank</governor>
+            <dependent idx="8">Secretary</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="8">Secretary</governor>
+            <dependent idx="9">suddenly</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="8">Secretary</governor>
+            <dependent idx="10">blossoms</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="det">
+            <governor idx="2">bank</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="8">Secretary</governor>
+            <dependent idx="3">manager</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">Secretary</governor>
+            <dependent idx="5">prim</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="5">prim</governor>
+            <dependent idx="7">uptight</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">bank</governor>
+            <dependent idx="8">Secretary</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="8">Secretary</governor>
+            <dependent idx="9">suddenly</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="8">Secretary</governor>
+            <dependent idx="10">blossoms</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="det">
+            <governor idx="2">bank</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="8">Secretary</governor>
+            <dependent idx="3">manager</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">Secretary</governor>
+            <dependent idx="5">prim</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="5">prim</governor>
+            <dependent idx="7">uptight</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">Secretary</governor>
+            <dependent idx="7">uptight</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">bank</governor>
+            <dependent idx="8">Secretary</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="8">Secretary</governor>
+            <dependent idx="9">suddenly</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="8">Secretary</governor>
+            <dependent idx="10">blossoms</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>http:\/\/ftvdb.bfi.org.uk\/sift\/title\/29419</word>
+            <lemma>http:\/\/ftvdb.bfi.org.uk\/sift\/title\/29419</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>102</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NN http:\/\/ftvdb.bfi.org.uk\/sift\/title\/29419))) </parse>
+        <basic-dependencies/>
+        <collapsed-dependencies/>
+        <collapsed-ccprocessed-dependencies/>
+      </sentence>
+    </sentences>
+  </document>
+</root>

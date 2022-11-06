@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>The</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>film</word>
+            <lemma>film</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>is</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>based</word>
+            <lemma>base</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>two</word>
+            <lemma>two</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>NUMBER</NER>
+            <NormalizedNER>2.0</NormalizedNER>
+          </token>
+          <token id="7">
+            <word>families</word>
+            <lemma>family</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>live</word>
+            <lemma>live</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>VBP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>Bangkok</word>
+            <lemma>Bangkok</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>LOCATION</NER>
+          </token>
+          <token id="11">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (DT The) (NN film)) (VP (VBZ is) (VP (VBN based) (PP (IN on) (NP (NP (CD two) (NNS families)) (SBAR (S (VP (VBP live) (PP (IN in) (NP (NNP Bangkok)))))))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="det">
+            <governor idx="2">film</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="4">based</governor>
+            <dependent idx="2">film</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="4">based</governor>
+            <dependent idx="3">is</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">based</governor>
+            <dependent idx="5">on</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="7">families</governor>
+            <dependent idx="6">two</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">on</governor>
+            <dependent idx="7">families</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="7">families</governor>
+            <dependent idx="8">live</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="8">live</governor>
+            <dependent idx="9">in</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="9">in</governor>
+            <dependent idx="10">Bangkok</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="det">
+            <governor idx="2">film</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="4">based</governor>
+            <dependent idx="2">film</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="4">based</governor>
+            <dependent idx="3">is</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="7">families</governor>
+            <dependent idx="6">two</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="4">based</governor>
+            <dependent idx="7">families</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="7">families</governor>
+            <dependent idx="8">live</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="8">live</governor>
+            <dependent idx="10">Bangkok</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="det">
+            <governor idx="2">film</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="4">based</governor>
+            <dependent idx="2">film</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="4">based</governor>
+            <dependent idx="3">is</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="7">families</governor>
+            <dependent idx="6">two</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="4">based</governor>
+            <dependent idx="7">families</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="7">families</governor>
+            <dependent idx="8">live</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="8">live</governor>
+            <dependent idx="10">Bangkok</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>http:\/\/cinemasagar.com\/2011\/03\/mate-bohu-kari-nei-ja-releasing-on-1st-april\/</word>
+            <lemma>http:\/\/cinemasagar.com\/2011\/03\/mate-bohu-kari-nei-ja-releasing-on-1st-april\/</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>126</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NN http:\/\/cinemasagar.com\/2011\/03\/mate-bohu-kari-nei-ja-releasing-on-1st-april\/))) </parse>
+        <basic-dependencies/>
+        <collapsed-dependencies/>
+        <collapsed-ccprocessed-dependencies/>
+      </sentence>
+    </sentences>
+  </document>
+</root>

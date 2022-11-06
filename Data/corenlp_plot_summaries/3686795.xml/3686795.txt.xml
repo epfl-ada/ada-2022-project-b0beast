@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>An</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>2</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>evil</word>
+            <lemma>evil</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>heterosexual</word>
+            <lemma>heterosexual</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>supervillain</word>
+            <lemma>supervillain</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>Dr.</word>
+            <lemma>Dr.</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+          </token>
+          <token id="6">
+            <word>Hetero</word>
+            <lemma>Hetero</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+          </token>
+          <token id="7">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>vows</word>
+            <lemma>vow</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>TO</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>destroy</word>
+            <lemma>destroy</lemma>
+            <CharacterOffsetBegin>55</CharacterOffsetBegin>
+            <CharacterOffsetEnd>62</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>63</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>homosexual</word>
+            <lemma>homosexual</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>77</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>world</word>
+            <lemma>world</lemma>
+            <CharacterOffsetBegin>78</CharacterOffsetBegin>
+            <CharacterOffsetEnd>83</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="14">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>83</CharacterOffsetBegin>
+            <CharacterOffsetEnd>84</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (DT An) (ADJP (JJ evil) (JJ heterosexual)) (NN supervillain)) (NP (NNP Dr.) (NNP Hetero)) (, ,)) (VP (VBZ vows) (S (VP (TO to) (VP (VB destroy) (NP (DT the) (JJ homosexual) (NN world)))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="det">
+            <governor idx="4">supervillain</governor>
+            <dependent idx="1">An</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">heterosexual</governor>
+            <dependent idx="2">evil</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">supervillain</governor>
+            <dependent idx="3">heterosexual</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">vows</governor>
+            <dependent idx="4">supervillain</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Hetero</governor>
+            <dependent idx="5">Dr.</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">supervillain</governor>
+            <dependent idx="6">Hetero</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="10">destroy</governor>
+            <dependent idx="9">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="8">vows</governor>
+            <dependent idx="10">destroy</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="13">world</governor>
+            <dependent idx="11">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="13">world</governor>
+            <dependent idx="12">homosexual</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="10">destroy</governor>
+            <dependent idx="13">world</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="det">
+            <governor idx="4">supervillain</governor>
+            <dependent idx="1">An</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">heterosexual</governor>
+            <dependent idx="2">evil</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">supervillain</governor>
+            <dependent idx="3">heterosexual</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">vows</governor>
+            <dependent idx="4">supervillain</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Hetero</governor>
+            <dependent idx="5">Dr.</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">supervillain</governor>
+            <dependent idx="6">Hetero</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="10">destroy</governor>
+            <dependent idx="9">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="8">vows</governor>
+            <dependent idx="10">destroy</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="13">world</governor>
+            <dependent idx="11">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="13">world</governor>
+            <dependent idx="12">homosexual</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="10">destroy</governor>
+            <dependent idx="13">world</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="det">
+            <governor idx="4">supervillain</governor>
+            <dependent idx="1">An</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">heterosexual</governor>
+            <dependent idx="2">evil</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">supervillain</governor>
+            <dependent idx="3">heterosexual</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">vows</governor>
+            <dependent idx="4">supervillain</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Hetero</governor>
+            <dependent idx="5">Dr.</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">supervillain</governor>
+            <dependent idx="6">Hetero</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="10">destroy</governor>
+            <dependent idx="9">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="8">vows</governor>
+            <dependent idx="10">destroy</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="13">world</governor>
+            <dependent idx="11">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="13">world</governor>
+            <dependent idx="12">homosexual</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="10">destroy</governor>
+            <dependent idx="13">world</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>Supertwink</word>
+            <lemma>Supertwink</lemma>
+            <CharacterOffsetBegin>85</CharacterOffsetBegin>
+            <CharacterOffsetEnd>95</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>is</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>97</CharacterOffsetBegin>
+            <CharacterOffsetEnd>99</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>called</word>
+            <lemma>call</lemma>
+            <CharacterOffsetBegin>100</CharacterOffsetBegin>
+            <CharacterOffsetEnd>106</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>107</CharacterOffsetBegin>
+            <CharacterOffsetEnd>109</CharacterOffsetEnd>
+            <POS>TO</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>save</word>
+            <lemma>save</lemma>
+            <CharacterOffsetBegin>110</CharacterOffsetBegin>
+            <CharacterOffsetEnd>114</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>115</CharacterOffsetBegin>
+            <CharacterOffsetEnd>118</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>THIS DT</NormalizedNER>
+            <Timex tid="t1" type="DATE"/>
+          </token>
+          <token id="7">
+            <word>day</word>
+            <lemma>day</lemma>
+            <CharacterOffsetBegin>119</CharacterOffsetBegin>
+            <CharacterOffsetEnd>122</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>THIS DT</NormalizedNER>
+            <Timex tid="t1" type="DATE"/>
+          </token>
+          <token id="8">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>122</CharacterOffsetBegin>
+            <CharacterOffsetEnd>123</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNP Supertwink)) (VP (VBZ is) (VP (VBN called) (S (VP (TO to) (VP (VB save) (NP (DT the) (NN day))))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nsubjpass">
+            <governor idx="3">called</governor>
+            <dependent idx="1">Supertwink</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="3">called</governor>
+            <dependent idx="2">is</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">save</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">called</governor>
+            <dependent idx="5">save</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">day</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="5">save</governor>
+            <dependent idx="7">day</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nsubjpass">
+            <governor idx="3">called</governor>
+            <dependent idx="1">Supertwink</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="3">called</governor>
+            <dependent idx="2">is</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">save</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">called</governor>
+            <dependent idx="5">save</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">day</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="5">save</governor>
+            <dependent idx="7">day</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nsubjpass">
+            <governor idx="3">called</governor>
+            <dependent idx="1">Supertwink</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="3">called</governor>
+            <dependent idx="2">is</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">save</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">called</governor>
+            <dependent idx="5">save</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">day</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="5">save</governor>
+            <dependent idx="7">day</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Police</word>
+            <lemma>Police</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>officer</word>
+            <lemma>officer</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>Steve</word>
+            <lemma>Steve</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+          </token>
+          <token id="4">
+            <word>Murtaugh</word>
+            <lemma>Murtaugh</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+          </token>
+          <token id="5">
+            <word>is</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>blackmailed</word>
+            <lemma>blackmail</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>having</word>
+            <lemma>have</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>VBG</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>an</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>58</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>extramarital</word>
+            <lemma>extramarital</lemma>
+            <CharacterOffsetBegin>59</CharacterOffsetBegin>
+            <CharacterOffsetEnd>71</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>affair</word>
+            <lemma>affair</lemma>
+            <CharacterOffsetBegin>72</CharacterOffsetBegin>
+            <CharacterOffsetEnd>78</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>78</CharacterOffsetBegin>
+            <CharacterOffsetEnd>79</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNP Police) (NN officer) (NNP Steve) (NNP Murtaugh)) (VP (VBZ is) (VP (VBN blackmailed) (PP (IN for) (S (VP (VBG having) (NP (DT an) (JJ extramarital) (NN affair))))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="4">Murtaugh</governor>
+            <dependent idx="1">Police</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Murtaugh</governor>
+            <dependent idx="2">officer</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Murtaugh</governor>
+            <dependent idx="3">Steve</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="6">blackmailed</governor>
+            <dependent idx="4">Murtaugh</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="6">blackmailed</governor>
+            <dependent idx="5">is</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">blackmailed</governor>
+            <dependent idx="7">for</dependent>
+          </dep>
+          <dep type="pcomp">
+            <governor idx="7">for</governor>
+            <dependent idx="8">having</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">affair</governor>
+            <dependent idx="9">an</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">affair</governor>
+            <dependent idx="10">extramarital</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="8">having</governor>
+            <dependent idx="11">affair</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="4">Murtaugh</governor>
+            <dependent idx="1">Police</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Murtaugh</governor>
+            <dependent idx="2">officer</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Murtaugh</governor>
+            <dependent idx="3">Steve</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="6">blackmailed</governor>
+            <dependent idx="4">Murtaugh</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="6">blackmailed</governor>
+            <dependent idx="5">is</dependent>
+          </dep>
+          <dep type="prepc_for">
+            <governor idx="6">blackmailed</governor>
+            <dependent idx="8">having</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">affair</governor>
+            <dependent idx="9">an</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">affair</governor>
+            <dependent idx="10">extramarital</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="8">having</governor>
+            <dependent idx="11">affair</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="4">Murtaugh</governor>
+            <dependent idx="1">Police</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Murtaugh</governor>
+            <dependent idx="2">officer</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Murtaugh</governor>
+            <dependent idx="3">Steve</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="6">blackmailed</governor>
+            <dependent idx="4">Murtaugh</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="6">blackmailed</governor>
+            <dependent idx="5">is</dependent>
+          </dep>
+          <dep type="prepc_for">
+            <governor idx="6">blackmailed</governor>
+            <dependent idx="8">having</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">affair</governor>
+            <dependent idx="9">an</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">affair</governor>
+            <dependent idx="10">extramarital</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="8">having</governor>
+            <dependent idx="11">affair</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>Moving</word>
+            <lemma>move</lemma>
+            <CharacterOffsetBegin>80</CharacterOffsetBegin>
+            <CharacterOffsetEnd>86</CharacterOffsetEnd>
+            <POS>VBG</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>with</word>
+            <lemma>with</lemma>
+            <CharacterOffsetBegin>87</CharacterOffsetBegin>
+            <CharacterOffsetEnd>91</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>his</word>
+            <lemma>he</lemma>
+            <CharacterOffsetBegin>92</CharacterOffsetBegin>
+            <CharacterOffsetEnd>95</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>wife</word>
+            <lemma>wife</lemma>
+            <CharacterOffsetBegin>96</CharacterOffsetBegin>
+            <CharacterOffsetEnd>100</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>from</word>
+            <lemma>from</lemma>
+            <CharacterOffsetBegin>101</CharacterOffsetBegin>
+            <CharacterOffsetEnd>105</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>Chicago</word>
+            <lemma>Chicago</lemma>
+            <CharacterOffsetBegin>106</CharacterOffsetBegin>
+            <CharacterOffsetEnd>113</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>LOCATION</NER>
+          </token>
+          <token id="7">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>114</CharacterOffsetBegin>
+            <CharacterOffsetEnd>116</CharacterOffsetEnd>
+            <POS>TO</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>Portland</word>
+            <lemma>Portland</lemma>
+            <CharacterOffsetBegin>117</CharacterOffsetBegin>
+            <CharacterOffsetEnd>125</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>LOCATION</NER>
+          </token>
+          <token id="9">
+            <word>Oregon</word>
+            <lemma>Oregon</lemma>
+            <CharacterOffsetBegin>126</CharacterOffsetBegin>
+            <CharacterOffsetEnd>132</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>LOCATION</NER>
+          </token>
+          <token id="10">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>132</CharacterOffsetBegin>
+            <CharacterOffsetEnd>133</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>134</CharacterOffsetBegin>
+            <CharacterOffsetEnd>137</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>blackmailer</word>
+            <lemma>blackmailer</lemma>
+            <CharacterOffsetBegin>138</CharacterOffsetBegin>
+            <CharacterOffsetEnd>149</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>follows</word>
+            <lemma>follow</lemma>
+            <CharacterOffsetBegin>150</CharacterOffsetBegin>
+            <CharacterOffsetEnd>157</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="14">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>157</CharacterOffsetBegin>
+            <CharacterOffsetEnd>158</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (S (VP (VBG Moving) (PP (IN with) (NP (NP (PRP$ his) (NN wife)) (PP (IN from) (NP (NNP Chicago))))) (PP (TO to) (NP (NNP Portland) (NNP Oregon))))) (, ,) (NP (DT the) (NN blackmailer)) (VP (VBZ follows)) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="partmod">
+            <governor idx="13">follows</governor>
+            <dependent idx="1">Moving</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">Moving</governor>
+            <dependent idx="2">with</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="4">wife</governor>
+            <dependent idx="3">his</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">with</governor>
+            <dependent idx="4">wife</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">wife</governor>
+            <dependent idx="5">from</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">from</governor>
+            <dependent idx="6">Chicago</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">Moving</governor>
+            <dependent idx="7">to</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">Oregon</governor>
+            <dependent idx="8">Portland</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="7">to</governor>
+            <dependent idx="9">Oregon</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">blackmailer</governor>
+            <dependent idx="11">the</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="13">follows</governor>
+            <dependent idx="12">blackmailer</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="partmod">
+            <governor idx="13">follows</governor>
+            <dependent idx="1">Moving</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="4">wife</governor>
+            <dependent idx="3">his</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="1">Moving</governor>
+            <dependent idx="4">wife</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="4">wife</governor>
+            <dependent idx="6">Chicago</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">Oregon</governor>
+            <dependent idx="8">Portland</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="1">Moving</governor>
+            <dependent idx="9">Oregon</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">blackmailer</governor>
+            <dependent idx="11">the</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="13">follows</governor>
+            <dependent idx="12">blackmailer</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="partmod">
+            <governor idx="13">follows</governor>
+            <dependent idx="1">Moving</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="4">wife</governor>
+            <dependent idx="3">his</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="1">Moving</governor>
+            <dependent idx="4">wife</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="4">wife</governor>
+            <dependent idx="6">Chicago</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">Oregon</governor>
+            <dependent idx="8">Portland</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="1">Moving</governor>
+            <dependent idx="9">Oregon</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">blackmailer</governor>
+            <dependent idx="11">the</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="13">follows</governor>
+            <dependent idx="12">blackmailer</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+    </sentences>
+    <coreference>
+      <coreference>
+        <mention representative="true">
+          <sentence>1</sentence>
+          <start>1</start>
+          <end>5</end>
+          <head>4</head>
+        </mention>
+        <mention>
+          <sentence>2</sentence>
+          <start>3</start>
+          <end>4</end>
+          <head>3</head>
+        </mention>
+      </coreference>
+    </coreference>
+  </document>
+</root>

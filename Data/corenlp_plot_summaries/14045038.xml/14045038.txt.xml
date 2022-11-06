@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Three</word>
+            <lemma>three</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>NUMBER</NER>
+            <NormalizedNER>3.0</NormalizedNER>
+          </token>
+          <token id="2">
+            <word>strangers</word>
+            <lemma>stranger</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>lives</word>
+            <lemma>life</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>are</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>VBP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>fractured</word>
+            <lemma>fracture</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>by</word>
+            <lemma>by</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>thoughts</word>
+            <lemma>thought</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>CC</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>acts</word>
+            <lemma>act</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>57</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>seething</word>
+            <lemma>seething</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>violence</word>
+            <lemma>violence</lemma>
+            <CharacterOffsetBegin>69</CharacterOffsetBegin>
+            <CharacterOffsetEnd>77</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>77</CharacterOffsetBegin>
+            <CharacterOffsetEnd>78</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (CD Three) (NNS strangers)) (NP (NNS lives))) (VP (VBP are) (ADJP (VBN fractured) (PP (IN by) (NP (NP (NNS thoughts) (CC and) (NNS acts)) (PP (IN of) (NP (JJ seething) (NN violence))))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="num">
+            <governor idx="2">strangers</governor>
+            <dependent idx="1">Three</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="5">fractured</governor>
+            <dependent idx="2">strangers</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">strangers</governor>
+            <dependent idx="3">lives</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="5">fractured</governor>
+            <dependent idx="4">are</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">fractured</governor>
+            <dependent idx="6">by</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">by</governor>
+            <dependent idx="7">thoughts</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="7">thoughts</governor>
+            <dependent idx="8">and</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="7">thoughts</governor>
+            <dependent idx="9">acts</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="7">thoughts</governor>
+            <dependent idx="10">of</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">violence</governor>
+            <dependent idx="11">seething</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="10">of</governor>
+            <dependent idx="12">violence</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="num">
+            <governor idx="2">strangers</governor>
+            <dependent idx="1">Three</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="5">fractured</governor>
+            <dependent idx="2">strangers</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">strangers</governor>
+            <dependent idx="3">lives</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="5">fractured</governor>
+            <dependent idx="4">are</dependent>
+          </dep>
+          <dep type="agent">
+            <governor idx="5">fractured</governor>
+            <dependent idx="7">thoughts</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="7">thoughts</governor>
+            <dependent idx="9">acts</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">violence</governor>
+            <dependent idx="11">seething</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="7">thoughts</governor>
+            <dependent idx="12">violence</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="num">
+            <governor idx="2">strangers</governor>
+            <dependent idx="1">Three</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="5">fractured</governor>
+            <dependent idx="2">strangers</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">strangers</governor>
+            <dependent idx="3">lives</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="5">fractured</governor>
+            <dependent idx="4">are</dependent>
+          </dep>
+          <dep type="agent">
+            <governor idx="5">fractured</governor>
+            <dependent idx="7">thoughts</dependent>
+          </dep>
+          <dep type="agent">
+            <governor idx="5">fractured</governor>
+            <dependent idx="9">acts</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="7">thoughts</governor>
+            <dependent idx="9">acts</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">violence</governor>
+            <dependent idx="11">seething</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="7">thoughts</governor>
+            <dependent idx="12">violence</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>In</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>79</CharacterOffsetBegin>
+            <CharacterOffsetEnd>81</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>this</word>
+            <lemma>this</lemma>
+            <CharacterOffsetBegin>82</CharacterOffsetBegin>
+            <CharacterOffsetEnd>86</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>interactive</word>
+            <lemma>interactive</lemma>
+            <CharacterOffsetBegin>87</CharacterOffsetBegin>
+            <CharacterOffsetEnd>98</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>feature</word>
+            <lemma>feature</lemma>
+            <CharacterOffsetBegin>99</CharacterOffsetBegin>
+            <CharacterOffsetEnd>106</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>film</word>
+            <lemma>film</lemma>
+            <CharacterOffsetBegin>107</CharacterOffsetBegin>
+            <CharacterOffsetEnd>111</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>111</CharacterOffsetBegin>
+            <CharacterOffsetEnd>112</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>viewers</word>
+            <lemma>viewer</lemma>
+            <CharacterOffsetBegin>113</CharacterOffsetBegin>
+            <CharacterOffsetEnd>120</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>unravel</word>
+            <lemma>unravel</lemma>
+            <CharacterOffsetBegin>121</CharacterOffsetBegin>
+            <CharacterOffsetEnd>128</CharacterOffsetEnd>
+            <POS>VBP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>their</word>
+            <lemma>they</lemma>
+            <CharacterOffsetBegin>129</CharacterOffsetBegin>
+            <CharacterOffsetEnd>134</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>interlocked</word>
+            <lemma>interlocked</lemma>
+            <CharacterOffsetBegin>135</CharacterOffsetBegin>
+            <CharacterOffsetEnd>146</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>stories</word>
+            <lemma>story</lemma>
+            <CharacterOffsetBegin>147</CharacterOffsetBegin>
+            <CharacterOffsetEnd>154</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>with</word>
+            <lemma>with</lemma>
+            <CharacterOffsetBegin>155</CharacterOffsetBegin>
+            <CharacterOffsetEnd>159</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>160</CharacterOffsetBegin>
+            <CharacterOffsetEnd>161</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="14">
+            <word>simple</word>
+            <lemma>simple</lemma>
+            <CharacterOffsetBegin>162</CharacterOffsetBegin>
+            <CharacterOffsetEnd>168</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="15">
+            <word>click</word>
+            <lemma>click</lemma>
+            <CharacterOffsetBegin>169</CharacterOffsetBegin>
+            <CharacterOffsetEnd>174</CharacterOffsetEnd>
+            <POS>VBP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="16">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>174</CharacterOffsetBegin>
+            <CharacterOffsetEnd>175</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (PP (IN In) (NP (DT this) (JJ interactive) (NN feature) (NN film))) (, ,) (NP (NNS viewers)) (VP (VBP unravel) (SBAR (S (NP (NP (PRP$ their) (JJ interlocked) (NNS stories)) (PP (IN with) (NP (DT a) (JJ simple)))) (VP (VBP click))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="prep">
+            <governor idx="8">unravel</governor>
+            <dependent idx="1">In</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">film</governor>
+            <dependent idx="2">this</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">film</governor>
+            <dependent idx="3">interactive</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">film</governor>
+            <dependent idx="4">feature</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="1">In</governor>
+            <dependent idx="5">film</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">unravel</governor>
+            <dependent idx="7">viewers</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="11">stories</governor>
+            <dependent idx="9">their</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">stories</governor>
+            <dependent idx="10">interlocked</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="15">click</governor>
+            <dependent idx="11">stories</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="11">stories</governor>
+            <dependent idx="12">with</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">simple</governor>
+            <dependent idx="13">a</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="12">with</governor>
+            <dependent idx="14">simple</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="8">unravel</governor>
+            <dependent idx="15">click</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="det">
+            <governor idx="5">film</governor>
+            <dependent idx="2">this</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">film</governor>
+            <dependent idx="3">interactive</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">film</governor>
+            <dependent idx="4">feature</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="8">unravel</governor>
+            <dependent idx="5">film</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">unravel</governor>
+            <dependent idx="7">viewers</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="11">stories</governor>
+            <dependent idx="9">their</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">stories</governor>
+            <dependent idx="10">interlocked</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="15">click</governor>
+            <dependent idx="11">stories</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">simple</governor>
+            <dependent idx="13">a</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="11">stories</governor>
+            <dependent idx="14">simple</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="8">unravel</governor>
+            <dependent idx="15">click</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="det">
+            <governor idx="5">film</governor>
+            <dependent idx="2">this</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">film</governor>
+            <dependent idx="3">interactive</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">film</governor>
+            <dependent idx="4">feature</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="8">unravel</governor>
+            <dependent idx="5">film</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">unravel</governor>
+            <dependent idx="7">viewers</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="11">stories</governor>
+            <dependent idx="9">their</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">stories</governor>
+            <dependent idx="10">interlocked</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="15">click</governor>
+            <dependent idx="11">stories</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">simple</governor>
+            <dependent idx="13">a</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="11">stories</governor>
+            <dependent idx="14">simple</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="8">unravel</governor>
+            <dependent idx="15">click</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+    </sentences>
+    <coreference>
+      <coreference>
+        <mention representative="true">
+          <sentence>2</sentence>
+          <start>7</start>
+          <end>8</end>
+          <head>7</head>
+        </mention>
+        <mention>
+          <sentence>2</sentence>
+          <start>9</start>
+          <end>10</end>
+          <head>9</head>
+        </mention>
+      </coreference>
+    </coreference>
+  </document>
+</root>

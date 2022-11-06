@@ -1,0 +1,745 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>During</word>
+            <lemma>during</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>his</word>
+            <lemma>he</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>wandering</word>
+            <lemma>wander</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>VBG</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>throughout</word>
+            <lemma>throughout</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>Japan</word>
+            <lemma>Japan</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>LOCATION</NER>
+          </token>
+          <token id="6">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>Tora-san</word>
+            <lemma>tora-san</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>meets</word>
+            <lemma>meet</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>suicidal</word>
+            <lemma>suicidal</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>64</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>man</word>
+            <lemma>man</lemma>
+            <CharacterOffsetBegin>65</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>68</CharacterOffsetBegin>
+            <CharacterOffsetEnd>69</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (PP (IN During) (S (NP (PRP$ his)) (VP (VBG wandering) (PP (IN throughout) (NP (NNP Japan)))))) (, ,) (NP (NN Tora-san)) (VP (VBZ meets) (NP (DT a) (JJ suicidal) (NN man))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="prep">
+            <governor idx="8">meets</governor>
+            <dependent idx="1">During</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">wandering</governor>
+            <dependent idx="2">his</dependent>
+          </dep>
+          <dep type="pcomp">
+            <governor idx="1">During</governor>
+            <dependent idx="3">wandering</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">wandering</governor>
+            <dependent idx="4">throughout</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">throughout</governor>
+            <dependent idx="5">Japan</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">meets</governor>
+            <dependent idx="7">Tora-san</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">man</governor>
+            <dependent idx="9">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">man</governor>
+            <dependent idx="10">suicidal</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="8">meets</governor>
+            <dependent idx="11">man</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nsubj">
+            <governor idx="3">wandering</governor>
+            <dependent idx="2">his</dependent>
+          </dep>
+          <dep type="prepc_during">
+            <governor idx="8">meets</governor>
+            <dependent idx="3">wandering</dependent>
+          </dep>
+          <dep type="prep_throughout">
+            <governor idx="3">wandering</governor>
+            <dependent idx="5">Japan</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">meets</governor>
+            <dependent idx="7">Tora-san</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">man</governor>
+            <dependent idx="9">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">man</governor>
+            <dependent idx="10">suicidal</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="8">meets</governor>
+            <dependent idx="11">man</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nsubj">
+            <governor idx="3">wandering</governor>
+            <dependent idx="2">his</dependent>
+          </dep>
+          <dep type="prepc_during">
+            <governor idx="8">meets</governor>
+            <dependent idx="3">wandering</dependent>
+          </dep>
+          <dep type="prep_throughout">
+            <governor idx="3">wandering</governor>
+            <dependent idx="5">Japan</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">meets</governor>
+            <dependent idx="7">Tora-san</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">man</governor>
+            <dependent idx="9">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">man</governor>
+            <dependent idx="10">suicidal</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="8">meets</governor>
+            <dependent idx="11">man</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>He</word>
+            <lemma>he</lemma>
+            <CharacterOffsetBegin>70</CharacterOffsetBegin>
+            <CharacterOffsetEnd>72</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>travels</word>
+            <lemma>travel</lemma>
+            <CharacterOffsetBegin>73</CharacterOffsetBegin>
+            <CharacterOffsetEnd>80</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>with</word>
+            <lemma>with</lemma>
+            <CharacterOffsetBegin>81</CharacterOffsetBegin>
+            <CharacterOffsetEnd>85</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>86</CharacterOffsetBegin>
+            <CharacterOffsetEnd>89</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>man</word>
+            <lemma>man</lemma>
+            <CharacterOffsetBegin>90</CharacterOffsetBegin>
+            <CharacterOffsetEnd>93</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>94</CharacterOffsetBegin>
+            <CharacterOffsetEnd>96</CharacterOffsetEnd>
+            <POS>TO</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>Vienna</word>
+            <lemma>Vienna</lemma>
+            <CharacterOffsetBegin>97</CharacterOffsetBegin>
+            <CharacterOffsetEnd>103</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>LOCATION</NER>
+          </token>
+          <token id="8">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>103</CharacterOffsetBegin>
+            <CharacterOffsetEnd>104</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>but</word>
+            <lemma>but</lemma>
+            <CharacterOffsetBegin>105</CharacterOffsetBegin>
+            <CharacterOffsetEnd>108</CharacterOffsetEnd>
+            <POS>CC</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>winds</word>
+            <lemma>wind</lemma>
+            <CharacterOffsetBegin>109</CharacterOffsetBegin>
+            <CharacterOffsetEnd>114</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>up</word>
+            <lemma>up</lemma>
+            <CharacterOffsetBegin>115</CharacterOffsetBegin>
+            <CharacterOffsetEnd>117</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>homesick</word>
+            <lemma>homesick</lemma>
+            <CharacterOffsetBegin>118</CharacterOffsetBegin>
+            <CharacterOffsetEnd>126</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>127</CharacterOffsetBegin>
+            <CharacterOffsetEnd>130</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="14">
+            <word>Japan</word>
+            <lemma>Japan</lemma>
+            <CharacterOffsetBegin>131</CharacterOffsetBegin>
+            <CharacterOffsetEnd>136</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>LOCATION</NER>
+          </token>
+          <token id="15">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>136</CharacterOffsetBegin>
+            <CharacterOffsetEnd>137</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (PRP He)) (VP (VBZ travels) (PP (IN with) (NP (NP (NP (DT the) (NN man)) (PP (TO to) (NP (NNP Vienna)))) (, ,) (CC but) (NP (NP (NNS winds)) (PP (IN up) (NP (NP (NN homesick)) (PP (IN for) (NP (NNP Japan))))))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nsubj">
+            <governor idx="2">travels</governor>
+            <dependent idx="1">He</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">travels</governor>
+            <dependent idx="3">with</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">man</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">with</governor>
+            <dependent idx="5">man</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">man</governor>
+            <dependent idx="6">to</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">to</governor>
+            <dependent idx="7">Vienna</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="5">man</governor>
+            <dependent idx="9">but</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="5">man</governor>
+            <dependent idx="10">winds</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="10">winds</governor>
+            <dependent idx="11">up</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="11">up</governor>
+            <dependent idx="12">homesick</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="12">homesick</governor>
+            <dependent idx="13">for</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="13">for</governor>
+            <dependent idx="14">Japan</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nsubj">
+            <governor idx="2">travels</governor>
+            <dependent idx="1">He</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">man</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="2">travels</governor>
+            <dependent idx="5">man</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="5">man</governor>
+            <dependent idx="7">Vienna</dependent>
+          </dep>
+          <dep type="conj_but">
+            <governor idx="5">man</governor>
+            <dependent idx="10">winds</dependent>
+          </dep>
+          <dep type="prep_up">
+            <governor idx="10">winds</governor>
+            <dependent idx="12">homesick</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="12">homesick</governor>
+            <dependent idx="14">Japan</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nsubj">
+            <governor idx="2">travels</governor>
+            <dependent idx="1">He</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">man</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="2">travels</governor>
+            <dependent idx="5">man</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="5">man</governor>
+            <dependent idx="7">Vienna</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="2">travels</governor>
+            <dependent idx="10">winds</dependent>
+          </dep>
+          <dep type="conj_but">
+            <governor idx="5">man</governor>
+            <dependent idx="10">winds</dependent>
+          </dep>
+          <dep type="prep_up">
+            <governor idx="10">winds</governor>
+            <dependent idx="12">homesick</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="12">homesick</governor>
+            <dependent idx="14">Japan</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="3">
+        <tokens>
+          <token id="1">
+            <word>-LRB-</word>
+            <lemma>-lrb-</lemma>
+            <CharacterOffsetBegin>137</CharacterOffsetBegin>
+            <CharacterOffsetEnd>138</CharacterOffsetEnd>
+            <POS>-LRB-</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>ref</word>
+            <lemma>ref</lemma>
+            <CharacterOffsetBegin>138</CharacterOffsetBegin>
+            <CharacterOffsetEnd>141</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>name</word>
+            <lemma>name</lemma>
+            <CharacterOffsetBegin>142</CharacterOffsetBegin>
+            <CharacterOffsetEnd>146</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>http:\/\/www.kinejun.jp\/cinema\/id\/18113</word>
+            <lemma>http:\/\/www.kinejun.jp\/cinema\/id\/18113</lemma>
+            <CharacterOffsetBegin>148</CharacterOffsetBegin>
+            <CharacterOffsetEnd>185</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>|</word>
+            <lemma>|</lemma>
+            <CharacterOffsetBegin>185</CharacterOffsetBegin>
+            <CharacterOffsetEnd>186</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>NUMBER</NER>
+          </token>
+          <token id="6">
+            <word>title2010-02-01</word>
+            <lemma>title2010-02-01</lemma>
+            <CharacterOffsetBegin>186</CharacterOffsetBegin>
+            <CharacterOffsetEnd>201</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>|</word>
+            <lemma>|</lemma>
+            <CharacterOffsetBegin>201</CharacterOffsetBegin>
+            <CharacterOffsetEnd>202</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>languageKinema</word>
+            <lemma>languagekinema</lemma>
+            <CharacterOffsetBegin>202</CharacterOffsetBegin>
+            <CharacterOffsetEnd>216</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>Junpo</word>
+            <lemma>junpo</lemma>
+            <CharacterOffsetBegin>217</CharacterOffsetBegin>
+            <CharacterOffsetEnd>222</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>-RCB-</word>
+            <lemma>-rcb-</lemma>
+            <CharacterOffsetBegin>222</CharacterOffsetBegin>
+            <CharacterOffsetEnd>223</CharacterOffsetEnd>
+            <POS>-RRB-</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>-RCB-</word>
+            <lemma>-rcb-</lemma>
+            <CharacterOffsetBegin>223</CharacterOffsetBegin>
+            <CharacterOffsetEnd>224</CharacterOffsetEnd>
+            <POS>-RRB-</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>-LCB-</word>
+            <lemma>-lcb-</lemma>
+            <CharacterOffsetBegin>224</CharacterOffsetBegin>
+            <CharacterOffsetEnd>225</CharacterOffsetEnd>
+            <POS>-LRB-</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>-LCB-</word>
+            <lemma>-lcb-</lemma>
+            <CharacterOffsetBegin>225</CharacterOffsetBegin>
+            <CharacterOffsetEnd>226</CharacterOffsetEnd>
+            <POS>-LRB-</POS>
+            <NER>O</NER>
+          </token>
+          <token id="14">
+            <word>cite</word>
+            <lemma>cite</lemma>
+            <CharacterOffsetBegin>226</CharacterOffsetBegin>
+            <CharacterOffsetEnd>230</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="15">
+            <word>web</word>
+            <lemma>web</lemma>
+            <CharacterOffsetBegin>231</CharacterOffsetBegin>
+            <CharacterOffsetEnd>234</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="16">
+            <word>-RCB-</word>
+            <lemma>-rcb-</lemma>
+            <CharacterOffsetBegin>234</CharacterOffsetBegin>
+            <CharacterOffsetEnd>235</CharacterOffsetEnd>
+            <POS>-RRB-</POS>
+            <NER>O</NER>
+          </token>
+          <token id="17">
+            <word>-RCB-</word>
+            <lemma>-rcb-</lemma>
+            <CharacterOffsetBegin>235</CharacterOffsetBegin>
+            <CharacterOffsetEnd>236</CharacterOffsetEnd>
+            <POS>-RRB-</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (PRN (-LRB- -LRB-) (NP (NP (NN ref)) (SBAR (S (NP-TMP (NP (NN name)) (NP (NN http:\/\/www.kinejun.jp\/cinema\/id\/18113))) (NP (NP (CD |) (NN title2010-02-01)) (PP (NN |) (NP (NN languageKinema))) (NP (NN Junpo)) (-RRB- -RCB-)) (-RRB- -RCB-) (VP (-LRB- -LCB-) (PRN (-LRB- -LCB-) (S (VP (VB cite) (NP (NN web)))) (-RRB- -RCB-)))))) (-RRB- -RCB-))) </parse>
+        <basic-dependencies>
+          <dep type="tmod">
+            <governor idx="12">-LCB-</governor>
+            <dependent idx="3">name</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">name</governor>
+            <dependent idx="4">http:\/\/www.kinejun.jp\/cinema\/id\/18113</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="6">title2010-02-01</governor>
+            <dependent idx="5">|</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="12">-LCB-</governor>
+            <dependent idx="6">title2010-02-01</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">title2010-02-01</governor>
+            <dependent idx="7">|</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="7">|</governor>
+            <dependent idx="8">languageKinema</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="6">title2010-02-01</governor>
+            <dependent idx="9">Junpo</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="12">-LCB-</governor>
+            <dependent idx="14">cite</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="14">cite</governor>
+            <dependent idx="15">web</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="tmod">
+            <governor idx="12">-LCB-</governor>
+            <dependent idx="3">name</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">name</governor>
+            <dependent idx="4">http:\/\/www.kinejun.jp\/cinema\/id\/18113</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="6">title2010-02-01</governor>
+            <dependent idx="5">|</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="12">-LCB-</governor>
+            <dependent idx="6">title2010-02-01</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">title2010-02-01</governor>
+            <dependent idx="7">|</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="7">|</governor>
+            <dependent idx="8">languageKinema</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="6">title2010-02-01</governor>
+            <dependent idx="9">Junpo</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="12">-LCB-</governor>
+            <dependent idx="14">cite</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="14">cite</governor>
+            <dependent idx="15">web</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="tmod">
+            <governor idx="12">-LCB-</governor>
+            <dependent idx="3">name</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">name</governor>
+            <dependent idx="4">http:\/\/www.kinejun.jp\/cinema\/id\/18113</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="6">title2010-02-01</governor>
+            <dependent idx="5">|</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="12">-LCB-</governor>
+            <dependent idx="6">title2010-02-01</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">title2010-02-01</governor>
+            <dependent idx="7">|</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="7">|</governor>
+            <dependent idx="8">languageKinema</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="6">title2010-02-01</governor>
+            <dependent idx="9">Junpo</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="12">-LCB-</governor>
+            <dependent idx="14">cite</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="14">cite</governor>
+            <dependent idx="15">web</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+    </sentences>
+    <coreference>
+      <coreference>
+        <mention representative="true">
+          <sentence>1</sentence>
+          <start>5</start>
+          <end>6</end>
+          <head>5</head>
+        </mention>
+        <mention>
+          <sentence>2</sentence>
+          <start>14</start>
+          <end>15</end>
+          <head>14</head>
+        </mention>
+      </coreference>
+      <coreference>
+        <mention representative="true">
+          <sentence>1</sentence>
+          <start>2</start>
+          <end>3</end>
+          <head>2</head>
+        </mention>
+        <mention>
+          <sentence>2</sentence>
+          <start>1</start>
+          <end>2</end>
+          <head>1</head>
+        </mention>
+      </coreference>
+      <coreference>
+        <mention representative="true">
+          <sentence>2</sentence>
+          <start>4</start>
+          <end>15</end>
+          <head>5</head>
+        </mention>
+        <mention>
+          <sentence>2</sentence>
+          <start>4</start>
+          <end>8</end>
+          <head>5</head>
+        </mention>
+      </coreference>
+    </coreference>
+  </document>
+</root>

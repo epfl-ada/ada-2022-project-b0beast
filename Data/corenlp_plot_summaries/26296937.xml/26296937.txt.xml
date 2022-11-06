@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>A</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>young</word>
+            <lemma>young</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>couple</word>
+            <lemma>couple</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>'s</word>
+            <lemma>'s</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>POS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>marriage</word>
+            <lemma>marriage</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>is</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>threatened</word>
+            <lemma>threaten</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>by</word>
+            <lemma>by</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>husband</word>
+            <lemma>husband</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>'s</word>
+            <lemma>'s</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>POS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>alcoholism</word>
+            <lemma>alcoholism</lemma>
+            <CharacterOffsetBegin>57</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (DT A) (JJ young) (NN couple) (POS 's)) (NN marriage)) (VP (VBZ is) (VP (VBN threatened) (PP (IN by) (NP (NP (DT the) (NN husband) (POS 's)) (NN alcoholism))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="det">
+            <governor idx="3">couple</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">couple</governor>
+            <dependent idx="2">young</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="5">marriage</governor>
+            <dependent idx="3">couple</dependent>
+          </dep>
+          <dep type="possessive">
+            <governor idx="3">couple</governor>
+            <dependent idx="4">'s</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="7">threatened</governor>
+            <dependent idx="5">marriage</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="7">threatened</governor>
+            <dependent idx="6">is</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="7">threatened</governor>
+            <dependent idx="8">by</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">husband</governor>
+            <dependent idx="9">the</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="12">alcoholism</governor>
+            <dependent idx="10">husband</dependent>
+          </dep>
+          <dep type="possessive">
+            <governor idx="10">husband</governor>
+            <dependent idx="11">'s</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="8">by</governor>
+            <dependent idx="12">alcoholism</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="det">
+            <governor idx="3">couple</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">couple</governor>
+            <dependent idx="2">young</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="5">marriage</governor>
+            <dependent idx="3">couple</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="7">threatened</governor>
+            <dependent idx="5">marriage</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="7">threatened</governor>
+            <dependent idx="6">is</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">husband</governor>
+            <dependent idx="9">the</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="12">alcoholism</governor>
+            <dependent idx="10">husband</dependent>
+          </dep>
+          <dep type="agent">
+            <governor idx="7">threatened</governor>
+            <dependent idx="12">alcoholism</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="det">
+            <governor idx="3">couple</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">couple</governor>
+            <dependent idx="2">young</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="5">marriage</governor>
+            <dependent idx="3">couple</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="7">threatened</governor>
+            <dependent idx="5">marriage</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="7">threatened</governor>
+            <dependent idx="6">is</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">husband</governor>
+            <dependent idx="9">the</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="12">alcoholism</governor>
+            <dependent idx="10">husband</dependent>
+          </dep>
+          <dep type="agent">
+            <governor idx="7">threatened</governor>
+            <dependent idx="12">alcoholism</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>New</word>
+            <lemma>New</lemma>
+            <CharacterOffsetBegin>68</CharacterOffsetBegin>
+            <CharacterOffsetEnd>71</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="2">
+            <word>York</word>
+            <lemma>York</lemma>
+            <CharacterOffsetBegin>72</CharacterOffsetBegin>
+            <CharacterOffsetEnd>76</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="3">
+            <word>Times</word>
+            <lemma>Times</lemma>
+            <CharacterOffsetBegin>77</CharacterOffsetBegin>
+            <CharacterOffsetEnd>82</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="4">
+            <word>review</word>
+            <lemma>review</lemma>
+            <CharacterOffsetBegin>83</CharacterOffsetBegin>
+            <CharacterOffsetEnd>89</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>90</CharacterOffsetBegin>
+            <CharacterOffsetEnd>92</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>DVD</word>
+            <lemma>dvd</lemma>
+            <CharacterOffsetBegin>93</CharacterOffsetBegin>
+            <CharacterOffsetEnd>96</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>set</word>
+            <lemma>set</lemma>
+            <CharacterOffsetBegin>97</CharacterOffsetBegin>
+            <CharacterOffsetEnd>100</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>101</CharacterOffsetBegin>
+            <CharacterOffsetEnd>103</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>Griffith</word>
+            <lemma>Griffith</lemma>
+            <CharacterOffsetBegin>104</CharacterOffsetBegin>
+            <CharacterOffsetEnd>112</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+          </token>
+          <token id="10">
+            <word>films</word>
+            <lemma>film</lemma>
+            <CharacterOffsetBegin>113</CharacterOffsetBegin>
+            <CharacterOffsetEnd>118</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NNP New) (NNP York) (NNP Times)) (NP (NP (NN review)) (PP (IN of) (NP (NP (NN DVD) (NN set)) (PP (IN of) (NP (NNP Griffith) (NNS films)))))))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="3">Times</governor>
+            <dependent idx="1">New</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Times</governor>
+            <dependent idx="2">York</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Times</governor>
+            <dependent idx="4">review</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">review</governor>
+            <dependent idx="5">of</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">set</governor>
+            <dependent idx="6">DVD</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">of</governor>
+            <dependent idx="7">set</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="7">set</governor>
+            <dependent idx="8">of</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">films</governor>
+            <dependent idx="9">Griffith</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="8">of</governor>
+            <dependent idx="10">films</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="3">Times</governor>
+            <dependent idx="1">New</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Times</governor>
+            <dependent idx="2">York</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Times</governor>
+            <dependent idx="4">review</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">set</governor>
+            <dependent idx="6">DVD</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="4">review</governor>
+            <dependent idx="7">set</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">films</governor>
+            <dependent idx="9">Griffith</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="7">set</governor>
+            <dependent idx="10">films</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="3">Times</governor>
+            <dependent idx="1">New</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Times</governor>
+            <dependent idx="2">York</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Times</governor>
+            <dependent idx="4">review</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">set</governor>
+            <dependent idx="6">DVD</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="4">review</governor>
+            <dependent idx="7">set</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">films</governor>
+            <dependent idx="9">Griffith</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="7">set</governor>
+            <dependent idx="10">films</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

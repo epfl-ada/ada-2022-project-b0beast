@@ -1,0 +1,758 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>A</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>French</word>
+            <lemma>french</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>LOCATION</NER>
+          </token>
+          <token id="3">
+            <word>research</word>
+            <lemma>research</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>team</word>
+            <lemma>team</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>travels</word>
+            <lemma>travel</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>TO</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>Swiss</word>
+            <lemma>swiss</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>MISC</NER>
+          </token>
+          <token id="9">
+            <word>Alps</word>
+            <lemma>Alps</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>MISC</NER>
+          </token>
+          <token id="10">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>TO</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>investigate</word>
+            <lemma>investigate</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>65</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>discovery</word>
+            <lemma>discovery</lemma>
+            <CharacterOffsetBegin>66</CharacterOffsetBegin>
+            <CharacterOffsetEnd>75</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="14">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>75</CharacterOffsetBegin>
+            <CharacterOffsetEnd>76</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (DT A) (JJ French) (NN research) (NN team)) (VP (VBZ travels) (PP (TO to) (NP (DT the) (JJ Swiss) (NNP Alps))) (S (VP (TO to) (VP (VB investigate) (NP (DT a) (NN discovery)))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="det">
+            <governor idx="4">team</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">team</governor>
+            <dependent idx="2">French</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">team</governor>
+            <dependent idx="3">research</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">travels</governor>
+            <dependent idx="4">team</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">travels</governor>
+            <dependent idx="6">to</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">Alps</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">Alps</governor>
+            <dependent idx="8">Swiss</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">to</governor>
+            <dependent idx="9">Alps</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="11">investigate</governor>
+            <dependent idx="10">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="5">travels</governor>
+            <dependent idx="11">investigate</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="13">discovery</governor>
+            <dependent idx="12">a</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="11">investigate</governor>
+            <dependent idx="13">discovery</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="det">
+            <governor idx="4">team</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">team</governor>
+            <dependent idx="2">French</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">team</governor>
+            <dependent idx="3">research</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">travels</governor>
+            <dependent idx="4">team</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">Alps</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">Alps</governor>
+            <dependent idx="8">Swiss</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="5">travels</governor>
+            <dependent idx="9">Alps</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="11">investigate</governor>
+            <dependent idx="10">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="5">travels</governor>
+            <dependent idx="11">investigate</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="13">discovery</governor>
+            <dependent idx="12">a</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="11">investigate</governor>
+            <dependent idx="13">discovery</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="det">
+            <governor idx="4">team</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">team</governor>
+            <dependent idx="2">French</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">team</governor>
+            <dependent idx="3">research</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">travels</governor>
+            <dependent idx="4">team</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">Alps</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">Alps</governor>
+            <dependent idx="8">Swiss</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="5">travels</governor>
+            <dependent idx="9">Alps</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="11">investigate</governor>
+            <dependent idx="10">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="5">travels</governor>
+            <dependent idx="11">investigate</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="13">discovery</governor>
+            <dependent idx="12">a</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="11">investigate</governor>
+            <dependent idx="13">discovery</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>After</word>
+            <lemma>after</lemma>
+            <CharacterOffsetBegin>77</CharacterOffsetBegin>
+            <CharacterOffsetEnd>82</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>83</CharacterOffsetBegin>
+            <CharacterOffsetEnd>84</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>car</word>
+            <lemma>car</lemma>
+            <CharacterOffsetBegin>85</CharacterOffsetBegin>
+            <CharacterOffsetEnd>88</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>accident</word>
+            <lemma>accident</lemma>
+            <CharacterOffsetBegin>89</CharacterOffsetBegin>
+            <CharacterOffsetEnd>97</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>97</CharacterOffsetBegin>
+            <CharacterOffsetEnd>98</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>99</CharacterOffsetBegin>
+            <CharacterOffsetEnd>102</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>group</word>
+            <lemma>group</lemma>
+            <CharacterOffsetBegin>103</CharacterOffsetBegin>
+            <CharacterOffsetEnd>108</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>becomes</word>
+            <lemma>become</lemma>
+            <CharacterOffsetBegin>109</CharacterOffsetBegin>
+            <CharacterOffsetEnd>116</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>lost</word>
+            <lemma>lose</lemma>
+            <CharacterOffsetBegin>117</CharacterOffsetBegin>
+            <CharacterOffsetEnd>121</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>122</CharacterOffsetBegin>
+            <CharacterOffsetEnd>124</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>125</CharacterOffsetBegin>
+            <CharacterOffsetEnd>128</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>mountains</word>
+            <lemma>mountain</lemma>
+            <CharacterOffsetBegin>129</CharacterOffsetBegin>
+            <CharacterOffsetEnd>138</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>with</word>
+            <lemma>with</lemma>
+            <CharacterOffsetBegin>139</CharacterOffsetBegin>
+            <CharacterOffsetEnd>143</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="14">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>144</CharacterOffsetBegin>
+            <CharacterOffsetEnd>145</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="15">
+            <word>group</word>
+            <lemma>group</lemma>
+            <CharacterOffsetBegin>146</CharacterOffsetBegin>
+            <CharacterOffsetEnd>151</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="16">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>152</CharacterOffsetBegin>
+            <CharacterOffsetEnd>154</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="17">
+            <word>tourists</word>
+            <lemma>tourist</lemma>
+            <CharacterOffsetBegin>155</CharacterOffsetBegin>
+            <CharacterOffsetEnd>163</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="18">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>164</CharacterOffsetBegin>
+            <CharacterOffsetEnd>167</CharacterOffsetEnd>
+            <POS>CC</POS>
+            <NER>O</NER>
+          </token>
+          <token id="19">
+            <word>struggle</word>
+            <lemma>struggle</lemma>
+            <CharacterOffsetBegin>168</CharacterOffsetBegin>
+            <CharacterOffsetEnd>176</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="20">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>177</CharacterOffsetBegin>
+            <CharacterOffsetEnd>179</CharacterOffsetEnd>
+            <POS>TO</POS>
+            <NER>O</NER>
+          </token>
+          <token id="21">
+            <word>survive</word>
+            <lemma>survive</lemma>
+            <CharacterOffsetBegin>180</CharacterOffsetBegin>
+            <CharacterOffsetEnd>187</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="22">
+            <word>while</word>
+            <lemma>while</lemma>
+            <CharacterOffsetBegin>188</CharacterOffsetBegin>
+            <CharacterOffsetEnd>193</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="23">
+            <word>being</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>194</CharacterOffsetBegin>
+            <CharacterOffsetEnd>199</CharacterOffsetEnd>
+            <POS>VBG</POS>
+            <NER>O</NER>
+          </token>
+          <token id="24">
+            <word>hunted</word>
+            <lemma>hunt</lemma>
+            <CharacterOffsetBegin>200</CharacterOffsetBegin>
+            <CharacterOffsetEnd>206</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="25">
+            <word>by</word>
+            <lemma>by</lemma>
+            <CharacterOffsetBegin>207</CharacterOffsetBegin>
+            <CharacterOffsetEnd>209</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="26">
+            <word>mysterious</word>
+            <lemma>mysterious</lemma>
+            <CharacterOffsetBegin>210</CharacterOffsetBegin>
+            <CharacterOffsetEnd>220</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="27">
+            <word>figures</word>
+            <lemma>figure</lemma>
+            <CharacterOffsetBegin>221</CharacterOffsetBegin>
+            <CharacterOffsetEnd>228</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="28">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>228</CharacterOffsetBegin>
+            <CharacterOffsetEnd>229</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (PP (IN After) (NP (DT a) (NN car) (NN accident))) (, ,) (NP (DT the) (NN group)) (VP (VBZ becomes) (VP (VBN lost) (PP (IN in) (NP (NP (DT the) (NNS mountains)) (PP (IN with) (NP (NP (DT a) (NN group)) (PP (IN of) (NP (NNS tourists) (CC and) (NN struggle))))))) (S (VP (TO to) (VP (VB survive) (SBAR (IN while) (S (VP (VBG being) (VP (VBN hunted) (PP (IN by) (NP (JJ mysterious) (NNS figures)))))))))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="prep">
+            <governor idx="9">lost</governor>
+            <dependent idx="1">After</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">accident</governor>
+            <dependent idx="2">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">accident</governor>
+            <dependent idx="3">car</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="1">After</governor>
+            <dependent idx="4">accident</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">group</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="9">lost</governor>
+            <dependent idx="7">group</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="9">lost</governor>
+            <dependent idx="8">becomes</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="9">lost</governor>
+            <dependent idx="10">in</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">mountains</governor>
+            <dependent idx="11">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="10">in</governor>
+            <dependent idx="12">mountains</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="12">mountains</governor>
+            <dependent idx="13">with</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="15">group</governor>
+            <dependent idx="14">a</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="13">with</governor>
+            <dependent idx="15">group</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="15">group</governor>
+            <dependent idx="16">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="16">of</governor>
+            <dependent idx="17">tourists</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="17">tourists</governor>
+            <dependent idx="18">and</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="17">tourists</governor>
+            <dependent idx="19">struggle</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="21">survive</governor>
+            <dependent idx="20">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="9">lost</governor>
+            <dependent idx="21">survive</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="24">hunted</governor>
+            <dependent idx="22">while</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="24">hunted</governor>
+            <dependent idx="23">being</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="21">survive</governor>
+            <dependent idx="24">hunted</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="24">hunted</governor>
+            <dependent idx="25">by</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="27">figures</governor>
+            <dependent idx="26">mysterious</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="25">by</governor>
+            <dependent idx="27">figures</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="det">
+            <governor idx="4">accident</governor>
+            <dependent idx="2">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">accident</governor>
+            <dependent idx="3">car</dependent>
+          </dep>
+          <dep type="prep_after">
+            <governor idx="9">lost</governor>
+            <dependent idx="4">accident</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">group</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="9">lost</governor>
+            <dependent idx="7">group</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="9">lost</governor>
+            <dependent idx="8">becomes</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">mountains</governor>
+            <dependent idx="11">the</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="9">lost</governor>
+            <dependent idx="12">mountains</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="15">group</governor>
+            <dependent idx="14">a</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="12">mountains</governor>
+            <dependent idx="15">group</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="15">group</governor>
+            <dependent idx="17">tourists</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="17">tourists</governor>
+            <dependent idx="19">struggle</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="21">survive</governor>
+            <dependent idx="20">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="9">lost</governor>
+            <dependent idx="21">survive</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="24">hunted</governor>
+            <dependent idx="22">while</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="24">hunted</governor>
+            <dependent idx="23">being</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="21">survive</governor>
+            <dependent idx="24">hunted</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="27">figures</governor>
+            <dependent idx="26">mysterious</dependent>
+          </dep>
+          <dep type="agent">
+            <governor idx="24">hunted</governor>
+            <dependent idx="27">figures</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="det">
+            <governor idx="4">accident</governor>
+            <dependent idx="2">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">accident</governor>
+            <dependent idx="3">car</dependent>
+          </dep>
+          <dep type="prep_after">
+            <governor idx="9">lost</governor>
+            <dependent idx="4">accident</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">group</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="9">lost</governor>
+            <dependent idx="7">group</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="9">lost</governor>
+            <dependent idx="8">becomes</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">mountains</governor>
+            <dependent idx="11">the</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="9">lost</governor>
+            <dependent idx="12">mountains</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="15">group</governor>
+            <dependent idx="14">a</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="12">mountains</governor>
+            <dependent idx="15">group</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="15">group</governor>
+            <dependent idx="17">tourists</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="15">group</governor>
+            <dependent idx="19">struggle</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="17">tourists</governor>
+            <dependent idx="19">struggle</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="21">survive</governor>
+            <dependent idx="20">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="9">lost</governor>
+            <dependent idx="21">survive</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="24">hunted</governor>
+            <dependent idx="22">while</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="24">hunted</governor>
+            <dependent idx="23">being</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="21">survive</governor>
+            <dependent idx="24">hunted</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="27">figures</governor>
+            <dependent idx="26">mysterious</dependent>
+          </dep>
+          <dep type="agent">
+            <governor idx="24">hunted</governor>
+            <dependent idx="27">figures</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Isabelle</word>
+            <lemma>Isabelle</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+          </token>
+          <token id="2">
+            <word>Huppert</word>
+            <lemma>Huppert</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+          </token>
+          <token id="3">
+            <word>plays</word>
+            <lemma>play</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>housewife</word>
+            <lemma>housewife</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>turned</word>
+            <lemma>turn</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>abortionist</word>
+            <lemma>abortionist</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>1940s</word>
+            <lemma>1940s</lemma>
+            <CharacterOffsetBegin>57</CharacterOffsetBegin>
+            <CharacterOffsetEnd>62</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>194X</NormalizedNER>
+            <Timex tid="t1" type="DATE">194X</Timex>
+          </token>
+          <token id="10">
+            <word>Nazi</word>
+            <lemma>nazi</lemma>
+            <CharacterOffsetBegin>63</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>MISC</NER>
+          </token>
+          <token id="11">
+            <word>occupied</word>
+            <lemma>occupied</lemma>
+            <CharacterOffsetBegin>68</CharacterOffsetBegin>
+            <CharacterOffsetEnd>76</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>France</word>
+            <lemma>France</lemma>
+            <CharacterOffsetBegin>77</CharacterOffsetBegin>
+            <CharacterOffsetEnd>83</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>LOCATION</NER>
+          </token>
+          <token id="13">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>83</CharacterOffsetBegin>
+            <CharacterOffsetEnd>84</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNP Isabelle) (NNP Huppert)) (VP (VBZ plays) (SBAR (S (NP (DT a) (NN housewife)) (VP (VBD turned) (NP (NN abortionist)) (PP (IN in) (NP (NP (CD 1940s)) (NP (JJ Nazi) (JJ occupied) (NNP France)))))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="2">Huppert</governor>
+            <dependent idx="1">Isabelle</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">plays</governor>
+            <dependent idx="2">Huppert</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">housewife</governor>
+            <dependent idx="4">a</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">turned</governor>
+            <dependent idx="5">housewife</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="3">plays</governor>
+            <dependent idx="6">turned</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">turned</governor>
+            <dependent idx="7">abortionist</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">turned</governor>
+            <dependent idx="8">in</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="8">in</governor>
+            <dependent idx="9">1940s</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">France</governor>
+            <dependent idx="10">Nazi</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">France</governor>
+            <dependent idx="11">occupied</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="9">1940s</governor>
+            <dependent idx="12">France</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="2">Huppert</governor>
+            <dependent idx="1">Isabelle</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">plays</governor>
+            <dependent idx="2">Huppert</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">housewife</governor>
+            <dependent idx="4">a</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">turned</governor>
+            <dependent idx="5">housewife</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="3">plays</governor>
+            <dependent idx="6">turned</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">turned</governor>
+            <dependent idx="7">abortionist</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="6">turned</governor>
+            <dependent idx="9">1940s</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">France</governor>
+            <dependent idx="10">Nazi</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">France</governor>
+            <dependent idx="11">occupied</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="9">1940s</governor>
+            <dependent idx="12">France</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="2">Huppert</governor>
+            <dependent idx="1">Isabelle</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">plays</governor>
+            <dependent idx="2">Huppert</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">housewife</governor>
+            <dependent idx="4">a</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">turned</governor>
+            <dependent idx="5">housewife</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="3">plays</governor>
+            <dependent idx="6">turned</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">turned</governor>
+            <dependent idx="7">abortionist</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="6">turned</governor>
+            <dependent idx="9">1940s</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">France</governor>
+            <dependent idx="10">Nazi</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">France</governor>
+            <dependent idx="11">occupied</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="9">1940s</governor>
+            <dependent idx="12">France</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>She</word>
+            <lemma>she</lemma>
+            <CharacterOffsetBegin>85</CharacterOffsetBegin>
+            <CharacterOffsetEnd>88</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>becomes</word>
+            <lemma>become</lemma>
+            <CharacterOffsetBegin>89</CharacterOffsetBegin>
+            <CharacterOffsetEnd>96</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>one</word>
+            <lemma>one</lemma>
+            <CharacterOffsetBegin>97</CharacterOffsetBegin>
+            <CharacterOffsetEnd>100</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>NUMBER</NER>
+            <NormalizedNER>1.0</NormalizedNER>
+          </token>
+          <token id="4">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>101</CharacterOffsetBegin>
+            <CharacterOffsetEnd>103</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>104</CharacterOffsetBegin>
+            <CharacterOffsetEnd>107</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>last</word>
+            <lemma>last</lemma>
+            <CharacterOffsetBegin>108</CharacterOffsetBegin>
+            <CharacterOffsetEnd>112</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>women</word>
+            <lemma>woman</lemma>
+            <CharacterOffsetBegin>113</CharacterOffsetBegin>
+            <CharacterOffsetEnd>118</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>119</CharacterOffsetBegin>
+            <CharacterOffsetEnd>121</CharacterOffsetEnd>
+            <POS>TO</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>be</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>122</CharacterOffsetBegin>
+            <CharacterOffsetEnd>124</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>guillotined</word>
+            <lemma>guillotine</lemma>
+            <CharacterOffsetBegin>125</CharacterOffsetBegin>
+            <CharacterOffsetEnd>136</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>137</CharacterOffsetBegin>
+            <CharacterOffsetEnd>139</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>France</word>
+            <lemma>France</lemma>
+            <CharacterOffsetBegin>140</CharacterOffsetBegin>
+            <CharacterOffsetEnd>146</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>LOCATION</NER>
+          </token>
+          <token id="13">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>146</CharacterOffsetBegin>
+            <CharacterOffsetEnd>147</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (PRP She)) (VP (VBZ becomes) (S (NP (NP (CD one)) (PP (IN of) (NP (DT the) (JJ last) (NNS women)))) (VP (TO to) (VP (VB be) (VP (VBN guillotined) (PP (IN in) (NP (NNP France)))))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nsubj">
+            <governor idx="2">becomes</governor>
+            <dependent idx="1">She</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="10">guillotined</governor>
+            <dependent idx="3">one</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">one</governor>
+            <dependent idx="4">of</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">women</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">women</governor>
+            <dependent idx="6">last</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">of</governor>
+            <dependent idx="7">women</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="10">guillotined</governor>
+            <dependent idx="8">to</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="10">guillotined</governor>
+            <dependent idx="9">be</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="2">becomes</governor>
+            <dependent idx="10">guillotined</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="10">guillotined</governor>
+            <dependent idx="11">in</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="11">in</governor>
+            <dependent idx="12">France</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nsubj">
+            <governor idx="2">becomes</governor>
+            <dependent idx="1">She</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="10">guillotined</governor>
+            <dependent idx="3">one</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">women</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">women</governor>
+            <dependent idx="6">last</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="3">one</governor>
+            <dependent idx="7">women</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="10">guillotined</governor>
+            <dependent idx="8">to</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="10">guillotined</governor>
+            <dependent idx="9">be</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="2">becomes</governor>
+            <dependent idx="10">guillotined</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="10">guillotined</governor>
+            <dependent idx="12">France</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nsubj">
+            <governor idx="2">becomes</governor>
+            <dependent idx="1">She</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="10">guillotined</governor>
+            <dependent idx="3">one</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">women</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">women</governor>
+            <dependent idx="6">last</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="3">one</governor>
+            <dependent idx="7">women</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="10">guillotined</governor>
+            <dependent idx="8">to</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="10">guillotined</governor>
+            <dependent idx="9">be</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="2">becomes</governor>
+            <dependent idx="10">guillotined</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="10">guillotined</governor>
+            <dependent idx="12">France</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+    </sentences>
+    <coreference>
+      <coreference>
+        <mention representative="true">
+          <sentence>1</sentence>
+          <start>4</start>
+          <end>6</end>
+          <head>5</head>
+        </mention>
+        <mention>
+          <sentence>2</sentence>
+          <start>1</start>
+          <end>2</end>
+          <head>1</head>
+        </mention>
+      </coreference>
+      <coreference>
+        <mention representative="true">
+          <sentence>1</sentence>
+          <start>10</start>
+          <end>13</end>
+          <head>12</head>
+        </mention>
+        <mention>
+          <sentence>2</sentence>
+          <start>12</start>
+          <end>13</end>
+          <head>12</head>
+        </mention>
+      </coreference>
+    </coreference>
+  </document>
+</root>

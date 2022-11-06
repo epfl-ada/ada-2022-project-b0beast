@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>The</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>film</word>
+            <lemma>film</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>has</word>
+            <lemma>have</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>been</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>shot</word>
+            <lemma>shoot</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>Chennai</word>
+            <lemma>Chennai</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>LOCATION</NER>
+          </token>
+          <token id="8">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>Australia</word>
+            <lemma>Australia</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>LOCATION</NER>
+          </token>
+          <token id="10">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>CC</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>New</word>
+            <lemma>New</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>LOCATION</NER>
+          </token>
+          <token id="12">
+            <word>Zealand</word>
+            <lemma>Zealand</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>LOCATION</NER>
+          </token>
+          <token id="13">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>61</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (DT The) (NN film)) (VP (VBZ has) (VP (VBN been) (VP (VBN shot) (PP (IN in) (NP (NP (NNP Chennai) (, ,) (NNP Australia) (CC and) (NNP New)) (NNP Zealand)))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="det">
+            <governor idx="2">film</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="5">shot</governor>
+            <dependent idx="2">film</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">shot</governor>
+            <dependent idx="3">has</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="5">shot</governor>
+            <dependent idx="4">been</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">shot</governor>
+            <dependent idx="6">in</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">Zealand</governor>
+            <dependent idx="7">Chennai</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="7">Chennai</governor>
+            <dependent idx="9">Australia</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="7">Chennai</governor>
+            <dependent idx="10">and</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="7">Chennai</governor>
+            <dependent idx="11">New</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">in</governor>
+            <dependent idx="12">Zealand</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="det">
+            <governor idx="2">film</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="5">shot</governor>
+            <dependent idx="2">film</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">shot</governor>
+            <dependent idx="3">has</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="5">shot</governor>
+            <dependent idx="4">been</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">Zealand</governor>
+            <dependent idx="7">Chennai</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="7">Chennai</governor>
+            <dependent idx="9">Australia</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="7">Chennai</governor>
+            <dependent idx="11">New</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="5">shot</governor>
+            <dependent idx="12">Zealand</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="det">
+            <governor idx="2">film</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="5">shot</governor>
+            <dependent idx="2">film</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">shot</governor>
+            <dependent idx="3">has</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="5">shot</governor>
+            <dependent idx="4">been</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">Zealand</governor>
+            <dependent idx="7">Chennai</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="7">Chennai</governor>
+            <dependent idx="9">Australia</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">Zealand</governor>
+            <dependent idx="9">Australia</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="7">Chennai</governor>
+            <dependent idx="11">New</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">Zealand</governor>
+            <dependent idx="11">New</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="5">shot</governor>
+            <dependent idx="12">Zealand</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>The</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>65</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>film</word>
+            <lemma>film</lemma>
+            <CharacterOffsetBegin>66</CharacterOffsetBegin>
+            <CharacterOffsetEnd>70</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>mainly</word>
+            <lemma>mainly</lemma>
+            <CharacterOffsetBegin>71</CharacterOffsetBegin>
+            <CharacterOffsetEnd>77</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>deals</word>
+            <lemma>deal</lemma>
+            <CharacterOffsetBegin>78</CharacterOffsetBegin>
+            <CharacterOffsetEnd>83</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>about</word>
+            <lemma>about</lemma>
+            <CharacterOffsetBegin>84</CharacterOffsetBegin>
+            <CharacterOffsetEnd>89</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>90</CharacterOffsetBegin>
+            <CharacterOffsetEnd>93</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>terrorism</word>
+            <lemma>terrorism</lemma>
+            <CharacterOffsetBegin>94</CharacterOffsetBegin>
+            <CharacterOffsetEnd>103</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>104</CharacterOffsetBegin>
+            <CharacterOffsetEnd>107</CharacterOffsetEnd>
+            <POS>CC</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>violence</word>
+            <lemma>violence</lemma>
+            <CharacterOffsetBegin>108</CharacterOffsetBegin>
+            <CharacterOffsetEnd>116</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>happening</word>
+            <lemma>happen</lemma>
+            <CharacterOffsetBegin>117</CharacterOffsetBegin>
+            <CharacterOffsetEnd>126</CharacterOffsetEnd>
+            <POS>VBG</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>around</word>
+            <lemma>around</lemma>
+            <CharacterOffsetBegin>127</CharacterOffsetBegin>
+            <CharacterOffsetEnd>133</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>134</CharacterOffsetBegin>
+            <CharacterOffsetEnd>137</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>world</word>
+            <lemma>world</lemma>
+            <CharacterOffsetBegin>138</CharacterOffsetBegin>
+            <CharacterOffsetEnd>143</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="14">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>143</CharacterOffsetBegin>
+            <CharacterOffsetEnd>144</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (DT The) (NN film)) (ADVP (RB mainly)) (VP (VBZ deals) (PP (IN about) (NP (NP (DT the) (NN terrorism) (CC and) (NN violence)) (VP (VBG happening) (PP (IN around) (NP (DT the) (NN world))))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="det">
+            <governor idx="2">film</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">deals</governor>
+            <dependent idx="2">film</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">deals</governor>
+            <dependent idx="3">mainly</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">deals</governor>
+            <dependent idx="5">about</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">terrorism</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">about</governor>
+            <dependent idx="7">terrorism</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="7">terrorism</governor>
+            <dependent idx="8">and</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="7">terrorism</governor>
+            <dependent idx="9">violence</dependent>
+          </dep>
+          <dep type="partmod">
+            <governor idx="7">terrorism</governor>
+            <dependent idx="10">happening</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="10">happening</governor>
+            <dependent idx="11">around</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="13">world</governor>
+            <dependent idx="12">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="11">around</governor>
+            <dependent idx="13">world</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="det">
+            <governor idx="2">film</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">deals</governor>
+            <dependent idx="2">film</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">deals</governor>
+            <dependent idx="3">mainly</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">terrorism</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="prep_about">
+            <governor idx="4">deals</governor>
+            <dependent idx="7">terrorism</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="7">terrorism</governor>
+            <dependent idx="9">violence</dependent>
+          </dep>
+          <dep type="partmod">
+            <governor idx="7">terrorism</governor>
+            <dependent idx="10">happening</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="13">world</governor>
+            <dependent idx="12">the</dependent>
+          </dep>
+          <dep type="prep_around">
+            <governor idx="10">happening</governor>
+            <dependent idx="13">world</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="det">
+            <governor idx="2">film</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">deals</governor>
+            <dependent idx="2">film</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">deals</governor>
+            <dependent idx="3">mainly</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">terrorism</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="prep_about">
+            <governor idx="4">deals</governor>
+            <dependent idx="7">terrorism</dependent>
+          </dep>
+          <dep type="prep_about">
+            <governor idx="4">deals</governor>
+            <dependent idx="9">violence</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="7">terrorism</governor>
+            <dependent idx="9">violence</dependent>
+          </dep>
+          <dep type="partmod">
+            <governor idx="7">terrorism</governor>
+            <dependent idx="10">happening</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="13">world</governor>
+            <dependent idx="12">the</dependent>
+          </dep>
+          <dep type="prep_around">
+            <governor idx="10">happening</governor>
+            <dependent idx="13">world</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+    </sentences>
+    <coreference>
+      <coreference>
+        <mention representative="true">
+          <sentence>1</sentence>
+          <start>7</start>
+          <end>12</end>
+          <head>7</head>
+        </mention>
+        <mention>
+          <sentence>1</sentence>
+          <start>7</start>
+          <end>8</end>
+          <head>7</head>
+        </mention>
+      </coreference>
+      <coreference>
+        <mention representative="true">
+          <sentence>1</sentence>
+          <start>1</start>
+          <end>3</end>
+          <head>2</head>
+        </mention>
+        <mention>
+          <sentence>2</sentence>
+          <start>1</start>
+          <end>3</end>
+          <head>2</head>
+        </mention>
+      </coreference>
+    </coreference>
+  </document>
+</root>

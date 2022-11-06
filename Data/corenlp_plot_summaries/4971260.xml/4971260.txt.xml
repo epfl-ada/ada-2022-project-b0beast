@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>The</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>lead</word>
+            <lemma>lead</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>singer</word>
+            <lemma>singer</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>boy</word>
+            <lemma>boy</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>band</word>
+            <lemma>band</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>`</word>
+            <lemma>`</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>``</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>Take</word>
+            <lemma>take</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>10</word>
+            <lemma>10</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>NUMBER</NER>
+            <NormalizedNER>10.0</NormalizedNER>
+          </token>
+          <token id="10">
+            <word>'</word>
+            <lemma>'</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>''</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>vanishes</word>
+            <lemma>vanish</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (DT The) (JJ lead) (NN singer)) (PP (IN of) (NP (NN boy) (NN band))) (S (VP (`` `) (VB Take) (NP (CD 10)) ('' ')))) (VP (VBZ vanishes)) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="det">
+            <governor idx="3">singer</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">singer</governor>
+            <dependent idx="2">lead</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">vanishes</governor>
+            <dependent idx="3">singer</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">singer</governor>
+            <dependent idx="4">of</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">band</governor>
+            <dependent idx="5">boy</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">of</governor>
+            <dependent idx="6">band</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">singer</governor>
+            <dependent idx="8">Take</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="8">Take</governor>
+            <dependent idx="9">10</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="det">
+            <governor idx="3">singer</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">singer</governor>
+            <dependent idx="2">lead</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">vanishes</governor>
+            <dependent idx="3">singer</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">band</governor>
+            <dependent idx="5">boy</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="3">singer</governor>
+            <dependent idx="6">band</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">singer</governor>
+            <dependent idx="8">Take</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="8">Take</governor>
+            <dependent idx="9">10</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="det">
+            <governor idx="3">singer</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">singer</governor>
+            <dependent idx="2">lead</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">vanishes</governor>
+            <dependent idx="3">singer</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">band</governor>
+            <dependent idx="5">boy</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="3">singer</governor>
+            <dependent idx="6">band</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">singer</governor>
+            <dependent idx="8">Take</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="8">Take</governor>
+            <dependent idx="9">10</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>The</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>band</word>
+            <lemma>band</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>conducts</word>
+            <lemma>conduct</lemma>
+            <CharacterOffsetBegin>57</CharacterOffsetBegin>
+            <CharacterOffsetEnd>65</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>an</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>66</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>American</word>
+            <lemma>american</lemma>
+            <CharacterOffsetBegin>69</CharacterOffsetBegin>
+            <CharacterOffsetEnd>77</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>MISC</NER>
+          </token>
+          <token id="6">
+            <word>Idol</word>
+            <lemma>Idol</lemma>
+            <CharacterOffsetBegin>78</CharacterOffsetBegin>
+            <CharacterOffsetEnd>82</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>MISC</NER>
+          </token>
+          <token id="7">
+            <word>type</word>
+            <lemma>type</lemma>
+            <CharacterOffsetBegin>83</CharacterOffsetBegin>
+            <CharacterOffsetEnd>87</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>contest</word>
+            <lemma>contest</lemma>
+            <CharacterOffsetBegin>88</CharacterOffsetBegin>
+            <CharacterOffsetEnd>95</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>96</CharacterOffsetBegin>
+            <CharacterOffsetEnd>98</CharacterOffsetEnd>
+            <POS>TO</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>find</word>
+            <lemma>find</lemma>
+            <CharacterOffsetBegin>99</CharacterOffsetBegin>
+            <CharacterOffsetEnd>103</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>104</CharacterOffsetBegin>
+            <CharacterOffsetEnd>105</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>replacement</word>
+            <lemma>replacement</lemma>
+            <CharacterOffsetBegin>106</CharacterOffsetBegin>
+            <CharacterOffsetEnd>117</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>117</CharacterOffsetBegin>
+            <CharacterOffsetEnd>118</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (DT The) (NN band)) (VP (VBZ conducts) (NP (DT an) (JJ American) (NNP Idol) (NN type) (NN contest)) (S (VP (TO to) (VP (VB find) (NP (DT a) (NN replacement)))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="det">
+            <governor idx="2">band</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">conducts</governor>
+            <dependent idx="2">band</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">contest</governor>
+            <dependent idx="4">an</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">contest</governor>
+            <dependent idx="5">American</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">contest</governor>
+            <dependent idx="6">Idol</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">contest</governor>
+            <dependent idx="7">type</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">conducts</governor>
+            <dependent idx="8">contest</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="10">find</governor>
+            <dependent idx="9">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">conducts</governor>
+            <dependent idx="10">find</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">replacement</governor>
+            <dependent idx="11">a</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="10">find</governor>
+            <dependent idx="12">replacement</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="det">
+            <governor idx="2">band</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">conducts</governor>
+            <dependent idx="2">band</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">contest</governor>
+            <dependent idx="4">an</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">contest</governor>
+            <dependent idx="5">American</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">contest</governor>
+            <dependent idx="6">Idol</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">contest</governor>
+            <dependent idx="7">type</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">conducts</governor>
+            <dependent idx="8">contest</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="10">find</governor>
+            <dependent idx="9">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">conducts</governor>
+            <dependent idx="10">find</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">replacement</governor>
+            <dependent idx="11">a</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="10">find</governor>
+            <dependent idx="12">replacement</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="det">
+            <governor idx="2">band</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">conducts</governor>
+            <dependent idx="2">band</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">contest</governor>
+            <dependent idx="4">an</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">contest</governor>
+            <dependent idx="5">American</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">contest</governor>
+            <dependent idx="6">Idol</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">contest</governor>
+            <dependent idx="7">type</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">conducts</governor>
+            <dependent idx="8">contest</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="10">find</governor>
+            <dependent idx="9">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">conducts</governor>
+            <dependent idx="10">find</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">replacement</governor>
+            <dependent idx="11">a</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="10">find</governor>
+            <dependent idx="12">replacement</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+    </sentences>
+    <coreference>
+      <coreference>
+        <mention representative="true">
+          <sentence>1</sentence>
+          <start>5</start>
+          <end>7</end>
+          <head>6</head>
+        </mention>
+        <mention>
+          <sentence>2</sentence>
+          <start>1</start>
+          <end>3</end>
+          <head>2</head>
+        </mention>
+      </coreference>
+    </coreference>
+  </document>
+</root>

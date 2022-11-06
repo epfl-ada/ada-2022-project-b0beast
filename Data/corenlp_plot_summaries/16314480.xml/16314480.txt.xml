@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>A</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>woman</word>
+            <lemma>woman</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>'s</word>
+            <lemma>'s</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>POS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>fianc</word>
+            <lemma>fianc</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>is</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>killed</word>
+            <lemma>kill</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>by</word>
+            <lemma>by</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>drug</word>
+            <lemma>drug</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>dealing</word>
+            <lemma>deal</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>VBG</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>gang</word>
+            <lemma>gang</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (DT A) (NN woman) (POS 's)) (NN fianc)) (VP (VBZ is) (VP (VBN killed) (PP (IN by) (NP (NP (DT a) (NN drug)) (VP (VBG dealing) (NP (NN gang))))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="det">
+            <governor idx="2">woman</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="4">fianc</governor>
+            <dependent idx="2">woman</dependent>
+          </dep>
+          <dep type="possessive">
+            <governor idx="2">woman</governor>
+            <dependent idx="3">'s</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="6">killed</governor>
+            <dependent idx="4">fianc</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="6">killed</governor>
+            <dependent idx="5">is</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">killed</governor>
+            <dependent idx="7">by</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">drug</governor>
+            <dependent idx="8">a</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="7">by</governor>
+            <dependent idx="9">drug</dependent>
+          </dep>
+          <dep type="partmod">
+            <governor idx="9">drug</governor>
+            <dependent idx="10">dealing</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="10">dealing</governor>
+            <dependent idx="11">gang</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="det">
+            <governor idx="2">woman</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="4">fianc</governor>
+            <dependent idx="2">woman</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="6">killed</governor>
+            <dependent idx="4">fianc</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="6">killed</governor>
+            <dependent idx="5">is</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">drug</governor>
+            <dependent idx="8">a</dependent>
+          </dep>
+          <dep type="agent">
+            <governor idx="6">killed</governor>
+            <dependent idx="9">drug</dependent>
+          </dep>
+          <dep type="partmod">
+            <governor idx="9">drug</governor>
+            <dependent idx="10">dealing</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="10">dealing</governor>
+            <dependent idx="11">gang</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="det">
+            <governor idx="2">woman</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="4">fianc</governor>
+            <dependent idx="2">woman</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="6">killed</governor>
+            <dependent idx="4">fianc</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="6">killed</governor>
+            <dependent idx="5">is</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">drug</governor>
+            <dependent idx="8">a</dependent>
+          </dep>
+          <dep type="agent">
+            <governor idx="6">killed</governor>
+            <dependent idx="9">drug</dependent>
+          </dep>
+          <dep type="partmod">
+            <governor idx="9">drug</governor>
+            <dependent idx="10">dealing</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="10">dealing</governor>
+            <dependent idx="11">gang</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>For</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>revenge</word>
+            <lemma>revenge</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>63</CharacterOffsetBegin>
+            <CharacterOffsetEnd>64</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>65</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>woman</word>
+            <lemma>woman</lemma>
+            <CharacterOffsetBegin>69</CharacterOffsetBegin>
+            <CharacterOffsetEnd>74</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>conjures</word>
+            <lemma>conjure</lemma>
+            <CharacterOffsetBegin>75</CharacterOffsetBegin>
+            <CharacterOffsetEnd>83</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>up</word>
+            <lemma>up</lemma>
+            <CharacterOffsetBegin>84</CharacterOffsetBegin>
+            <CharacterOffsetEnd>86</CharacterOffsetEnd>
+            <POS>RP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>87</CharacterOffsetBegin>
+            <CharacterOffsetEnd>88</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>zombie</word>
+            <lemma>zombie</lemma>
+            <CharacterOffsetBegin>89</CharacterOffsetBegin>
+            <CharacterOffsetEnd>95</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>96</CharacterOffsetBegin>
+            <CharacterOffsetEnd>98</CharacterOffsetEnd>
+            <POS>TO</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>hunt</word>
+            <lemma>hunt</lemma>
+            <CharacterOffsetBegin>99</CharacterOffsetBegin>
+            <CharacterOffsetEnd>103</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>down</word>
+            <lemma>down</lemma>
+            <CharacterOffsetBegin>104</CharacterOffsetBegin>
+            <CharacterOffsetEnd>108</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>109</CharacterOffsetBegin>
+            <CharacterOffsetEnd>112</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="14">
+            <word>gangmembers</word>
+            <lemma>gangmember</lemma>
+            <CharacterOffsetBegin>113</CharacterOffsetBegin>
+            <CharacterOffsetEnd>124</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="15">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>125</CharacterOffsetBegin>
+            <CharacterOffsetEnd>128</CharacterOffsetEnd>
+            <POS>CC</POS>
+            <NER>O</NER>
+          </token>
+          <token id="16">
+            <word>kill</word>
+            <lemma>kill</lemma>
+            <CharacterOffsetBegin>129</CharacterOffsetBegin>
+            <CharacterOffsetEnd>133</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="17">
+            <word>them</word>
+            <lemma>they</lemma>
+            <CharacterOffsetBegin>134</CharacterOffsetBegin>
+            <CharacterOffsetEnd>138</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="18">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>138</CharacterOffsetBegin>
+            <CharacterOffsetEnd>139</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (PP (IN For) (NP (NN revenge))) (, ,) (NP (DT the) (NN woman)) (VP (VP (VBZ conjures) (PRT (RP up)) (NP (NP (DT a) (NN zombie)) (PP (TO to) (NP (NP (NN hunt)) (PP (IN down) (NP (DT the) (NNS gangmembers))))))) (CC and) (VP (VB kill) (NP (PRP them)))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="prep">
+            <governor idx="6">conjures</governor>
+            <dependent idx="1">For</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="1">For</governor>
+            <dependent idx="2">revenge</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">woman</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">conjures</governor>
+            <dependent idx="5">woman</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="6">conjures</governor>
+            <dependent idx="7">up</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">zombie</governor>
+            <dependent idx="8">a</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">conjures</governor>
+            <dependent idx="9">zombie</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="9">zombie</governor>
+            <dependent idx="10">to</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="10">to</governor>
+            <dependent idx="11">hunt</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="11">hunt</governor>
+            <dependent idx="12">down</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">gangmembers</governor>
+            <dependent idx="13">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="12">down</governor>
+            <dependent idx="14">gangmembers</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="6">conjures</governor>
+            <dependent idx="15">and</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="6">conjures</governor>
+            <dependent idx="16">kill</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="16">kill</governor>
+            <dependent idx="17">them</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="prep_for">
+            <governor idx="6">conjures</governor>
+            <dependent idx="2">revenge</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">woman</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">conjures</governor>
+            <dependent idx="5">woman</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="6">conjures</governor>
+            <dependent idx="7">up</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">zombie</governor>
+            <dependent idx="8">a</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">conjures</governor>
+            <dependent idx="9">zombie</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="9">zombie</governor>
+            <dependent idx="11">hunt</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">gangmembers</governor>
+            <dependent idx="13">the</dependent>
+          </dep>
+          <dep type="prep_down">
+            <governor idx="11">hunt</governor>
+            <dependent idx="14">gangmembers</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="6">conjures</governor>
+            <dependent idx="16">kill</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="16">kill</governor>
+            <dependent idx="17">them</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="prep_for">
+            <governor idx="6">conjures</governor>
+            <dependent idx="2">revenge</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">woman</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">conjures</governor>
+            <dependent idx="5">woman</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="16">kill</governor>
+            <dependent idx="5">woman</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="6">conjures</governor>
+            <dependent idx="7">up</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">zombie</governor>
+            <dependent idx="8">a</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">conjures</governor>
+            <dependent idx="9">zombie</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="9">zombie</governor>
+            <dependent idx="11">hunt</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">gangmembers</governor>
+            <dependent idx="13">the</dependent>
+          </dep>
+          <dep type="prep_down">
+            <governor idx="11">hunt</governor>
+            <dependent idx="14">gangmembers</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="6">conjures</governor>
+            <dependent idx="16">kill</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="16">kill</governor>
+            <dependent idx="17">them</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+    </sentences>
+    <coreference>
+      <coreference>
+        <mention representative="true">
+          <sentence>1</sentence>
+          <start>1</start>
+          <end>4</end>
+          <head>2</head>
+        </mention>
+        <mention>
+          <sentence>2</sentence>
+          <start>4</start>
+          <end>6</end>
+          <head>5</head>
+        </mention>
+      </coreference>
+      <coreference>
+        <mention representative="true">
+          <sentence>2</sentence>
+          <start>13</start>
+          <end>15</end>
+          <head>14</head>
+        </mention>
+        <mention>
+          <sentence>2</sentence>
+          <start>17</start>
+          <end>18</end>
+          <head>17</head>
+        </mention>
+      </coreference>
+    </coreference>
+  </document>
+</root>

@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Homeless</word>
+            <lemma>homeless</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>CC</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>starving</word>
+            <lemma>starving</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>Suzie</word>
+            <lemma>Suzie</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+          </token>
+          <token id="5">
+            <word>will</word>
+            <lemma>will</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>MD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>do</word>
+            <lemma>do</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>anything</word>
+            <lemma>anything</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>TO</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>make</word>
+            <lemma>make</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>enough</word>
+            <lemma>enough</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>money</word>
+            <lemma>money</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>65</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>66</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>TO</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>eat</word>
+            <lemma>eat</lemma>
+            <CharacterOffsetBegin>69</CharacterOffsetBegin>
+            <CharacterOffsetEnd>72</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="14">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>72</CharacterOffsetBegin>
+            <CharacterOffsetEnd>73</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (JJ Homeless)) (CC and) (NP (JJ starving) (NNP Suzie))) (VP (MD will) (VP (VB do) (NP (NN anything)) (S (VP (TO to) (VP (VB make) (NP (JJ enough) (NN money)) (S (VP (TO to) (VP (VB eat))))))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nsubj">
+            <governor idx="6">do</governor>
+            <dependent idx="1">Homeless</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="1">Homeless</governor>
+            <dependent idx="2">and</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">Suzie</governor>
+            <dependent idx="3">starving</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="1">Homeless</governor>
+            <dependent idx="4">Suzie</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="6">do</governor>
+            <dependent idx="5">will</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">do</governor>
+            <dependent idx="7">anything</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="9">make</governor>
+            <dependent idx="8">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="6">do</governor>
+            <dependent idx="9">make</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">money</governor>
+            <dependent idx="10">enough</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="9">make</governor>
+            <dependent idx="11">money</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="13">eat</governor>
+            <dependent idx="12">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="9">make</governor>
+            <dependent idx="13">eat</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nsubj">
+            <governor idx="6">do</governor>
+            <dependent idx="1">Homeless</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">Suzie</governor>
+            <dependent idx="3">starving</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="1">Homeless</governor>
+            <dependent idx="4">Suzie</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="6">do</governor>
+            <dependent idx="5">will</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">do</governor>
+            <dependent idx="7">anything</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="9">make</governor>
+            <dependent idx="8">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="6">do</governor>
+            <dependent idx="9">make</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">money</governor>
+            <dependent idx="10">enough</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="9">make</governor>
+            <dependent idx="11">money</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="13">eat</governor>
+            <dependent idx="12">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="9">make</governor>
+            <dependent idx="13">eat</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nsubj">
+            <governor idx="6">do</governor>
+            <dependent idx="1">Homeless</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">Suzie</governor>
+            <dependent idx="3">starving</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="1">Homeless</governor>
+            <dependent idx="4">Suzie</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">do</governor>
+            <dependent idx="4">Suzie</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="6">do</governor>
+            <dependent idx="5">will</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">do</governor>
+            <dependent idx="7">anything</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="9">make</governor>
+            <dependent idx="8">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="6">do</governor>
+            <dependent idx="9">make</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">money</governor>
+            <dependent idx="10">enough</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="9">make</governor>
+            <dependent idx="11">money</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="13">eat</governor>
+            <dependent idx="12">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="9">make</governor>
+            <dependent idx="13">eat</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>She</word>
+            <lemma>she</lemma>
+            <CharacterOffsetBegin>74</CharacterOffsetBegin>
+            <CharacterOffsetEnd>77</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>goes</word>
+            <lemma>go</lemma>
+            <CharacterOffsetBegin>78</CharacterOffsetBegin>
+            <CharacterOffsetEnd>82</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>from</word>
+            <lemma>from</lemma>
+            <CharacterOffsetBegin>83</CharacterOffsetBegin>
+            <CharacterOffsetEnd>87</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>one</word>
+            <lemma>one</lemma>
+            <CharacterOffsetBegin>88</CharacterOffsetBegin>
+            <CharacterOffsetEnd>91</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>NUMBER</NER>
+            <NormalizedNER>1.0</NormalizedNER>
+          </token>
+          <token id="5">
+            <word>bad</word>
+            <lemma>bad</lemma>
+            <CharacterOffsetBegin>92</CharacterOffsetBegin>
+            <CharacterOffsetEnd>95</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>situation</word>
+            <lemma>situation</lemma>
+            <CharacterOffsetBegin>96</CharacterOffsetBegin>
+            <CharacterOffsetEnd>105</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>106</CharacterOffsetBegin>
+            <CharacterOffsetEnd>108</CharacterOffsetEnd>
+            <POS>TO</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>another</word>
+            <lemma>another</lemma>
+            <CharacterOffsetBegin>109</CharacterOffsetBegin>
+            <CharacterOffsetEnd>116</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>117</CharacterOffsetBegin>
+            <CharacterOffsetEnd>119</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>what</word>
+            <lemma>what</lemma>
+            <CharacterOffsetBegin>120</CharacterOffsetBegin>
+            <CharacterOffsetEnd>124</CharacterOffsetEnd>
+            <POS>WP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>will</word>
+            <lemma>will</lemma>
+            <CharacterOffsetBegin>125</CharacterOffsetBegin>
+            <CharacterOffsetEnd>129</CharacterOffsetEnd>
+            <POS>MD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>be</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>130</CharacterOffsetBegin>
+            <CharacterOffsetEnd>132</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>133</CharacterOffsetBegin>
+            <CharacterOffsetEnd>136</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>DURATION</NER>
+            <Timex tid="t2" type="DURATION">PXD</Timex>
+          </token>
+          <token id="14">
+            <word>last</word>
+            <lemma>last</lemma>
+            <CharacterOffsetBegin>137</CharacterOffsetBegin>
+            <CharacterOffsetEnd>141</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>DURATION</NER>
+            <Timex tid="t2" type="DURATION">PXD</Timex>
+          </token>
+          <token id="15">
+            <word>days</word>
+            <lemma>day</lemma>
+            <CharacterOffsetBegin>142</CharacterOffsetBegin>
+            <CharacterOffsetEnd>146</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>DURATION</NER>
+            <Timex tid="t2" type="DURATION">PXD</Timex>
+          </token>
+          <token id="16">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>147</CharacterOffsetBegin>
+            <CharacterOffsetEnd>149</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="17">
+            <word>her</word>
+            <lemma>she</lemma>
+            <CharacterOffsetBegin>150</CharacterOffsetBegin>
+            <CharacterOffsetEnd>153</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+            <NER>O</NER>
+          </token>
+          <token id="18">
+            <word>life</word>
+            <lemma>life</lemma>
+            <CharacterOffsetBegin>154</CharacterOffsetBegin>
+            <CharacterOffsetEnd>158</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="19">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>158</CharacterOffsetBegin>
+            <CharacterOffsetEnd>159</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (PRP She)) (VP (VBZ goes) (PP (IN from) (NP (NP (CD one) (JJ bad) (NN situation)) (PP (TO to) (NP (NP (DT another)) (PP (IN in) (SBAR (WHNP (WP what)) (S (VP (MD will) (VP (VB be) (NP (NP (DT the) (JJ last) (NNS days)) (PP (IN of) (NP (PRP$ her) (NN life)))))))))))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nsubj">
+            <governor idx="2">goes</governor>
+            <dependent idx="1">She</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">goes</governor>
+            <dependent idx="3">from</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="6">situation</governor>
+            <dependent idx="4">one</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">situation</governor>
+            <dependent idx="5">bad</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">from</governor>
+            <dependent idx="6">situation</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">situation</governor>
+            <dependent idx="7">to</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="7">to</governor>
+            <dependent idx="8">another</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="8">another</governor>
+            <dependent idx="9">in</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="15">days</governor>
+            <dependent idx="10">what</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="15">days</governor>
+            <dependent idx="11">will</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="15">days</governor>
+            <dependent idx="12">be</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="15">days</governor>
+            <dependent idx="13">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="15">days</governor>
+            <dependent idx="14">last</dependent>
+          </dep>
+          <dep type="pcomp">
+            <governor idx="9">in</governor>
+            <dependent idx="15">days</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="15">days</governor>
+            <dependent idx="16">of</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="18">life</governor>
+            <dependent idx="17">her</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="16">of</governor>
+            <dependent idx="18">life</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nsubj">
+            <governor idx="2">goes</governor>
+            <dependent idx="1">She</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="6">situation</governor>
+            <dependent idx="4">one</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">situation</governor>
+            <dependent idx="5">bad</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="2">goes</governor>
+            <dependent idx="6">situation</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="6">situation</governor>
+            <dependent idx="8">another</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="15">days</governor>
+            <dependent idx="10">what</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="15">days</governor>
+            <dependent idx="11">will</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="15">days</governor>
+            <dependent idx="12">be</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="15">days</governor>
+            <dependent idx="13">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="15">days</governor>
+            <dependent idx="14">last</dependent>
+          </dep>
+          <dep type="prepc_in">
+            <governor idx="8">another</governor>
+            <dependent idx="15">days</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="18">life</governor>
+            <dependent idx="17">her</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="15">days</governor>
+            <dependent idx="18">life</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nsubj">
+            <governor idx="2">goes</governor>
+            <dependent idx="1">She</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="6">situation</governor>
+            <dependent idx="4">one</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">situation</governor>
+            <dependent idx="5">bad</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="2">goes</governor>
+            <dependent idx="6">situation</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="6">situation</governor>
+            <dependent idx="8">another</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="15">days</governor>
+            <dependent idx="10">what</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="15">days</governor>
+            <dependent idx="11">will</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="15">days</governor>
+            <dependent idx="12">be</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="15">days</governor>
+            <dependent idx="13">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="15">days</governor>
+            <dependent idx="14">last</dependent>
+          </dep>
+          <dep type="prepc_in">
+            <governor idx="8">another</governor>
+            <dependent idx="15">days</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="18">life</governor>
+            <dependent idx="17">her</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="15">days</governor>
+            <dependent idx="18">life</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+    </sentences>
+    <coreference>
+      <coreference>
+        <mention representative="true">
+          <sentence>1</sentence>
+          <start>3</start>
+          <end>5</end>
+          <head>4</head>
+        </mention>
+        <mention>
+          <sentence>2</sentence>
+          <start>1</start>
+          <end>2</end>
+          <head>1</head>
+        </mention>
+        <mention>
+          <sentence>2</sentence>
+          <start>17</start>
+          <end>18</end>
+          <head>17</head>
+        </mention>
+      </coreference>
+    </coreference>
+  </document>
+</root>

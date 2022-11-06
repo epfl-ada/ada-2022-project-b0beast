@@ -1,0 +1,1049 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Since</word>
+            <lemma>since</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>1975</word>
+            <lemma>1975</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>1975</NormalizedNER>
+            <Timex tid="t1" type="DATE">1975</Timex>
+          </token>
+          <token id="3">
+            <word>millions</word>
+            <lemma>million</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>Vietnamese</word>
+            <lemma>vietnamese</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>MISC</NER>
+          </token>
+          <token id="6">
+            <word>boat</word>
+            <lemma>boat</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>people</word>
+            <lemma>people</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>have</word>
+            <lemma>have</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>VBP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>fled</word>
+            <lemma>flee</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>freedom</word>
+            <lemma>freedom</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (PP (IN Since) (NP (NP (CD 1975) (NNS millions)) (PP (IN of) (NP (JJ Vietnamese) (NN boat))))) (NP (NNS people)) (VP (VBP have) (VP (VBN fled) (PP (IN for) (NP (NN freedom))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="prep">
+            <governor idx="9">fled</governor>
+            <dependent idx="1">Since</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="3">millions</governor>
+            <dependent idx="2">1975</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="1">Since</governor>
+            <dependent idx="3">millions</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">millions</governor>
+            <dependent idx="4">of</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">boat</governor>
+            <dependent idx="5">Vietnamese</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">of</governor>
+            <dependent idx="6">boat</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">fled</governor>
+            <dependent idx="7">people</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="9">fled</governor>
+            <dependent idx="8">have</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="9">fled</governor>
+            <dependent idx="10">for</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="10">for</governor>
+            <dependent idx="11">freedom</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="num">
+            <governor idx="3">millions</governor>
+            <dependent idx="2">1975</dependent>
+          </dep>
+          <dep type="prep_since">
+            <governor idx="9">fled</governor>
+            <dependent idx="3">millions</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">boat</governor>
+            <dependent idx="5">Vietnamese</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="3">millions</governor>
+            <dependent idx="6">boat</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">fled</governor>
+            <dependent idx="7">people</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="9">fled</governor>
+            <dependent idx="8">have</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="9">fled</governor>
+            <dependent idx="11">freedom</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="num">
+            <governor idx="3">millions</governor>
+            <dependent idx="2">1975</dependent>
+          </dep>
+          <dep type="prep_since">
+            <governor idx="9">fled</governor>
+            <dependent idx="3">millions</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">boat</governor>
+            <dependent idx="5">Vietnamese</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="3">millions</governor>
+            <dependent idx="6">boat</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">fled</governor>
+            <dependent idx="7">people</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="9">fled</governor>
+            <dependent idx="8">have</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="9">fled</governor>
+            <dependent idx="11">freedom</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>By</word>
+            <lemma>by</lemma>
+            <CharacterOffsetBegin>69</CharacterOffsetBegin>
+            <CharacterOffsetEnd>71</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>1993</word>
+            <lemma>1993</lemma>
+            <CharacterOffsetBegin>72</CharacterOffsetBegin>
+            <CharacterOffsetEnd>76</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>1993</NormalizedNER>
+            <Timex tid="t1" type="DATE">1993</Timex>
+          </token>
+          <token id="3">
+            <word>more</word>
+            <lemma>more</lemma>
+            <CharacterOffsetBegin>77</CharacterOffsetBegin>
+            <CharacterOffsetEnd>81</CharacterOffsetEnd>
+            <POS>JJR</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>than</word>
+            <lemma>than</lemma>
+            <CharacterOffsetBegin>82</CharacterOffsetBegin>
+            <CharacterOffsetEnd>86</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>half</word>
+            <lemma>half</lemma>
+            <CharacterOffsetBegin>87</CharacterOffsetBegin>
+            <CharacterOffsetEnd>91</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>who</word>
+            <lemma>who</lemma>
+            <CharacterOffsetBegin>92</CharacterOffsetBegin>
+            <CharacterOffsetEnd>95</CharacterOffsetEnd>
+            <POS>WP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>survived</word>
+            <lemma>survive</lemma>
+            <CharacterOffsetBegin>96</CharacterOffsetBegin>
+            <CharacterOffsetEnd>104</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>105</CharacterOffsetBegin>
+            <CharacterOffsetEnd>108</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>exodus</word>
+            <lemma>exodus</lemma>
+            <CharacterOffsetBegin>109</CharacterOffsetBegin>
+            <CharacterOffsetEnd>115</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>resided</word>
+            <lemma>reside</lemma>
+            <CharacterOffsetBegin>116</CharacterOffsetBegin>
+            <CharacterOffsetEnd>123</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>124</CharacterOffsetBegin>
+            <CharacterOffsetEnd>126</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>California</word>
+            <lemma>California</lemma>
+            <CharacterOffsetBegin>127</CharacterOffsetBegin>
+            <CharacterOffsetEnd>137</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>LOCATION</NER>
+          </token>
+          <token id="13">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>137</CharacterOffsetBegin>
+            <CharacterOffsetEnd>138</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (PP (IN By) (NP (NP (CD 1993)) (SBAR (WHNP (QP (XS (JJR more) (IN than)) (DT half)) (WP who)) (S (VP (VBD survived)))))) (NP (DT the) (NN exodus)) (VP (VBD resided) (PP (IN in) (NP (NNP California)))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="prep">
+            <governor idx="10">resided</governor>
+            <dependent idx="1">By</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="1">By</governor>
+            <dependent idx="2">1993</dependent>
+          </dep>
+          <dep type="mwe">
+            <governor idx="4">than</governor>
+            <dependent idx="3">more</dependent>
+          </dep>
+          <dep type="quantmod">
+            <governor idx="5">half</governor>
+            <dependent idx="4">than</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="6">who</governor>
+            <dependent idx="5">half</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">survived</governor>
+            <dependent idx="6">who</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="2">1993</governor>
+            <dependent idx="7">survived</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">exodus</governor>
+            <dependent idx="8">the</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">resided</governor>
+            <dependent idx="9">exodus</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="10">resided</governor>
+            <dependent idx="11">in</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="11">in</governor>
+            <dependent idx="12">California</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="prep_by">
+            <governor idx="10">resided</governor>
+            <dependent idx="2">1993</dependent>
+          </dep>
+          <dep type="mwe">
+            <governor idx="4">than</governor>
+            <dependent idx="3">more</dependent>
+          </dep>
+          <dep type="quantmod">
+            <governor idx="5">half</governor>
+            <dependent idx="4">than</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="6">who</governor>
+            <dependent idx="5">half</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">survived</governor>
+            <dependent idx="6">who</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="2">1993</governor>
+            <dependent idx="7">survived</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">exodus</governor>
+            <dependent idx="8">the</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">resided</governor>
+            <dependent idx="9">exodus</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="10">resided</governor>
+            <dependent idx="12">California</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="prep_by">
+            <governor idx="10">resided</governor>
+            <dependent idx="2">1993</dependent>
+          </dep>
+          <dep type="mwe">
+            <governor idx="4">than</governor>
+            <dependent idx="3">more</dependent>
+          </dep>
+          <dep type="quantmod">
+            <governor idx="5">half</governor>
+            <dependent idx="4">than</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="6">who</governor>
+            <dependent idx="5">half</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">survived</governor>
+            <dependent idx="6">who</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="2">1993</governor>
+            <dependent idx="7">survived</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">exodus</governor>
+            <dependent idx="8">the</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">resided</governor>
+            <dependent idx="9">exodus</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="10">resided</governor>
+            <dependent idx="12">California</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="3">
+        <tokens>
+          <token id="1">
+            <word>The</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>139</CharacterOffsetBegin>
+            <CharacterOffsetEnd>142</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>film</word>
+            <lemma>film</lemma>
+            <CharacterOffsetBegin>143</CharacterOffsetBegin>
+            <CharacterOffsetEnd>147</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>portrays</word>
+            <lemma>portray</lemma>
+            <CharacterOffsetBegin>148</CharacterOffsetBegin>
+            <CharacterOffsetEnd>156</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>157</CharacterOffsetBegin>
+            <CharacterOffsetEnd>160</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>coming</word>
+            <lemma>come</lemma>
+            <CharacterOffsetBegin>161</CharacterOffsetBegin>
+            <CharacterOffsetEnd>167</CharacterOffsetEnd>
+            <POS>VBG</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>168</CharacterOffsetBegin>
+            <CharacterOffsetEnd>170</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>age</word>
+            <lemma>age</lemma>
+            <CharacterOffsetBegin>171</CharacterOffsetBegin>
+            <CharacterOffsetEnd>174</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>story</word>
+            <lemma>story</lemma>
+            <CharacterOffsetBegin>175</CharacterOffsetBegin>
+            <CharacterOffsetEnd>180</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>181</CharacterOffsetBegin>
+            <CharacterOffsetEnd>183</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>abandoned</word>
+            <lemma>abandon</lemma>
+            <CharacterOffsetBegin>184</CharacterOffsetBegin>
+            <CharacterOffsetEnd>193</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>kids</word>
+            <lemma>kid</lemma>
+            <CharacterOffsetBegin>194</CharacterOffsetBegin>
+            <CharacterOffsetEnd>198</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>growing</word>
+            <lemma>grow</lemma>
+            <CharacterOffsetBegin>199</CharacterOffsetBegin>
+            <CharacterOffsetEnd>206</CharacterOffsetEnd>
+            <POS>VBG</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>up</word>
+            <lemma>up</lemma>
+            <CharacterOffsetBegin>207</CharacterOffsetBegin>
+            <CharacterOffsetEnd>209</CharacterOffsetEnd>
+            <POS>RP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="14">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>210</CharacterOffsetBegin>
+            <CharacterOffsetEnd>212</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="15">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>213</CharacterOffsetBegin>
+            <CharacterOffsetEnd>216</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="16">
+            <word>new</word>
+            <lemma>new</lemma>
+            <CharacterOffsetBegin>217</CharacterOffsetBegin>
+            <CharacterOffsetEnd>220</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="17">
+            <word>Vietnamese</word>
+            <lemma>vietnamese</lemma>
+            <CharacterOffsetBegin>221</CharacterOffsetBegin>
+            <CharacterOffsetEnd>231</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>LOCATION</NER>
+          </token>
+          <token id="18">
+            <word>enclave</word>
+            <lemma>enclave</lemma>
+            <CharacterOffsetBegin>232</CharacterOffsetBegin>
+            <CharacterOffsetEnd>239</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="19">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>240</CharacterOffsetBegin>
+            <CharacterOffsetEnd>242</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="20">
+            <word>Orange</word>
+            <lemma>Orange</lemma>
+            <CharacterOffsetBegin>243</CharacterOffsetBegin>
+            <CharacterOffsetEnd>249</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>LOCATION</NER>
+          </token>
+          <token id="21">
+            <word>County</word>
+            <lemma>County</lemma>
+            <CharacterOffsetBegin>250</CharacterOffsetBegin>
+            <CharacterOffsetEnd>256</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>LOCATION</NER>
+          </token>
+          <token id="22">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>256</CharacterOffsetBegin>
+            <CharacterOffsetEnd>257</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="23">
+            <word>California</word>
+            <lemma>California</lemma>
+            <CharacterOffsetBegin>258</CharacterOffsetBegin>
+            <CharacterOffsetEnd>268</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>LOCATION</NER>
+          </token>
+          <token id="24">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>269</CharacterOffsetBegin>
+            <CharacterOffsetEnd>271</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="25">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>272</CharacterOffsetBegin>
+            <CharacterOffsetEnd>275</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>199X</NormalizedNER>
+            <Timex tid="t1" type="DATE">199X</Timex>
+          </token>
+          <token id="26">
+            <word>early</word>
+            <lemma>early</lemma>
+            <CharacterOffsetBegin>276</CharacterOffsetBegin>
+            <CharacterOffsetEnd>281</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>199X</NormalizedNER>
+            <Timex tid="t1" type="DATE">199X</Timex>
+          </token>
+          <token id="27">
+            <word>1990s</word>
+            <lemma>1990s</lemma>
+            <CharacterOffsetBegin>282</CharacterOffsetBegin>
+            <CharacterOffsetEnd>287</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>199X</NormalizedNER>
+            <Timex tid="t1" type="DATE">199X</Timex>
+          </token>
+          <token id="28">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>287</CharacterOffsetBegin>
+            <CharacterOffsetEnd>288</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="29">
+            <word>based</word>
+            <lemma>base</lemma>
+            <CharacterOffsetBegin>289</CharacterOffsetBegin>
+            <CharacterOffsetEnd>294</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="30">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>295</CharacterOffsetBegin>
+            <CharacterOffsetEnd>297</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="31">
+            <word>true</word>
+            <lemma>true</lemma>
+            <CharacterOffsetBegin>298</CharacterOffsetBegin>
+            <CharacterOffsetEnd>302</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="32">
+            <word>events</word>
+            <lemma>event</lemma>
+            <CharacterOffsetBegin>303</CharacterOffsetBegin>
+            <CharacterOffsetEnd>309</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="33">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>309</CharacterOffsetBegin>
+            <CharacterOffsetEnd>310</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (DT The) (NN film)) (VP (VBZ portrays) (NP (NP (DT the) (VBG coming)) (PP (IN of) (NP (NN age) (NN story))) (PP (IN of) (NP (NP (VBN abandoned) (NNS kids)) (VP (VBG growing) (PRT (RP up)) (PP (IN in) (NP (NP (DT the) (JJ new) (JJ Vietnamese) (NN enclave)) (PP (IN of) (NP (NP (NNP Orange) (NNP County)) (, ,) (NP (NP (NNP California)) (PP (IN in) (NP (DT the) (JJ early) (CD 1990s)))))))) (, ,) (PP (VBN based) (PP (IN on) (NP (JJ true) (NNS events))))))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="det">
+            <governor idx="2">film</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">portrays</governor>
+            <dependent idx="2">film</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">portrays</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">the</governor>
+            <dependent idx="5">coming</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">the</governor>
+            <dependent idx="6">of</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">story</governor>
+            <dependent idx="7">age</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">of</governor>
+            <dependent idx="8">story</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">the</governor>
+            <dependent idx="9">of</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">kids</governor>
+            <dependent idx="10">abandoned</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="9">of</governor>
+            <dependent idx="11">kids</dependent>
+          </dep>
+          <dep type="partmod">
+            <governor idx="11">kids</governor>
+            <dependent idx="12">growing</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="12">growing</governor>
+            <dependent idx="13">up</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="12">growing</governor>
+            <dependent idx="14">in</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="18">enclave</governor>
+            <dependent idx="15">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="18">enclave</governor>
+            <dependent idx="16">new</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="18">enclave</governor>
+            <dependent idx="17">Vietnamese</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="14">in</governor>
+            <dependent idx="18">enclave</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="18">enclave</governor>
+            <dependent idx="19">of</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="21">County</governor>
+            <dependent idx="20">Orange</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="19">of</governor>
+            <dependent idx="21">County</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="21">County</governor>
+            <dependent idx="23">California</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="23">California</governor>
+            <dependent idx="24">in</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="27">1990s</governor>
+            <dependent idx="25">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="27">1990s</governor>
+            <dependent idx="26">early</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="24">in</governor>
+            <dependent idx="27">1990s</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="12">growing</governor>
+            <dependent idx="29">based</dependent>
+          </dep>
+          <dep type="pcomp">
+            <governor idx="29">based</governor>
+            <dependent idx="30">on</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="32">events</governor>
+            <dependent idx="31">true</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="30">on</governor>
+            <dependent idx="32">events</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="det">
+            <governor idx="2">film</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">portrays</governor>
+            <dependent idx="2">film</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">portrays</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">the</governor>
+            <dependent idx="5">coming</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">story</governor>
+            <dependent idx="7">age</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="4">the</governor>
+            <dependent idx="8">story</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">kids</governor>
+            <dependent idx="10">abandoned</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="4">the</governor>
+            <dependent idx="11">kids</dependent>
+          </dep>
+          <dep type="partmod">
+            <governor idx="11">kids</governor>
+            <dependent idx="12">growing</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="12">growing</governor>
+            <dependent idx="13">up</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="18">enclave</governor>
+            <dependent idx="15">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="18">enclave</governor>
+            <dependent idx="16">new</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="18">enclave</governor>
+            <dependent idx="17">Vietnamese</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="12">growing</governor>
+            <dependent idx="18">enclave</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="21">County</governor>
+            <dependent idx="20">Orange</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="18">enclave</governor>
+            <dependent idx="21">County</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="21">County</governor>
+            <dependent idx="23">California</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="27">1990s</governor>
+            <dependent idx="25">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="27">1990s</governor>
+            <dependent idx="26">early</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="23">California</governor>
+            <dependent idx="27">1990s</dependent>
+          </dep>
+          <dep type="prepc_based_on">
+            <governor idx="12">growing</governor>
+            <dependent idx="30">on</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="32">events</governor>
+            <dependent idx="31">true</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="12">growing</governor>
+            <dependent idx="32">events</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="det">
+            <governor idx="2">film</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">portrays</governor>
+            <dependent idx="2">film</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">portrays</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">the</governor>
+            <dependent idx="5">coming</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">story</governor>
+            <dependent idx="7">age</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="4">the</governor>
+            <dependent idx="8">story</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">kids</governor>
+            <dependent idx="10">abandoned</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="4">the</governor>
+            <dependent idx="11">kids</dependent>
+          </dep>
+          <dep type="partmod">
+            <governor idx="11">kids</governor>
+            <dependent idx="12">growing</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="12">growing</governor>
+            <dependent idx="13">up</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="18">enclave</governor>
+            <dependent idx="15">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="18">enclave</governor>
+            <dependent idx="16">new</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="18">enclave</governor>
+            <dependent idx="17">Vietnamese</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="12">growing</governor>
+            <dependent idx="18">enclave</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="21">County</governor>
+            <dependent idx="20">Orange</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="18">enclave</governor>
+            <dependent idx="21">County</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="21">County</governor>
+            <dependent idx="23">California</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="27">1990s</governor>
+            <dependent idx="25">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="27">1990s</governor>
+            <dependent idx="26">early</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="23">California</governor>
+            <dependent idx="27">1990s</dependent>
+          </dep>
+          <dep type="prepc_based_on">
+            <governor idx="12">growing</governor>
+            <dependent idx="30">on</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="32">events</governor>
+            <dependent idx="31">true</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="12">growing</governor>
+            <dependent idx="32">events</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+    </sentences>
+    <coreference>
+      <coreference>
+        <mention representative="true">
+          <sentence>3</sentence>
+          <start>20</start>
+          <end>28</end>
+          <head>21</head>
+        </mention>
+        <mention>
+          <sentence>3</sentence>
+          <start>20</start>
+          <end>22</end>
+          <head>21</head>
+        </mention>
+        <mention>
+          <sentence>3</sentence>
+          <start>23</start>
+          <end>28</end>
+          <head>23</head>
+        </mention>
+      </coreference>
+    </coreference>
+  </document>
+</root>

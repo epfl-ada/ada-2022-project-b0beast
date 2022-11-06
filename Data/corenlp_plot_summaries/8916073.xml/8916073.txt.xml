@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>A</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>womaniser</word>
+            <lemma>womaniser</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>is</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>accidentally</word>
+            <lemma>accidentally</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>killed</word>
+            <lemma>kill</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>by</word>
+            <lemma>by</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>one</word>
+            <lemma>one</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>NUMBER</NER>
+            <NormalizedNER>1.0</NormalizedNER>
+          </token>
+          <token id="8">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>his</word>
+            <lemma>he</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>many</word>
+            <lemma>many</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>girlfriends</word>
+            <lemma>girlfriend</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>65</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>65</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (DT A) (NN womaniser)) (VP (VBZ is) (ADVP (RB accidentally)) (VP (VBN killed) (PP (IN by) (NP (NP (CD one)) (PP (IN of) (NP (PRP$ his) (JJ many) (NNS girlfriends))))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="det">
+            <governor idx="2">womaniser</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="5">killed</governor>
+            <dependent idx="2">womaniser</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="5">killed</governor>
+            <dependent idx="3">is</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">killed</governor>
+            <dependent idx="4">accidentally</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">killed</governor>
+            <dependent idx="6">by</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">by</governor>
+            <dependent idx="7">one</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="7">one</governor>
+            <dependent idx="8">of</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="11">girlfriends</governor>
+            <dependent idx="9">his</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">girlfriends</governor>
+            <dependent idx="10">many</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="8">of</governor>
+            <dependent idx="11">girlfriends</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="det">
+            <governor idx="2">womaniser</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="5">killed</governor>
+            <dependent idx="2">womaniser</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="5">killed</governor>
+            <dependent idx="3">is</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">killed</governor>
+            <dependent idx="4">accidentally</dependent>
+          </dep>
+          <dep type="agent">
+            <governor idx="5">killed</governor>
+            <dependent idx="7">one</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="11">girlfriends</governor>
+            <dependent idx="9">his</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">girlfriends</governor>
+            <dependent idx="10">many</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="7">one</governor>
+            <dependent idx="11">girlfriends</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="det">
+            <governor idx="2">womaniser</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="5">killed</governor>
+            <dependent idx="2">womaniser</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="5">killed</governor>
+            <dependent idx="3">is</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">killed</governor>
+            <dependent idx="4">accidentally</dependent>
+          </dep>
+          <dep type="agent">
+            <governor idx="5">killed</governor>
+            <dependent idx="7">one</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="11">girlfriends</governor>
+            <dependent idx="9">his</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">girlfriends</governor>
+            <dependent idx="10">many</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="7">one</governor>
+            <dependent idx="11">girlfriends</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>As</word>
+            <lemma>as</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>69</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>redemption</word>
+            <lemma>redemption</lemma>
+            <CharacterOffsetBegin>70</CharacterOffsetBegin>
+            <CharacterOffsetEnd>80</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>80</CharacterOffsetBegin>
+            <CharacterOffsetEnd>81</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>he</word>
+            <lemma>he</lemma>
+            <CharacterOffsetBegin>82</CharacterOffsetBegin>
+            <CharacterOffsetEnd>84</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>is</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>85</CharacterOffsetBegin>
+            <CharacterOffsetEnd>87</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>reincarnated</word>
+            <lemma>reincarnate</lemma>
+            <CharacterOffsetBegin>88</CharacterOffsetBegin>
+            <CharacterOffsetEnd>100</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>as</word>
+            <lemma>as</lemma>
+            <CharacterOffsetBegin>101</CharacterOffsetBegin>
+            <CharacterOffsetEnd>103</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>104</CharacterOffsetBegin>
+            <CharacterOffsetEnd>105</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>woman</word>
+            <lemma>woman</lemma>
+            <CharacterOffsetBegin>106</CharacterOffsetBegin>
+            <CharacterOffsetEnd>111</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>111</CharacterOffsetBegin>
+            <CharacterOffsetEnd>112</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (PP (IN As) (NP (NN redemption))) (, ,) (NP (PRP he)) (VP (VBZ is) (VP (VBN reincarnated) (PP (IN as) (NP (DT a) (NN woman))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="prep">
+            <governor idx="6">reincarnated</governor>
+            <dependent idx="1">As</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="1">As</governor>
+            <dependent idx="2">redemption</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="6">reincarnated</governor>
+            <dependent idx="4">he</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="6">reincarnated</governor>
+            <dependent idx="5">is</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">reincarnated</governor>
+            <dependent idx="7">as</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">woman</governor>
+            <dependent idx="8">a</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="7">as</governor>
+            <dependent idx="9">woman</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="prep_as">
+            <governor idx="6">reincarnated</governor>
+            <dependent idx="2">redemption</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="6">reincarnated</governor>
+            <dependent idx="4">he</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="6">reincarnated</governor>
+            <dependent idx="5">is</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">woman</governor>
+            <dependent idx="8">a</dependent>
+          </dep>
+          <dep type="prep_as">
+            <governor idx="6">reincarnated</governor>
+            <dependent idx="9">woman</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="prep_as">
+            <governor idx="6">reincarnated</governor>
+            <dependent idx="2">redemption</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="6">reincarnated</governor>
+            <dependent idx="4">he</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="6">reincarnated</governor>
+            <dependent idx="5">is</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">woman</governor>
+            <dependent idx="8">a</dependent>
+          </dep>
+          <dep type="prep_as">
+            <governor idx="6">reincarnated</governor>
+            <dependent idx="9">woman</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="3">
+        <tokens>
+          <token id="1">
+            <word>However</word>
+            <lemma>however</lemma>
+            <CharacterOffsetBegin>113</CharacterOffsetBegin>
+            <CharacterOffsetEnd>120</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>this</word>
+            <lemma>this</lemma>
+            <CharacterOffsetBegin>121</CharacterOffsetBegin>
+            <CharacterOffsetEnd>125</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>is</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>126</CharacterOffsetBegin>
+            <CharacterOffsetEnd>128</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>not</word>
+            <lemma>not</lemma>
+            <CharacterOffsetBegin>129</CharacterOffsetBegin>
+            <CharacterOffsetEnd>132</CharacterOffsetEnd>
+            <POS>RB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>133</CharacterOffsetBegin>
+            <CharacterOffsetEnd>134</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>DURATION</NER>
+            <NormalizedNER>2.0</NormalizedNER>
+            <Timex tid="t1" type="DURATION">PT1S</Timex>
+          </token>
+          <token id="6">
+            <word>second</word>
+            <lemma>second</lemma>
+            <CharacterOffsetBegin>135</CharacterOffsetBegin>
+            <CharacterOffsetEnd>141</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>DURATION</NER>
+            <NormalizedNER>2.0</NormalizedNER>
+            <Timex tid="t1" type="DURATION">PT1S</Timex>
+          </token>
+          <token id="7">
+            <word>chance</word>
+            <lemma>chance</lemma>
+            <CharacterOffsetBegin>142</CharacterOffsetBegin>
+            <CharacterOffsetEnd>148</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>but</word>
+            <lemma>but</lemma>
+            <CharacterOffsetBegin>149</CharacterOffsetBegin>
+            <CharacterOffsetEnd>152</CharacterOffsetEnd>
+            <POS>CC</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>153</CharacterOffsetBegin>
+            <CharacterOffsetEnd>154</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>punishment</word>
+            <lemma>punishment</lemma>
+            <CharacterOffsetBegin>155</CharacterOffsetBegin>
+            <CharacterOffsetEnd>165</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>165</CharacterOffsetBegin>
+            <CharacterOffsetEnd>166</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (ADVP (RB However)) (NP (DT this)) (VP (VBZ is) (RB not) (NP (NP (DT a) (JJ second) (NN chance)) (PP (CC but) (NP (DT a) (NN punishment))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="advmod">
+            <governor idx="7">chance</governor>
+            <dependent idx="1">However</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">chance</governor>
+            <dependent idx="2">this</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="7">chance</governor>
+            <dependent idx="3">is</dependent>
+          </dep>
+          <dep type="neg">
+            <governor idx="7">chance</governor>
+            <dependent idx="4">not</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">chance</governor>
+            <dependent idx="5">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">chance</governor>
+            <dependent idx="6">second</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="7">chance</governor>
+            <dependent idx="8">but</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">punishment</governor>
+            <dependent idx="9">a</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="8">but</governor>
+            <dependent idx="10">punishment</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="advmod">
+            <governor idx="7">chance</governor>
+            <dependent idx="1">However</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">chance</governor>
+            <dependent idx="2">this</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="7">chance</governor>
+            <dependent idx="3">is</dependent>
+          </dep>
+          <dep type="neg">
+            <governor idx="7">chance</governor>
+            <dependent idx="4">not</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">chance</governor>
+            <dependent idx="5">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">chance</governor>
+            <dependent idx="6">second</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="7">chance</governor>
+            <dependent idx="8">but</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">punishment</governor>
+            <dependent idx="9">a</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="8">but</governor>
+            <dependent idx="10">punishment</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="advmod">
+            <governor idx="7">chance</governor>
+            <dependent idx="1">However</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">chance</governor>
+            <dependent idx="2">this</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="7">chance</governor>
+            <dependent idx="3">is</dependent>
+          </dep>
+          <dep type="neg">
+            <governor idx="7">chance</governor>
+            <dependent idx="4">not</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">chance</governor>
+            <dependent idx="5">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">chance</governor>
+            <dependent idx="6">second</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="7">chance</governor>
+            <dependent idx="8">but</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">punishment</governor>
+            <dependent idx="9">a</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="8">but</governor>
+            <dependent idx="10">punishment</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+    </sentences>
+    <coreference>
+      <coreference>
+        <mention representative="true">
+          <sentence>1</sentence>
+          <start>1</start>
+          <end>3</end>
+          <head>2</head>
+        </mention>
+        <mention>
+          <sentence>2</sentence>
+          <start>4</start>
+          <end>5</end>
+          <head>4</head>
+        </mention>
+      </coreference>
+    </coreference>
+  </document>
+</root>

@@ -1,0 +1,788 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Dolphin</word>
+            <lemma>Dolphin</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>researchers</word>
+            <lemma>researcher</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>suspect</word>
+            <lemma>suspect</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>VBP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>US</word>
+            <lemma>US</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="6">
+            <word>Navy</word>
+            <lemma>Navy</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="7">
+            <word>'s</word>
+            <lemma>'s</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>POS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>sonar</word>
+            <lemma>sonar</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>program</word>
+            <lemma>program</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>is</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>58</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>causing</word>
+            <lemma>cause</lemma>
+            <CharacterOffsetBegin>59</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>VBG</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>dolphin</word>
+            <lemma>dolphin</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>74</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>deaths</word>
+            <lemma>death</lemma>
+            <CharacterOffsetBegin>75</CharacterOffsetBegin>
+            <CharacterOffsetEnd>81</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="14">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>81</CharacterOffsetBegin>
+            <CharacterOffsetEnd>82</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNP Dolphin) (NNS researchers)) (VP (VBP suspect) (SBAR (S (NP (NP (DT the) (NNP US) (NNP Navy) (POS 's)) (NN sonar) (NN program)) (VP (VBZ is) (VP (VBG causing) (NP (NN dolphin) (NNS deaths))))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="2">researchers</governor>
+            <dependent idx="1">Dolphin</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">suspect</governor>
+            <dependent idx="2">researchers</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">Navy</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Navy</governor>
+            <dependent idx="5">US</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="9">program</governor>
+            <dependent idx="6">Navy</dependent>
+          </dep>
+          <dep type="possessive">
+            <governor idx="6">Navy</governor>
+            <dependent idx="7">'s</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">program</governor>
+            <dependent idx="8">sonar</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">causing</governor>
+            <dependent idx="9">program</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="11">causing</governor>
+            <dependent idx="10">is</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="3">suspect</governor>
+            <dependent idx="11">causing</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="13">deaths</governor>
+            <dependent idx="12">dolphin</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="11">causing</governor>
+            <dependent idx="13">deaths</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="2">researchers</governor>
+            <dependent idx="1">Dolphin</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">suspect</governor>
+            <dependent idx="2">researchers</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">Navy</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Navy</governor>
+            <dependent idx="5">US</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="9">program</governor>
+            <dependent idx="6">Navy</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">program</governor>
+            <dependent idx="8">sonar</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">causing</governor>
+            <dependent idx="9">program</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="11">causing</governor>
+            <dependent idx="10">is</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="3">suspect</governor>
+            <dependent idx="11">causing</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="13">deaths</governor>
+            <dependent idx="12">dolphin</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="11">causing</governor>
+            <dependent idx="13">deaths</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="2">researchers</governor>
+            <dependent idx="1">Dolphin</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">suspect</governor>
+            <dependent idx="2">researchers</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">Navy</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Navy</governor>
+            <dependent idx="5">US</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="9">program</governor>
+            <dependent idx="6">Navy</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">program</governor>
+            <dependent idx="8">sonar</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">causing</governor>
+            <dependent idx="9">program</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="11">causing</governor>
+            <dependent idx="10">is</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="3">suspect</governor>
+            <dependent idx="11">causing</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="13">deaths</governor>
+            <dependent idx="12">dolphin</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="11">causing</governor>
+            <dependent idx="13">deaths</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>When</word>
+            <lemma>when</lemma>
+            <CharacterOffsetBegin>83</CharacterOffsetBegin>
+            <CharacterOffsetEnd>87</CharacterOffsetEnd>
+            <POS>WRB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>88</CharacterOffsetBegin>
+            <CharacterOffsetEnd>91</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>US</word>
+            <lemma>US</lemma>
+            <CharacterOffsetBegin>92</CharacterOffsetBegin>
+            <CharacterOffsetEnd>94</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="4">
+            <word>Navy</word>
+            <lemma>Navy</lemma>
+            <CharacterOffsetBegin>95</CharacterOffsetBegin>
+            <CharacterOffsetEnd>99</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="5">
+            <word>abducts</word>
+            <lemma>abduct</lemma>
+            <CharacterOffsetBegin>100</CharacterOffsetBegin>
+            <CharacterOffsetEnd>107</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>108</CharacterOffsetBegin>
+            <CharacterOffsetEnd>109</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>scientific</word>
+            <lemma>scientific</lemma>
+            <CharacterOffsetBegin>110</CharacterOffsetBegin>
+            <CharacterOffsetEnd>120</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>research</word>
+            <lemma>research</lemma>
+            <CharacterOffsetBegin>121</CharacterOffsetBegin>
+            <CharacterOffsetEnd>129</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>dolphin</word>
+            <lemma>dolphin</lemma>
+            <CharacterOffsetBegin>130</CharacterOffsetBegin>
+            <CharacterOffsetEnd>137</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>137</CharacterOffsetBegin>
+            <CharacterOffsetEnd>138</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>139</CharacterOffsetBegin>
+            <CharacterOffsetEnd>140</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>teenage</word>
+            <lemma>teenage</lemma>
+            <CharacterOffsetBegin>141</CharacterOffsetBegin>
+            <CharacterOffsetEnd>148</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>dolphin</word>
+            <lemma>dolphin</lemma>
+            <CharacterOffsetBegin>149</CharacterOffsetBegin>
+            <CharacterOffsetEnd>156</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="14">
+            <word>researcher</word>
+            <lemma>researcher</lemma>
+            <CharacterOffsetBegin>157</CharacterOffsetBegin>
+            <CharacterOffsetEnd>167</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="15">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>167</CharacterOffsetBegin>
+            <CharacterOffsetEnd>168</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="16">
+            <word>Alyssa</word>
+            <lemma>Alyssa</lemma>
+            <CharacterOffsetBegin>169</CharacterOffsetBegin>
+            <CharacterOffsetEnd>175</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+          </token>
+          <token id="17">
+            <word>Hawk</word>
+            <lemma>Hawk</lemma>
+            <CharacterOffsetBegin>176</CharacterOffsetBegin>
+            <CharacterOffsetEnd>180</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+          </token>
+          <token id="18">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>180</CharacterOffsetBegin>
+            <CharacterOffsetEnd>181</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="19">
+            <word>risks</word>
+            <lemma>risk</lemma>
+            <CharacterOffsetBegin>182</CharacterOffsetBegin>
+            <CharacterOffsetEnd>187</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="20">
+            <word>getting</word>
+            <lemma>get</lemma>
+            <CharacterOffsetBegin>188</CharacterOffsetBegin>
+            <CharacterOffsetEnd>195</CharacterOffsetEnd>
+            <POS>VBG</POS>
+            <NER>O</NER>
+          </token>
+          <token id="21">
+            <word>caught</word>
+            <lemma>catch</lemma>
+            <CharacterOffsetBegin>196</CharacterOffsetBegin>
+            <CharacterOffsetEnd>202</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="22">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>203</CharacterOffsetBegin>
+            <CharacterOffsetEnd>205</CharacterOffsetEnd>
+            <POS>TO</POS>
+            <NER>O</NER>
+          </token>
+          <token id="23">
+            <word>save</word>
+            <lemma>save</lemma>
+            <CharacterOffsetBegin>206</CharacterOffsetBegin>
+            <CharacterOffsetEnd>210</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="24">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>211</CharacterOffsetBegin>
+            <CharacterOffsetEnd>214</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="25">
+            <word>dolphin</word>
+            <lemma>dolphin</lemma>
+            <CharacterOffsetBegin>215</CharacterOffsetBegin>
+            <CharacterOffsetEnd>222</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="26">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>222</CharacterOffsetBegin>
+            <CharacterOffsetEnd>223</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (SBAR (WHADVP (WRB When)) (S (NP (DT the) (NNP US) (NNP Navy)) (VP (VBZ abducts) (NP (DT a) (JJ scientific) (NN research) (NN dolphin))))) (, ,) (NP (NP (DT a) (JJ teenage) (NN dolphin) (NN researcher)) (, ,) (NP (NNP Alyssa) (NNP Hawk)) (, ,)) (VP (VBZ risks) (S (VP (VBG getting) (VP (VBN caught) (S (VP (TO to) (VP (VB save) (NP (DT the) (NN dolphin))))))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="advmod">
+            <governor idx="5">abducts</governor>
+            <dependent idx="1">When</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">Navy</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Navy</governor>
+            <dependent idx="3">US</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">abducts</governor>
+            <dependent idx="4">Navy</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="19">risks</governor>
+            <dependent idx="5">abducts</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">dolphin</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">dolphin</governor>
+            <dependent idx="7">scientific</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">dolphin</governor>
+            <dependent idx="8">research</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">abducts</governor>
+            <dependent idx="9">dolphin</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">researcher</governor>
+            <dependent idx="11">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="14">researcher</governor>
+            <dependent idx="12">teenage</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">researcher</governor>
+            <dependent idx="13">dolphin</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="19">risks</governor>
+            <dependent idx="14">researcher</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="17">Hawk</governor>
+            <dependent idx="16">Alyssa</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="14">researcher</governor>
+            <dependent idx="17">Hawk</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="21">caught</governor>
+            <dependent idx="20">getting</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="19">risks</governor>
+            <dependent idx="21">caught</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="23">save</governor>
+            <dependent idx="22">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="21">caught</governor>
+            <dependent idx="23">save</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="25">dolphin</governor>
+            <dependent idx="24">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="23">save</governor>
+            <dependent idx="25">dolphin</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="advmod">
+            <governor idx="5">abducts</governor>
+            <dependent idx="1">When</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">Navy</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Navy</governor>
+            <dependent idx="3">US</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">abducts</governor>
+            <dependent idx="4">Navy</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="19">risks</governor>
+            <dependent idx="5">abducts</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">dolphin</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">dolphin</governor>
+            <dependent idx="7">scientific</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">dolphin</governor>
+            <dependent idx="8">research</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">abducts</governor>
+            <dependent idx="9">dolphin</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">researcher</governor>
+            <dependent idx="11">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="14">researcher</governor>
+            <dependent idx="12">teenage</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">researcher</governor>
+            <dependent idx="13">dolphin</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="19">risks</governor>
+            <dependent idx="14">researcher</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="17">Hawk</governor>
+            <dependent idx="16">Alyssa</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="14">researcher</governor>
+            <dependent idx="17">Hawk</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="21">caught</governor>
+            <dependent idx="20">getting</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="19">risks</governor>
+            <dependent idx="21">caught</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="23">save</governor>
+            <dependent idx="22">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="21">caught</governor>
+            <dependent idx="23">save</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="25">dolphin</governor>
+            <dependent idx="24">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="23">save</governor>
+            <dependent idx="25">dolphin</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="advmod">
+            <governor idx="5">abducts</governor>
+            <dependent idx="1">When</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">Navy</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Navy</governor>
+            <dependent idx="3">US</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">abducts</governor>
+            <dependent idx="4">Navy</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="19">risks</governor>
+            <dependent idx="5">abducts</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">dolphin</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">dolphin</governor>
+            <dependent idx="7">scientific</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">dolphin</governor>
+            <dependent idx="8">research</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">abducts</governor>
+            <dependent idx="9">dolphin</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">researcher</governor>
+            <dependent idx="11">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="14">researcher</governor>
+            <dependent idx="12">teenage</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">researcher</governor>
+            <dependent idx="13">dolphin</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="19">risks</governor>
+            <dependent idx="14">researcher</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="17">Hawk</governor>
+            <dependent idx="16">Alyssa</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="14">researcher</governor>
+            <dependent idx="17">Hawk</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="21">caught</governor>
+            <dependent idx="20">getting</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="19">risks</governor>
+            <dependent idx="21">caught</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="23">save</governor>
+            <dependent idx="22">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="21">caught</governor>
+            <dependent idx="23">save</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="25">dolphin</governor>
+            <dependent idx="24">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="23">save</governor>
+            <dependent idx="25">dolphin</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+    </sentences>
+    <coreference>
+      <coreference>
+        <mention representative="true">
+          <sentence>1</sentence>
+          <start>4</start>
+          <end>8</end>
+          <head>6</head>
+        </mention>
+        <mention>
+          <sentence>2</sentence>
+          <start>2</start>
+          <end>5</end>
+          <head>4</head>
+        </mention>
+      </coreference>
+      <coreference>
+        <mention representative="true">
+          <sentence>2</sentence>
+          <start>6</start>
+          <end>10</end>
+          <head>9</head>
+        </mention>
+        <mention>
+          <sentence>2</sentence>
+          <start>24</start>
+          <end>26</end>
+          <head>25</head>
+        </mention>
+      </coreference>
+      <coreference>
+        <mention representative="true">
+          <sentence>2</sentence>
+          <start>16</start>
+          <end>18</end>
+          <head>17</head>
+        </mention>
+        <mention>
+          <sentence>2</sentence>
+          <start>11</start>
+          <end>19</end>
+          <head>14</head>
+        </mention>
+        <mention>
+          <sentence>2</sentence>
+          <start>11</start>
+          <end>15</end>
+          <head>14</head>
+        </mention>
+      </coreference>
+    </coreference>
+  </document>
+</root>

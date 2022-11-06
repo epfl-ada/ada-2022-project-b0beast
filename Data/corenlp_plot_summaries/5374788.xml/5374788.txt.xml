@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>While</word>
+            <lemma>while</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>playing</word>
+            <lemma>play</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>VBG</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>golf</word>
+            <lemma>golf</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>Fred</word>
+            <lemma>Fred</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+          </token>
+          <token id="6">
+            <word>Johnson</word>
+            <lemma>Johnson</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+          </token>
+          <token id="7">
+            <word>hits</word>
+            <lemma>hit</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>ball</word>
+            <lemma>ball</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>out</word>
+            <lemma>out</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>bounds</word>
+            <lemma>bound</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>58</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>58</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (SBAR (IN While) (S (VP (VBG playing) (NP (NN golf))))) (, ,) (NP (NNP Fred) (NNP Johnson)) (VP (VBZ hits) (PP (ADVP (NP (DT a) (NN ball)) (IN out)) (IN of) (NP (NNS bounds)))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="mark">
+            <governor idx="2">playing</governor>
+            <dependent idx="1">While</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="7">hits</governor>
+            <dependent idx="2">playing</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">playing</governor>
+            <dependent idx="3">golf</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Johnson</governor>
+            <dependent idx="5">Fred</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">hits</governor>
+            <dependent idx="6">Johnson</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">ball</governor>
+            <dependent idx="8">a</dependent>
+          </dep>
+          <dep type="npadvmod">
+            <governor idx="10">out</governor>
+            <dependent idx="9">ball</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="11">of</governor>
+            <dependent idx="10">out</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="7">hits</governor>
+            <dependent idx="11">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="11">of</governor>
+            <dependent idx="12">bounds</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="mark">
+            <governor idx="2">playing</governor>
+            <dependent idx="1">While</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="7">hits</governor>
+            <dependent idx="2">playing</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">playing</governor>
+            <dependent idx="3">golf</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Johnson</governor>
+            <dependent idx="5">Fred</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">hits</governor>
+            <dependent idx="6">Johnson</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">ball</governor>
+            <dependent idx="8">a</dependent>
+          </dep>
+          <dep type="npadvmod">
+            <governor idx="7">hits</governor>
+            <dependent idx="9">ball</dependent>
+          </dep>
+          <dep type="prep_out_of">
+            <governor idx="7">hits</governor>
+            <dependent idx="12">bounds</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="mark">
+            <governor idx="2">playing</governor>
+            <dependent idx="1">While</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="7">hits</governor>
+            <dependent idx="2">playing</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">playing</governor>
+            <dependent idx="3">golf</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Johnson</governor>
+            <dependent idx="5">Fred</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">hits</governor>
+            <dependent idx="6">Johnson</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">ball</governor>
+            <dependent idx="8">a</dependent>
+          </dep>
+          <dep type="npadvmod">
+            <governor idx="7">hits</governor>
+            <dependent idx="9">ball</dependent>
+          </dep>
+          <dep type="prep_out_of">
+            <governor idx="7">hits</governor>
+            <dependent idx="12">bounds</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>When</word>
+            <lemma>when</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>64</CharacterOffsetEnd>
+            <POS>WRB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>he</word>
+            <lemma>he</lemma>
+            <CharacterOffsetBegin>65</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>goes</word>
+            <lemma>go</lemma>
+            <CharacterOffsetBegin>68</CharacterOffsetBegin>
+            <CharacterOffsetEnd>72</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>73</CharacterOffsetBegin>
+            <CharacterOffsetEnd>75</CharacterOffsetEnd>
+            <POS>TO</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>retrieve</word>
+            <lemma>retrieve</lemma>
+            <CharacterOffsetBegin>76</CharacterOffsetBegin>
+            <CharacterOffsetEnd>84</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>it</word>
+            <lemma>it</lemma>
+            <CharacterOffsetBegin>85</CharacterOffsetBegin>
+            <CharacterOffsetEnd>87</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>87</CharacterOffsetBegin>
+            <CharacterOffsetEnd>88</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>he</word>
+            <lemma>he</lemma>
+            <CharacterOffsetBegin>89</CharacterOffsetBegin>
+            <CharacterOffsetEnd>91</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>witnesses</word>
+            <lemma>witness</lemma>
+            <CharacterOffsetBegin>92</CharacterOffsetBegin>
+            <CharacterOffsetEnd>101</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>102</CharacterOffsetBegin>
+            <CharacterOffsetEnd>103</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>crime</word>
+            <lemma>crime</lemma>
+            <CharacterOffsetBegin>104</CharacterOffsetBegin>
+            <CharacterOffsetEnd>109</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>110</CharacterOffsetBegin>
+            <CharacterOffsetEnd>112</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>progress</word>
+            <lemma>progress</lemma>
+            <CharacterOffsetBegin>113</CharacterOffsetBegin>
+            <CharacterOffsetEnd>121</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="14">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>121</CharacterOffsetBegin>
+            <CharacterOffsetEnd>122</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (SBAR (WHADVP (WRB When)) (S (NP (PRP he)) (VP (VBZ goes) (S (VP (TO to) (VP (VB retrieve) (NP (NP (PRP it)) (, ,) (NP (NP (PRP he) (NNS witnesses)) (NP (DT a) (NN crime)))) (PP (IN in) (NP (NN progress))))))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="advmod">
+            <governor idx="3">goes</governor>
+            <dependent idx="1">When</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">goes</governor>
+            <dependent idx="2">he</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">retrieve</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">goes</governor>
+            <dependent idx="5">retrieve</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">retrieve</governor>
+            <dependent idx="6">it</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="9">witnesses</governor>
+            <dependent idx="8">he</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="6">it</governor>
+            <dependent idx="9">witnesses</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">crime</governor>
+            <dependent idx="10">a</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="9">witnesses</governor>
+            <dependent idx="11">crime</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">retrieve</governor>
+            <dependent idx="12">in</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="12">in</governor>
+            <dependent idx="13">progress</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="advmod">
+            <governor idx="3">goes</governor>
+            <dependent idx="1">When</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">goes</governor>
+            <dependent idx="2">he</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">retrieve</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">goes</governor>
+            <dependent idx="5">retrieve</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">retrieve</governor>
+            <dependent idx="6">it</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="9">witnesses</governor>
+            <dependent idx="8">he</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="6">it</governor>
+            <dependent idx="9">witnesses</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">crime</governor>
+            <dependent idx="10">a</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="9">witnesses</governor>
+            <dependent idx="11">crime</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="5">retrieve</governor>
+            <dependent idx="13">progress</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="advmod">
+            <governor idx="3">goes</governor>
+            <dependent idx="1">When</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">goes</governor>
+            <dependent idx="2">he</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">retrieve</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">goes</governor>
+            <dependent idx="5">retrieve</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">retrieve</governor>
+            <dependent idx="6">it</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="9">witnesses</governor>
+            <dependent idx="8">he</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="6">it</governor>
+            <dependent idx="9">witnesses</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">crime</governor>
+            <dependent idx="10">a</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="9">witnesses</governor>
+            <dependent idx="11">crime</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="5">retrieve</governor>
+            <dependent idx="13">progress</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+    </sentences>
+    <coreference>
+      <coreference>
+        <mention representative="true">
+          <sentence>1</sentence>
+          <start>5</start>
+          <end>7</end>
+          <head>6</head>
+        </mention>
+        <mention>
+          <sentence>2</sentence>
+          <start>2</start>
+          <end>3</end>
+          <head>2</head>
+        </mention>
+        <mention>
+          <sentence>2</sentence>
+          <start>8</start>
+          <end>9</end>
+          <head>8</head>
+        </mention>
+      </coreference>
+      <coreference>
+        <mention representative="true">
+          <sentence>1</sentence>
+          <start>8</start>
+          <end>10</end>
+          <head>9</head>
+        </mention>
+        <mention>
+          <sentence>2</sentence>
+          <start>6</start>
+          <end>12</end>
+          <head>6</head>
+        </mention>
+        <mention>
+          <sentence>2</sentence>
+          <start>6</start>
+          <end>7</end>
+          <head>6</head>
+        </mention>
+      </coreference>
+    </coreference>
+  </document>
+</root>

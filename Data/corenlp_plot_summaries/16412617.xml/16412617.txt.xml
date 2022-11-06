@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Racehorse</word>
+            <lemma>racehorse</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>Trainer</word>
+            <lemma>trainer</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>Gerald</word>
+            <lemma>Gerald</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+          </token>
+          <token id="4">
+            <word>Coates</word>
+            <lemma>Coates</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+          </token>
+          <token id="5">
+            <word>kills</word>
+            <lemma>kill</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>his</word>
+            <lemma>he</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>wife</word>
+            <lemma>wife</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>Babs</word>
+            <lemma>bab</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>PERSON</NER>
+          </token>
+          <token id="9">
+            <word>during</word>
+            <lemma>during</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>an</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>61</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>argument</word>
+            <lemma>argument</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>72</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>72</CharacterOffsetBegin>
+            <CharacterOffsetEnd>73</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NN Racehorse) (NN Trainer) (NNP Gerald) (NNP Coates)) (VP (VBZ kills) (NP (PRP$ his) (NN wife) (NNS Babs)) (PP (IN during) (NP (DT an) (NN argument)))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="4">Coates</governor>
+            <dependent idx="1">Racehorse</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Coates</governor>
+            <dependent idx="2">Trainer</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Coates</governor>
+            <dependent idx="3">Gerald</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">kills</governor>
+            <dependent idx="4">Coates</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="8">Babs</governor>
+            <dependent idx="6">his</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">Babs</governor>
+            <dependent idx="7">wife</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">kills</governor>
+            <dependent idx="8">Babs</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">kills</governor>
+            <dependent idx="9">during</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">argument</governor>
+            <dependent idx="10">an</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="9">during</governor>
+            <dependent idx="11">argument</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="4">Coates</governor>
+            <dependent idx="1">Racehorse</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Coates</governor>
+            <dependent idx="2">Trainer</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Coates</governor>
+            <dependent idx="3">Gerald</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">kills</governor>
+            <dependent idx="4">Coates</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="8">Babs</governor>
+            <dependent idx="6">his</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">Babs</governor>
+            <dependent idx="7">wife</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">kills</governor>
+            <dependent idx="8">Babs</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">argument</governor>
+            <dependent idx="10">an</dependent>
+          </dep>
+          <dep type="prep_during">
+            <governor idx="5">kills</governor>
+            <dependent idx="11">argument</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="4">Coates</governor>
+            <dependent idx="1">Racehorse</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Coates</governor>
+            <dependent idx="2">Trainer</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Coates</governor>
+            <dependent idx="3">Gerald</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">kills</governor>
+            <dependent idx="4">Coates</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="8">Babs</governor>
+            <dependent idx="6">his</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">Babs</governor>
+            <dependent idx="7">wife</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">kills</governor>
+            <dependent idx="8">Babs</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">argument</governor>
+            <dependent idx="10">an</dependent>
+          </dep>
+          <dep type="prep_during">
+            <governor idx="5">kills</governor>
+            <dependent idx="11">argument</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>Grand</word>
+            <lemma>Grand</lemma>
+            <CharacterOffsetBegin>73</CharacterOffsetBegin>
+            <CharacterOffsetEnd>78</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>MISC</NER>
+          </token>
+          <token id="2">
+            <word>National</word>
+            <lemma>National</lemma>
+            <CharacterOffsetBegin>79</CharacterOffsetBegin>
+            <CharacterOffsetEnd>87</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>MISC</NER>
+          </token>
+          <token id="3">
+            <word>Night</word>
+            <lemma>Night</lemma>
+            <CharacterOffsetBegin>88</CharacterOffsetBegin>
+            <CharacterOffsetEnd>93</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>TIME</NER>
+            <NormalizedNER>TNI</NormalizedNER>
+            <Timex tid="t1" type="TIME">TNI</Timex>
+          </token>
+          <token id="4">
+            <word>-</word>
+            <lemma>-</lemma>
+            <CharacterOffsetBegin>94</CharacterOffsetBegin>
+            <CharacterOffsetEnd>95</CharacterOffsetEnd>
+            <POS>:</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>Trailer</word>
+            <lemma>Trailer</lemma>
+            <CharacterOffsetBegin>96</CharacterOffsetBegin>
+            <CharacterOffsetEnd>103</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>-</word>
+            <lemma>-</lemma>
+            <CharacterOffsetBegin>104</CharacterOffsetBegin>
+            <CharacterOffsetEnd>105</CharacterOffsetEnd>
+            <POS>:</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>Cast</word>
+            <lemma>cast</lemma>
+            <CharacterOffsetBegin>106</CharacterOffsetBegin>
+            <CharacterOffsetEnd>110</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>-</word>
+            <lemma>-</lemma>
+            <CharacterOffsetBegin>111</CharacterOffsetBegin>
+            <CharacterOffsetEnd>112</CharacterOffsetEnd>
+            <POS>:</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>Showtimes</word>
+            <lemma>showtime</lemma>
+            <CharacterOffsetBegin>113</CharacterOffsetBegin>
+            <CharacterOffsetEnd>122</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="10">
+            <word>-</word>
+            <lemma>-</lemma>
+            <CharacterOffsetBegin>123</CharacterOffsetBegin>
+            <CharacterOffsetEnd>124</CharacterOffsetEnd>
+            <POS>:</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>The</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>125</CharacterOffsetBegin>
+            <CharacterOffsetEnd>128</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>New</word>
+            <lemma>New</lemma>
+            <CharacterOffsetBegin>129</CharacterOffsetBegin>
+            <CharacterOffsetEnd>132</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="13">
+            <word>York</word>
+            <lemma>York</lemma>
+            <CharacterOffsetBegin>133</CharacterOffsetBegin>
+            <CharacterOffsetEnd>137</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+          <token id="14">
+            <word>Times</word>
+            <lemma>Times</lemma>
+            <CharacterOffsetBegin>138</CharacterOffsetBegin>
+            <CharacterOffsetEnd>143</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>ORGANIZATION</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP-TMP (NP (NNP Grand) (NNP National) (NNP Night)) (VP (PRN (: -) (NP (NNP Trailer)) (: -)) (VBN Cast))) (: -) (NP (NP (NNS Showtimes)) (: -) (NP (DT The) (NNP New) (NNP York) (NNP Times))))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="3">Night</governor>
+            <dependent idx="1">Grand</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Night</governor>
+            <dependent idx="2">National</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="7">Cast</governor>
+            <dependent idx="5">Trailer</dependent>
+          </dep>
+          <dep type="partmod">
+            <governor idx="3">Night</governor>
+            <dependent idx="7">Cast</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Night</governor>
+            <dependent idx="9">Showtimes</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">Times</governor>
+            <dependent idx="11">The</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">Times</governor>
+            <dependent idx="12">New</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">Times</governor>
+            <dependent idx="13">York</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="9">Showtimes</governor>
+            <dependent idx="14">Times</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="3">Night</governor>
+            <dependent idx="1">Grand</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Night</governor>
+            <dependent idx="2">National</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="7">Cast</governor>
+            <dependent idx="5">Trailer</dependent>
+          </dep>
+          <dep type="partmod">
+            <governor idx="3">Night</governor>
+            <dependent idx="7">Cast</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Night</governor>
+            <dependent idx="9">Showtimes</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">Times</governor>
+            <dependent idx="11">The</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">Times</governor>
+            <dependent idx="12">New</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">Times</governor>
+            <dependent idx="13">York</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="9">Showtimes</governor>
+            <dependent idx="14">Times</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="3">Night</governor>
+            <dependent idx="1">Grand</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Night</governor>
+            <dependent idx="2">National</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="7">Cast</governor>
+            <dependent idx="5">Trailer</dependent>
+          </dep>
+          <dep type="partmod">
+            <governor idx="3">Night</governor>
+            <dependent idx="7">Cast</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Night</governor>
+            <dependent idx="9">Showtimes</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">Times</governor>
+            <dependent idx="11">The</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">Times</governor>
+            <dependent idx="12">New</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">Times</governor>
+            <dependent idx="13">York</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="9">Showtimes</governor>
+            <dependent idx="14">Times</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+    </sentences>
+    <coreference>
+      <coreference>
+        <mention representative="true">
+          <sentence>1</sentence>
+          <start>1</start>
+          <end>5</end>
+          <head>4</head>
+        </mention>
+        <mention>
+          <sentence>1</sentence>
+          <start>6</start>
+          <end>7</end>
+          <head>6</head>
+        </mention>
+      </coreference>
+    </coreference>
+  </document>
+</root>

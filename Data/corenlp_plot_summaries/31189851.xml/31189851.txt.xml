@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>The</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>plot</word>
+            <lemma>plot</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>concerns</word>
+            <lemma>concern</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>twin</word>
+            <lemma>twin</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>sisters</word>
+            <lemma>sister</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>one</word>
+            <lemma>one</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>NUMBER</NER>
+            <NormalizedNER>1.0</NormalizedNER>
+          </token>
+          <token id="8">
+            <word>good</word>
+            <lemma>good</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>other</word>
+            <lemma>other</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>evil</word>
+            <lemma>evil</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>57</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (DT The) (NN plot) (NNS concerns)) (NP (NP (JJ twin) (NNS sisters)) (, ,) (ADJP (NP (CD one)) (JJ good)) (, ,) (NP (DT the) (JJ other) (NN evil))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="det">
+            <governor idx="3">concerns</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">concerns</governor>
+            <dependent idx="2">plot</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">sisters</governor>
+            <dependent idx="4">twin</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">concerns</governor>
+            <dependent idx="5">sisters</dependent>
+          </dep>
+          <dep type="npadvmod">
+            <governor idx="8">good</governor>
+            <dependent idx="7">one</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">sisters</governor>
+            <dependent idx="8">good</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">evil</governor>
+            <dependent idx="10">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">evil</governor>
+            <dependent idx="11">other</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="5">sisters</governor>
+            <dependent idx="12">evil</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="det">
+            <governor idx="3">concerns</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">concerns</governor>
+            <dependent idx="2">plot</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">sisters</governor>
+            <dependent idx="4">twin</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">concerns</governor>
+            <dependent idx="5">sisters</dependent>
+          </dep>
+          <dep type="npadvmod">
+            <governor idx="8">good</governor>
+            <dependent idx="7">one</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">sisters</governor>
+            <dependent idx="8">good</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">evil</governor>
+            <dependent idx="10">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">evil</governor>
+            <dependent idx="11">other</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="5">sisters</governor>
+            <dependent idx="12">evil</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="det">
+            <governor idx="3">concerns</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">concerns</governor>
+            <dependent idx="2">plot</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">sisters</governor>
+            <dependent idx="4">twin</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">concerns</governor>
+            <dependent idx="5">sisters</dependent>
+          </dep>
+          <dep type="npadvmod">
+            <governor idx="8">good</governor>
+            <dependent idx="7">one</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">sisters</governor>
+            <dependent idx="8">good</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">evil</governor>
+            <dependent idx="10">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">evil</governor>
+            <dependent idx="11">other</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="5">sisters</governor>
+            <dependent idx="12">evil</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>-LRB-</word>
+            <lemma>-lrb-</lemma>
+            <CharacterOffsetBegin>57</CharacterOffsetBegin>
+            <CharacterOffsetEnd>58</CharacterOffsetEnd>
+            <POS>-LRB-</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>ref</word>
+            <lemma>ref</lemma>
+            <CharacterOffsetBegin>58</CharacterOffsetBegin>
+            <CharacterOffsetEnd>61</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>nameRare</word>
+            <lemma>namerare</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>70</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>Alfred</word>
+            <lemma>Alfred</lemma>
+            <CharacterOffsetBegin>71</CharacterOffsetBegin>
+            <CharacterOffsetEnd>77</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+          </token>
+          <token id="5">
+            <word>Hitchcock</word>
+            <lemma>Hitchcock</lemma>
+            <CharacterOffsetBegin>78</CharacterOffsetBegin>
+            <CharacterOffsetEnd>87</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+          </token>
+          <token id="6">
+            <word>film</word>
+            <lemma>film</lemma>
+            <CharacterOffsetBegin>88</CharacterOffsetBegin>
+            <CharacterOffsetEnd>92</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>footage</word>
+            <lemma>footage</lemma>
+            <CharacterOffsetBegin>93</CharacterOffsetBegin>
+            <CharacterOffsetEnd>100</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>uncovered</word>
+            <lemma>uncovered</lemma>
+            <CharacterOffsetBegin>101</CharacterOffsetBegin>
+            <CharacterOffsetEnd>110</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>|</word>
+            <lemma>|</lemma>
+            <CharacterOffsetBegin>111</CharacterOffsetBegin>
+            <CharacterOffsetEnd>112</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>urlBBC</word>
+            <lemma>urlbbc</lemma>
+            <CharacterOffsetBegin>112</CharacterOffsetBegin>
+            <CharacterOffsetEnd>118</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>News</word>
+            <lemma>news</lemma>
+            <CharacterOffsetBegin>119</CharacterOffsetBegin>
+            <CharacterOffsetEnd>123</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>|</word>
+            <lemma>|</lemma>
+            <CharacterOffsetBegin>124</CharacterOffsetBegin>
+            <CharacterOffsetEnd>125</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>NUMBER</NER>
+          </token>
+          <token id="13">
+            <word>date3</word>
+            <lemma>date3</lemma>
+            <CharacterOffsetBegin>125</CharacterOffsetBegin>
+            <CharacterOffsetEnd>130</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="14">
+            <word>August</word>
+            <lemma>August</lemma>
+            <CharacterOffsetBegin>131</CharacterOffsetBegin>
+            <CharacterOffsetEnd>137</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2011-08</NormalizedNER>
+            <Timex tid="t1" type="DATE">2011-08</Timex>
+          </token>
+          <token id="15">
+            <word>2011</word>
+            <lemma>2011</lemma>
+            <CharacterOffsetBegin>138</CharacterOffsetBegin>
+            <CharacterOffsetEnd>142</CharacterOffsetEnd>
+            <POS>CD</POS>
+            <NER>DATE</NER>
+            <NormalizedNER>2011-08</NormalizedNER>
+            <Timex tid="t1" type="DATE">2011-08</Timex>
+          </token>
+          <token id="16">
+            <word>-RCB-</word>
+            <lemma>-rcb-</lemma>
+            <CharacterOffsetBegin>142</CharacterOffsetBegin>
+            <CharacterOffsetEnd>143</CharacterOffsetEnd>
+            <POS>-RRB-</POS>
+            <NER>O</NER>
+          </token>
+          <token id="17">
+            <word>-RCB-</word>
+            <lemma>-rcb-</lemma>
+            <CharacterOffsetBegin>143</CharacterOffsetBegin>
+            <CharacterOffsetEnd>144</CharacterOffsetEnd>
+            <POS>-RRB-</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (PRN (-LRB- -LRB-) (NP (NP (NN ref) (NN nameRare) (NNP Alfred) (NNP Hitchcock)) (NP (NP (NN film) (NN footage)) (ADJP (ADJP (JJ uncovered)) (PRN (NP (NP (NN |) (NN urlBBC) (NN News)) (NP (NP (CD |) (NN date3)) (NP-TMP (NNP August) (CD 2011)))) (-RRB- -RCB-))))) (-RRB- -RCB-))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="5">Hitchcock</governor>
+            <dependent idx="2">ref</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Hitchcock</governor>
+            <dependent idx="3">nameRare</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Hitchcock</governor>
+            <dependent idx="4">Alfred</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">footage</governor>
+            <dependent idx="6">film</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">Hitchcock</governor>
+            <dependent idx="7">footage</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">footage</governor>
+            <dependent idx="8">uncovered</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">News</governor>
+            <dependent idx="9">|</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">News</governor>
+            <dependent idx="10">urlBBC</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="8">uncovered</governor>
+            <dependent idx="11">News</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="13">date3</governor>
+            <dependent idx="12">|</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="11">News</governor>
+            <dependent idx="13">date3</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="13">date3</governor>
+            <dependent idx="14">August</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="14">August</governor>
+            <dependent idx="15">2011</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="5">Hitchcock</governor>
+            <dependent idx="2">ref</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Hitchcock</governor>
+            <dependent idx="3">nameRare</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Hitchcock</governor>
+            <dependent idx="4">Alfred</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">footage</governor>
+            <dependent idx="6">film</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">Hitchcock</governor>
+            <dependent idx="7">footage</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">footage</governor>
+            <dependent idx="8">uncovered</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">News</governor>
+            <dependent idx="9">|</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">News</governor>
+            <dependent idx="10">urlBBC</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="8">uncovered</governor>
+            <dependent idx="11">News</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="13">date3</governor>
+            <dependent idx="12">|</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="11">News</governor>
+            <dependent idx="13">date3</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="13">date3</governor>
+            <dependent idx="14">August</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="14">August</governor>
+            <dependent idx="15">2011</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="5">Hitchcock</governor>
+            <dependent idx="2">ref</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Hitchcock</governor>
+            <dependent idx="3">nameRare</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Hitchcock</governor>
+            <dependent idx="4">Alfred</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">footage</governor>
+            <dependent idx="6">film</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">Hitchcock</governor>
+            <dependent idx="7">footage</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">footage</governor>
+            <dependent idx="8">uncovered</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">News</governor>
+            <dependent idx="9">|</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">News</governor>
+            <dependent idx="10">urlBBC</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="8">uncovered</governor>
+            <dependent idx="11">News</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="13">date3</governor>
+            <dependent idx="12">|</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="11">News</governor>
+            <dependent idx="13">date3</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="13">date3</governor>
+            <dependent idx="14">August</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="14">August</governor>
+            <dependent idx="15">2011</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+    </sentences>
+    <coreference>
+      <coreference>
+        <mention representative="true">
+          <sentence>1</sentence>
+          <start>4</start>
+          <end>13</end>
+          <head>5</head>
+        </mention>
+        <mention>
+          <sentence>1</sentence>
+          <start>4</start>
+          <end>6</end>
+          <head>5</head>
+        </mention>
+      </coreference>
+    </coreference>
+  </document>
+</root>

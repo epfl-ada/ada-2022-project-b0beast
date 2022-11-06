@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Yusaku</word>
+            <lemma>Yusaku</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+          </token>
+          <token id="2">
+            <word>Matsuda</word>
+            <lemma>Matsuda</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+          </token>
+          <token id="3">
+            <word>plays</word>
+            <lemma>play</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>an</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>23</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>ex-boxer</word>
+            <lemma>ex-boxer</lemma>
+            <CharacterOffsetBegin>24</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>who</word>
+            <lemma>who</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>WP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>killed</word>
+            <lemma>kill</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>VBD</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>an</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>opponent</word>
+            <lemma>opponent</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>during</word>
+            <lemma>during</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>62</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>63</CharacterOffsetBegin>
+            <CharacterOffsetEnd>64</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>fight</word>
+            <lemma>fight</lemma>
+            <CharacterOffsetBegin>65</CharacterOffsetBegin>
+            <CharacterOffsetEnd>70</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>70</CharacterOffsetBegin>
+            <CharacterOffsetEnd>71</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNP Yusaku) (NNP Matsuda)) (VP (VBZ plays) (NP (NP (DT an) (NN ex-boxer)) (SBAR (WHNP (WP who)) (S (VP (VBD killed) (NP (DT an) (NN opponent)) (PP (IN during) (NP (DT a) (NN fight)))))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nn">
+            <governor idx="2">Matsuda</governor>
+            <dependent idx="1">Yusaku</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">plays</governor>
+            <dependent idx="2">Matsuda</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">ex-boxer</governor>
+            <dependent idx="4">an</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">plays</governor>
+            <dependent idx="5">ex-boxer</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">killed</governor>
+            <dependent idx="6">who</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="5">ex-boxer</governor>
+            <dependent idx="7">killed</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">opponent</governor>
+            <dependent idx="8">an</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="7">killed</governor>
+            <dependent idx="9">opponent</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="7">killed</governor>
+            <dependent idx="10">during</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">fight</governor>
+            <dependent idx="11">a</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="10">during</governor>
+            <dependent idx="12">fight</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nn">
+            <governor idx="2">Matsuda</governor>
+            <dependent idx="1">Yusaku</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">plays</governor>
+            <dependent idx="2">Matsuda</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">ex-boxer</governor>
+            <dependent idx="4">an</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">plays</governor>
+            <dependent idx="5">ex-boxer</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">killed</governor>
+            <dependent idx="6">who</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="5">ex-boxer</governor>
+            <dependent idx="7">killed</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">opponent</governor>
+            <dependent idx="8">an</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="7">killed</governor>
+            <dependent idx="9">opponent</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">fight</governor>
+            <dependent idx="11">a</dependent>
+          </dep>
+          <dep type="prep_during">
+            <governor idx="7">killed</governor>
+            <dependent idx="12">fight</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nn">
+            <governor idx="2">Matsuda</governor>
+            <dependent idx="1">Yusaku</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">plays</governor>
+            <dependent idx="2">Matsuda</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">ex-boxer</governor>
+            <dependent idx="4">an</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">plays</governor>
+            <dependent idx="5">ex-boxer</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">killed</governor>
+            <dependent idx="6">who</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="5">ex-boxer</governor>
+            <dependent idx="7">killed</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">opponent</governor>
+            <dependent idx="8">an</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="7">killed</governor>
+            <dependent idx="9">opponent</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">fight</governor>
+            <dependent idx="11">a</dependent>
+          </dep>
+          <dep type="prep_during">
+            <governor idx="7">killed</governor>
+            <dependent idx="12">fight</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>He</word>
+            <lemma>he</lemma>
+            <CharacterOffsetBegin>72</CharacterOffsetBegin>
+            <CharacterOffsetEnd>74</CharacterOffsetEnd>
+            <POS>PRP</POS>
+            <NER>O</NER>
+          </token>
+          <token id="2">
+            <word>is</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>75</CharacterOffsetBegin>
+            <CharacterOffsetEnd>77</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="3">
+            <word>brought</word>
+            <lemma>bring</lemma>
+            <CharacterOffsetBegin>78</CharacterOffsetBegin>
+            <CharacterOffsetEnd>85</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="4">
+            <word>into</word>
+            <lemma>into</lemma>
+            <CharacterOffsetBegin>86</CharacterOffsetBegin>
+            <CharacterOffsetEnd>90</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="5">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>91</CharacterOffsetBegin>
+            <CharacterOffsetEnd>92</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="6">
+            <word>school</word>
+            <lemma>school</lemma>
+            <CharacterOffsetBegin>93</CharacterOffsetBegin>
+            <CharacterOffsetEnd>99</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="7">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>100</CharacterOffsetBegin>
+            <CharacterOffsetEnd>102</CharacterOffsetEnd>
+            <POS>TO</POS>
+            <NER>O</NER>
+          </token>
+          <token id="8">
+            <word>deal</word>
+            <lemma>deal</lemma>
+            <CharacterOffsetBegin>103</CharacterOffsetBegin>
+            <CharacterOffsetEnd>107</CharacterOffsetEnd>
+            <POS>VB</POS>
+            <NER>O</NER>
+          </token>
+          <token id="9">
+            <word>with</word>
+            <lemma>with</lemma>
+            <CharacterOffsetBegin>108</CharacterOffsetBegin>
+            <CharacterOffsetEnd>112</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="10">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>113</CharacterOffsetBegin>
+            <CharacterOffsetEnd>114</CharacterOffsetEnd>
+            <POS>DT</POS>
+            <NER>O</NER>
+          </token>
+          <token id="11">
+            <word>gang</word>
+            <lemma>gang</lemma>
+            <CharacterOffsetBegin>115</CharacterOffsetBegin>
+            <CharacterOffsetEnd>119</CharacterOffsetEnd>
+            <POS>NN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="12">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>120</CharacterOffsetBegin>
+            <CharacterOffsetEnd>122</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="13">
+            <word>disruptive</word>
+            <lemma>disruptive</lemma>
+            <CharacterOffsetBegin>123</CharacterOffsetBegin>
+            <CharacterOffsetEnd>133</CharacterOffsetEnd>
+            <POS>JJ</POS>
+            <NER>O</NER>
+          </token>
+          <token id="14">
+            <word>students</word>
+            <lemma>student</lemma>
+            <CharacterOffsetBegin>134</CharacterOffsetBegin>
+            <CharacterOffsetEnd>142</CharacterOffsetEnd>
+            <POS>NNS</POS>
+            <NER>O</NER>
+          </token>
+          <token id="15">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>142</CharacterOffsetBegin>
+            <CharacterOffsetEnd>143</CharacterOffsetEnd>
+            <POS>,</POS>
+            <NER>O</NER>
+          </token>
+          <token id="16">
+            <word>led</word>
+            <lemma>lead</lemma>
+            <CharacterOffsetBegin>144</CharacterOffsetBegin>
+            <CharacterOffsetEnd>147</CharacterOffsetEnd>
+            <POS>VBN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="17">
+            <word>by</word>
+            <lemma>by</lemma>
+            <CharacterOffsetBegin>148</CharacterOffsetBegin>
+            <CharacterOffsetEnd>150</CharacterOffsetEnd>
+            <POS>IN</POS>
+            <NER>O</NER>
+          </token>
+          <token id="18">
+            <word>Hiroshi</word>
+            <lemma>Hiroshi</lemma>
+            <CharacterOffsetBegin>151</CharacterOffsetBegin>
+            <CharacterOffsetEnd>158</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+          </token>
+          <token id="19">
+            <word>Tachi</word>
+            <lemma>Tachi</lemma>
+            <CharacterOffsetBegin>159</CharacterOffsetBegin>
+            <CharacterOffsetEnd>164</CharacterOffsetEnd>
+            <POS>NNP</POS>
+            <NER>PERSON</NER>
+          </token>
+          <token id="20">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>164</CharacterOffsetBegin>
+            <CharacterOffsetEnd>165</CharacterOffsetEnd>
+            <POS>.</POS>
+            <NER>O</NER>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (PRP He)) (VP (VBZ is) (VP (VBN brought) (PP (IN into) (NP (DT a) (NN school))) (S (VP (TO to) (VP (VB deal) (PP (IN with) (NP (NP (DT a) (NN gang)) (PP (IN of) (NP (NP (ADJP (JJ disruptive)) (NNS students)) (, ,) (VP (VBN led) (PP (IN by) (NP (NNP Hiroshi) (NNP Tachi))))))))))))) (. .))) </parse>
+        <basic-dependencies>
+          <dep type="nsubjpass">
+            <governor idx="3">brought</governor>
+            <dependent idx="1">He</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="3">brought</governor>
+            <dependent idx="2">is</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">brought</governor>
+            <dependent idx="4">into</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">school</governor>
+            <dependent idx="5">a</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">into</governor>
+            <dependent idx="6">school</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="8">deal</governor>
+            <dependent idx="7">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">brought</governor>
+            <dependent idx="8">deal</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="8">deal</governor>
+            <dependent idx="9">with</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">gang</governor>
+            <dependent idx="10">a</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="9">with</governor>
+            <dependent idx="11">gang</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="11">gang</governor>
+            <dependent idx="12">of</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="14">students</governor>
+            <dependent idx="13">disruptive</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="12">of</governor>
+            <dependent idx="14">students</dependent>
+          </dep>
+          <dep type="partmod">
+            <governor idx="14">students</governor>
+            <dependent idx="16">led</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="16">led</governor>
+            <dependent idx="17">by</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="19">Tachi</governor>
+            <dependent idx="18">Hiroshi</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="17">by</governor>
+            <dependent idx="19">Tachi</dependent>
+          </dep>
+        </basic-dependencies>
+        <collapsed-dependencies>
+          <dep type="nsubjpass">
+            <governor idx="3">brought</governor>
+            <dependent idx="1">He</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="3">brought</governor>
+            <dependent idx="2">is</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">school</governor>
+            <dependent idx="5">a</dependent>
+          </dep>
+          <dep type="prep_into">
+            <governor idx="3">brought</governor>
+            <dependent idx="6">school</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="8">deal</governor>
+            <dependent idx="7">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">brought</governor>
+            <dependent idx="8">deal</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">gang</governor>
+            <dependent idx="10">a</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="8">deal</governor>
+            <dependent idx="11">gang</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="14">students</governor>
+            <dependent idx="13">disruptive</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="11">gang</governor>
+            <dependent idx="14">students</dependent>
+          </dep>
+          <dep type="partmod">
+            <governor idx="14">students</governor>
+            <dependent idx="16">led</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="19">Tachi</governor>
+            <dependent idx="18">Hiroshi</dependent>
+          </dep>
+          <dep type="agent">
+            <governor idx="16">led</governor>
+            <dependent idx="19">Tachi</dependent>
+          </dep>
+        </collapsed-dependencies>
+        <collapsed-ccprocessed-dependencies>
+          <dep type="nsubjpass">
+            <governor idx="3">brought</governor>
+            <dependent idx="1">He</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="3">brought</governor>
+            <dependent idx="2">is</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">school</governor>
+            <dependent idx="5">a</dependent>
+          </dep>
+          <dep type="prep_into">
+            <governor idx="3">brought</governor>
+            <dependent idx="6">school</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="8">deal</governor>
+            <dependent idx="7">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">brought</governor>
+            <dependent idx="8">deal</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">gang</governor>
+            <dependent idx="10">a</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="8">deal</governor>
+            <dependent idx="11">gang</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="14">students</governor>
+            <dependent idx="13">disruptive</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="11">gang</governor>
+            <dependent idx="14">students</dependent>
+          </dep>
+          <dep type="partmod">
+            <governor idx="14">students</governor>
+            <dependent idx="16">led</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="19">Tachi</governor>
+            <dependent idx="18">Hiroshi</dependent>
+          </dep>
+          <dep type="agent">
+            <governor idx="16">led</governor>
+            <dependent idx="19">Tachi</dependent>
+          </dep>
+        </collapsed-ccprocessed-dependencies>
+      </sentence>
+    </sentences>
+    <coreference>
+      <coreference>
+        <mention representative="true">
+          <sentence>1</sentence>
+          <start>1</start>
+          <end>3</end>
+          <head>2</head>
+        </mention>
+        <mention>
+          <sentence>2</sentence>
+          <start>1</start>
+          <end>2</end>
+          <head>1</head>
+        </mention>
+      </coreference>
+      <coreference>
+        <mention representative="true">
+          <sentence>2</sentence>
+          <start>13</start>
+          <end>20</end>
+          <head>14</head>
+        </mention>
+        <mention>
+          <sentence>2</sentence>
+          <start>13</start>
+          <end>15</end>
+          <head>14</head>
+        </mention>
+      </coreference>
+    </coreference>
+  </document>
+</root>
