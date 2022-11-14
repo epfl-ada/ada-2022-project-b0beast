@@ -1,5 +1,3 @@
-# ada-2022-project-b0beast
-
 # What makes a movie successful? Examining the relation between characteristics of movies and their box office revenue with an emphasis on factors like diversity and gender
 
 ## Abstract (A 150 word description of the project idea and goals. What’s the motivation behind your project? What story would you like to tell, and why?)
@@ -19,7 +17,6 @@ Our idea would be to examine which characteristics of movies and their character
 ## Proposed additional datasets [if any] (List the additional dataset(s) you want to use (if any), and some ideas on how you expect to get, manage, process, and enrich it/them. Show us that you’ve read the docs and some examples, and that you have a clear idea on what to expect. Discuss data size and format if relevant. It is your responsibility to check that what you propose is feasible)
 
 ## Methods
-•	Train predictor
 
 ## Proposed timeline
 
@@ -30,7 +27,7 @@ Our idea would be to examine which characteristics of movies and their character
 
 
 
-
+# ada-2022-project-b0beast
 ## Base research "directions" (subject to change)
 ### 1. The changes of character types in movies over time as an indicator for transformation processes in society.
 Movies and their characters as a cultural phenomenon heavily influence our society and vice versa. Therefore, the changes of the traits and actions of the most common character types in movies (Hero, Villain etc.) over time could act as an indicator for general changes in society. Because of this, I want to find out which are the most common character types in the most successful movies for every year. The first step would be to rank all movies after box office revenue for each year, and then identify the most successful ones. Out of these movies, you can then pick out the main characters and analyze their traits and their actions. Both can be analyzed by scanning the plot summaries using Natural Language Processing, while the traits can additionally be analyzed through investigation of the actor metadata (Gender, Age, Height etc.). Afterwards, the found changes of character types in movies over the years can be outlined and be considered as an image of the advancements in society.
