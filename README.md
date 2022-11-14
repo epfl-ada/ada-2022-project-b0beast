@@ -7,13 +7,21 @@ Our idea would be to examine which characteristics of movies and their character
 
 ## Research Questions
 _(A list of research questions you would like to address during the project)_
+
 •	Which characteristics of movies are causing high movie box office revenue?
+
 •	Which characteristics of movies are causing low movie box office revenue?
+
 •	Are their differences in these characteristics between movies from the US and movies from the rest of the world?
+
 •	Did ethnical diversity in successful movies change over time?
+
 •	Did the gender ratio of the cast in successful movies change over time?
+
 •	Did the age distribution of men and women of the cast in successful movies change over time?
+
 •	What could have caused these changes?
+
 •	What can you infer from these changes about society?
 
 ## Proposed additional datasets (if any)
