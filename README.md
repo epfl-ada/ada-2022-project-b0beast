@@ -1,10 +1,12 @@
 # What makes a movie successful? Examining the relation between characteristics of movies and their box office revenue with an emphasis on factors like diversity and gender
 
-## Abstract (A 150 word description of the project idea and goals. What’s the motivation behind your project? What story would you like to tell, and why?)
+## Abstract 
+_(A 150 word description of the project idea and goals. What’s the motivation behind your project? What story would you like to tell, and why?)_
 
 Our idea would be to examine which characteristics of movies and their characters are causing high movie box office revenue. Since the movie business is a multi-billion-dollar industry, it would be very beneficial to know what sells and what does not. In order to add to this mainly capitalistic driven topic some more societal relevance, we would during the examination of these characteristics lay an emphasis on factors like ethnical diversity, gender ratio, and the age distribution between men and women in the cast and how it changed over the years. Since movies can be seen as a reflection of their time, the results of this analysis could act as an indicator for changes and advancements in society over time.
 
-## Research Questions (A list of research questions you would like to address during the project)
+## Research Questions
+_(A list of research questions you would like to address during the project)_
 •	Which characteristics of movies are causing high movie box office revenue?
 •	Which characteristics of movies are causing low movie box office revenue?
 •	Are their differences in these characteristics between movies from the US and movies from the rest of the world?
@@ -14,15 +16,18 @@ Our idea would be to examine which characteristics of movies and their character
 •	What could have caused these changes?
 •	What can you infer from these changes about society?
 
-## Proposed additional datasets [if any] (List the additional dataset(s) you want to use (if any), and some ideas on how you expect to get, manage, process, and enrich it/them. Show us that you’ve read the docs and some examples, and that you have a clear idea on what to expect. Discuss data size and format if relevant. It is your responsibility to check that what you propose is feasible)
+## Proposed additional datasets (if any)
+_(List the additional dataset(s) you want to use (if any), and some ideas on how you expect to get, manage, process, and enrich it/them. Show us that you’ve read the docs and some examples, and that you have a clear idea on what to expect. Discuss data size and format if relevant. It is your responsibility to check that what you propose is feasible)_
 
 ## Methods
 
 ## Proposed timeline
 
-## Organization within the team (A list of internal milestones up until project Milestone P3)
+## Organization within the team
+_(A list of internal milestones up until project Milestone P3)_
 
-## Questions for TAs (optional) (Add here any questions you have for us related to the proposed project)
+## Questions for TAs (optional)
+_(Add here any questions you have for us related to the proposed project)_
 
 
 
