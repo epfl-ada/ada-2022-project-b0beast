@@ -35,13 +35,14 @@ The movie business is a multi-billion-dollar industry. Therefore, it would be ve
 
 **Step 3: Searching for further patterns regarding the movie box office revenue (in preparation for step 4)**
 - Decide which features will be useful (TODO: Add list of useful features)
-- Process them to be interpretable by the Machine Learning model (TODO: Add processing steps (e.g. dummy variables))
+- Process the features to be interpretable by the Machine Learning model (TODO: Add processing steps (e.g. dummy variables))
 
 **Step 4: Train the regressor/classifier on movie box office revenue data**
 
 **Step 5: Create a datastory presenting the results**
 
 ## Proposed timeline
+
 - 02.12.22 Homework 2 deadline
 - 03.12.22 Start further analysis
 - 09.12.22 Discuss open questions in the project office hour
@@ -54,7 +55,5 @@ The movie business is a multi-billion-dollar industry. Therefore, it would be ve
 ## Organization within the team
 
 Split the work into pairs of two:
-
-• Further data analysis & create datastory: Colin, Jan
-
-• Implement and train the Machine Learning model & create website: Hendrik, Matthieu
+- Further data analysis & create datastory: Colin, Jan
+- Implement and train the Machine Learning model & create website: Hendrik, Matthieu
