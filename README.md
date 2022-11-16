@@ -18,7 +18,7 @@ The movie business is a multi-billion-dollar industry. Therefore, it would be ve
 
 ## Methods
 
-# Step 1: Data Wrangling (see data_wrangling.ipynb)
+### Step 1: Data Wrangling (see data_wrangling.ipynb)
 - Extract data from ethnicities, characters and movie datasets
 - Transform dates in the data from strings to datetime objects
 - Remove Freebase ID from features in JSON-format (e.g. language, countries, genres)
@@ -27,19 +27,19 @@ The movie business is a multi-billion-dollar industry. Therefore, it would be ve
 - Cluster ethnicites into five groups (for later usage)
 - Merge the data
 
-# Step 2: Data Exploration (see data_exploration.ipynb)
+### Step 2: Data Exploration (see data_exploration.ipynb)
 - Ensure that we have the required amount of valid data needed for our further analysis
 - Find patterns in the data regarding gender, ethnicities and age of the actors
 - Plot evolution of gender ratio, ethnical diversity and age distribution of the actors over the decades
 - Plot evolution of movie box office revenue in the US
 
-# Step 3: Searching for further patterns regarding the movie box office revenue (in preparation for step 4)
+### Step 3: Searching for further patterns regarding the movie box office revenue (in preparation for step 4)
 - Decide which features will be useful (TODO: Add list of useful features)
 - Process them to be interpretable by the Machine Learning model (TODO: Add processing steps (e.g. dummy variables))
 
-# Step 4: Train the regressor/classifier on movie box office revenue data
+### Step 4: Train the regressor/classifier on movie box office revenue data
 
-# Step 5: Create a datastory presenting the results
+### Step 5: Create a datastory presenting the results
 
 ## Proposed timeline
 - 02.12.22 Homework 2 deadline
