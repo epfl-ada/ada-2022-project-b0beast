@@ -4,7 +4,7 @@
 ## Abstract 
 _(A 150 word description of the project idea and goals. What’s the motivation behind your project? What story would you like to tell, and why?)_
 
-Our idea is to examine which characteristics of movies and their characters are causing high movie box office revenue. Since the movie business is a multi-billion-dollar industry, it would be very beneficial to know what sells and what does not. In order to add to this mainly capitalistic driven topic some more societal relevance, we would during the examination of these characteristics lay an emphasis on factors like ethnical diversity, gender ratio, and the age distribution between men and women in the cast and how it changed over the years. Since movies can be seen as a reflection of their time, the results of this analysis could act as an indicator for changes and advancements in society over time.
+Since the movie business is a multi-billion-dollar industry, it would be very beneficial to know what sells and what does not. Therefore, we want to examine which characteristics of movies and their characters are causing high movie box office revenue. In order to add to this mainly capitalistic driven topic some more societal relevance, we would during the examination of these characteristics lay an emphasis on factors like ethnical diversity, gender ratio, and the age distribution between men and women in the cast and how it changed over the years. Since movies can be seen as a reflection of their time, the results of this analysis could act as an indicator for changes and advancements in society over time.
 
 ## Research Questions
 _(A list of research questions you would like to address during the project)_
@@ -30,7 +30,15 @@ _(List the additional dataset(s) you want to use (if any), and some ideas on how
 
 ## Methods
 
+Step 1:
 
+Step 2:
+
+Step 3:
+
+Step 4:
+
+Step 5:
 
 ## Proposed timeline
 
