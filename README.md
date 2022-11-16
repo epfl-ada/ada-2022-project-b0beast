@@ -4,7 +4,7 @@
 ## Abstract 
 _(A 150 word description of the project idea and goals. What’s the motivation behind your project? What story would you like to tell, and why?)_
 
-Since the movie business is a multi-billion-dollar industry, it would be very beneficial to know what sells and what does not. Therefore, we want to examine which characteristics of movies and their characters are causing high movie box office revenue. In order to add to this mainly capitalistic driven topic some more societal relevance, we lay during the examination of these characteristics an emphasis on factors like ethnical diversity, gender ratio, and the age distribution between men and women in the cast and how it changed over the years. Because movies can be seen as a reflection of their time, the results of this analysis can act as an indicator for changes and advancements in society over time.
+The movie business is a multi-billion-dollar industry. Therefore it would be very beneficial to know what sells and what does not which is why we want to examine which characteristics of movies and their characters are causing high movie box office revenue. In order to add to this mainly capitalistic driven topic some more societal relevance, during the examination of these characteristics we lay an emphasis on factors like ethnical diversity, gender ratio, and the age distribution between men and women in the cast and how it changed over the years. Because movies can be seen as a reflection of their time, the results of this analysis can act as an indicator for changes and advancements in society over time.
 
 ## Research Questions
 _(A list of research questions you would like to address during the project)_
