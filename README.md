@@ -30,15 +30,26 @@ _(List the additional dataset(s) you want to use (if any), and some ideas on how
 
 ## Methods
 
-Step 1:
+Step 1: Data Wrangling
+- Extract data from ethnicities, characters and movie datasets
+- Transform dates in the data from strings to datetime objects
+- Remove Freebase ID from features in JSON-format (e.g. language, countries, genres)
+- Remove NaN values from various features in a context dependent manner in order to keep as much data as possible for the later analysis
+- Extract ethnicities names using SPARQL in python (see gen_ethnicites.ipynb)
+- Cluster ethnicites into five groups (for later usage) 
+- Merge the data
 
-Step 2:
+Step 2: Data Exploration
+- Ensure that we have the required amount of valid data needed for our further analysis
+- Find patterns in the data regarding gender, ethnicities and age of the actors
+- Plot evolution of gender ratio, ethnical diversity and age distribution of the actors over the decades (see data_exploration.ipynb)
 
-Step 3:
+Step 3: Searching for further patterns regarding the movie box office revenue (in preparation for step 4)
+- Decide which features will be useful (TODO: Add list of useful features)
 
-Step 4:
+Step 4: Train the regressor/classifier on movie box office revenue data
 
-Step 5:
+Step 5: Create a datastory presenting the results
 
 ## Proposed timeline
 
