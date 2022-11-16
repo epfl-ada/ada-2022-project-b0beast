@@ -30,7 +30,25 @@ _(List the additional dataset(s) you want to use (if any), and some ideas on how
 
 ## Methods
 
+
+
 ## Proposed timeline
+
+• 02.12.22 Homework 2 deadline
+
+• 03.12.22 Start further analysis
+
+• 09.12.22 Discuss open questions in the project office hour
+
+• 10.12.22 Start developing a first draft of the datastory
+
+• 16.12.22 Discuss open questions in the project office hour
+
+• 17.12.22 Finish the analysis
+
+• 19.12.22 Finish the datastory
+
+• 23.12.22 Milestone 3 deadline
 
 ## Organization within the team
 _(A list of internal milestones up until project Milestone P3)_
