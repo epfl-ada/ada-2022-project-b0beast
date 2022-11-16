@@ -55,5 +55,5 @@ The movie business is a multi-billion-dollar industry. Therefore, it would be ve
 ## Organization within the team
 
 Split the work into pairs of two:
-- Further data analysis & create datastory: Colin, Jan
-- Implement and train the Machine Learning model & create website: Hendrik, Matthieu
+Further data analysis & create datastory: Colin, Jan
+Implement and train the Machine Learning model & create website: Hendrik, Matthieu
