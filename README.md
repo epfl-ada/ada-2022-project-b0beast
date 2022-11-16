@@ -53,6 +53,14 @@ _(List the additional dataset(s) you want to use (if any), and some ideas on how
 ## Organization within the team
 _(A list of internal milestones up until project Milestone P3)_
 
+• Colin:
+
+• Hendrik:
+
+• Jan:
+
+• Matthieu:
+
 ## Questions for TAs (optional)
 _(Add here any questions you have for us related to the proposed project)_
 
