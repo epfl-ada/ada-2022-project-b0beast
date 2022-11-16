@@ -1,5 +1,5 @@
 # What makes a movie successful?
-**Examining the relation between characteristics of movies and their box office revenue with an emphasis on important factors like diversity and gender**
+**Examining the relation between characteristics of movies and their box office revenue with an emphasis on factors like diversity and gender**
 
 ## Abstract 
 _(A 150 word description of the project idea and goals. What’s the motivation behind your project? What story would you like to tell, and why?)_
