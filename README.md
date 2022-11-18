@@ -27,7 +27,7 @@ This dataset contains information on 45,000 movies released on or before July 20
 - gen_ethnicities.ipynb:: Get ethnicities from wikidata using sparql query
 - data_wrangling_tools.py:: Functions to easily load the cleaned datasets
 - gen/ethnicities.tsv::  Cointains all ethnicities and freebase ID's
-- gen/reports:: Folder which cointains reports created which ["pandas profiling"](https://pandas-profiling.ydata.ai)
+- gen/reports:: Folder which cointains reports created with [pandas profiling](https://pandas-profiling.ydata.ai)
 
 
 
