@@ -18,7 +18,7 @@ The movie business is a multi-billion-dollar industry. Therefore, it would be ve
 
 ## Proposed additional datasets
 
-In addition to the CMU dataset, we want to add the ["The Movies Dataset"](https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset) from Kaggle.
+In addition to the CMU dataset, we want to add "movies_metadata.csv" from the ["The Movies Dataset"](https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset) from Kaggle.
 This dataset contains information on 45,000 movies and it will add **TODO: add number** previously unknown values for the movie box office revenue. It also introduces new features which will be very interesting and beneficial for our further analysis, like for example the budget of a movie. A detailed description of the format and all further relevant information can be found on Kaggle.
 
 ## Methods
