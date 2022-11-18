@@ -39,8 +39,8 @@ This dataset contains information on 45,000 movies and it will add **TODO: add n
 - Plot evolution of movie box office revenue in the US
 
 **Step 3: Searching for further patterns regarding the movie box office revenue (in preparation for step 4)**
-- Decide which features will be useful (TODO: Add list of useful features)
-- Process the features to be interpretable by the Machine Learning model (TODO: Add processing steps (e.g. dummy variables))
+- Decide which features will be useful (**TODO: Add list of useful features**)
+- Process the features to be interpretable by the Machine Learning model (**TODO: Add processing steps (e.g. dummy variables)**)
 
 **Step 4: Train the regressor/classifier on movie box office revenue data**
 
