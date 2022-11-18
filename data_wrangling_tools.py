@@ -80,6 +80,8 @@ def load_imdb(imdb_file, columns=['original_title', 'revenue', 'budget', 'vote_a
 
     # remove wrongly formatted rows (only 3)
     imdb = imdb.drop(imdb[imdb['budget'].str.contains('.jpg')].index)
+
+    # convert date string to datetime objects
     imdb['release_date'] = pd.to_datetime(imdb['release_date'], format='%Y-%m-%d', errors='coerce')
 
     # convert numerical columns to float
