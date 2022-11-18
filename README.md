@@ -19,7 +19,17 @@ The movie business is a multi-billion-dollar industry. Therefore, it would be ve
 ## Proposed additional datasets
 
 In addition to the CMU dataset, we want to add "movies_metadata.csv" from the ["The Movies Dataset"](https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset) from Kaggle.
-This dataset contains information on 45,000 movies and it will add **TODO: add number** previously unknown values for the movie box office revenue. It also introduces new features which will be very interesting and beneficial for our further analysis, like for example the budget of a movie. A detailed description of the format and all further relevant information can be found on Kaggle.
+This dataset contains information on 45,000 movies released on or before July 2017. By doing a left join with the existing dataset we managed to add 1074 previously unknown values for the movie box office revenue. That's an increase by 12,78% to a total of 9475 known box office revenue values. It also introduces new features which will be very interesting and beneficial for our further analysis, like for example the budget of a movie. A detailed description of the format and all further relevant information can be found on Kaggle.
+
+## Files
+- data_exploration.ipynb:: Ananlysis on the dataset
+- data_wrangling.ipynb:: Load datasets, merge and clean
+- gen_ethnicities.ipynb:: Get ethnicities from wikidata using sparql query
+- data_wrangling_tools.py:: Functions to easily load the cleaned datasets
+- gen/ethnicities.tsv::  Cointains all ethnicities and freebase ID's
+- gen/reports:: Folder which cointains reports created which ["pandas profiling"](https://pandas-profiling.ydata.ai)
+
+
 
 ## Methods
 
