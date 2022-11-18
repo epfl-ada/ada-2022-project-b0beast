@@ -9,7 +9,7 @@ The movie business is a multi-billion-dollar industry. Therefore, it would be ve
 
 -	Which characteristics of movies are causing high movie box office revenue?
 -	Which characteristics of movies are causing low movie box office revenue?
--	Are their differences in these characteristics between movies from the US and movies from the rest of the world?
+-	Are there differences in these characteristics between movies from the US and movies from the rest of the world?
 -	Did ethnical diversity in successful movies change over time?
 -	Did the gender ratio of the cast in successful movies change over time?
 - Did the age distribution of men and women of the cast in successful movies change over time?
@@ -19,12 +19,12 @@ The movie business is a multi-billion-dollar industry. Therefore, it would be ve
 ## Proposed additional datasets
 
 In addition to the CMU dataset, we want to add the ["The Movies Dataset"](https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset) from Kaggle.
-This dataset contains information on 45,000 movies and it will add **TODO: add number** previously unknown values for the movie box office revenue. It also introduces new features which will be very interesting and beneficial for our further analysis like for example the budget of a movie. A detailed description of the format and all further relevant information can be found on Kaggle.
+This dataset contains information on 45,000 movies and it will add **TODO: add number** previously unknown values for the movie box office revenue. It also introduces new features which will be very interesting and beneficial for our further analysis, like for example the budget of a movie. A detailed description of the format and all further relevant information can be found on Kaggle.
 
 ## Methods
 
 **Step 1: Data Wrangling (see data_wrangling.ipynb)**
-- Extract data from ethnicities, characters and movie datasets
+- Extract data from ethnicities, characters, and movie datasets
 - Transform dates in the data from strings to datetime objects
 - Remove Freebase ID from features in JSON-format (e.g. language, countries, genres)
 - Remove NaN values from various features in a context dependent manner in order to keep as much data as possible for the later analysis
@@ -34,7 +34,7 @@ This dataset contains information on 45,000 movies and it will add **TODO: add n
 
 **Step 2: Data Exploration (see data_exploration.ipynb)**
 - Ensure that we have the required amount of valid data needed for our further analysis
-- Find patterns in the data regarding gender, ethnicities and age of the actors
+- Find patterns in the data regarding gender, ethnicities, and age of the actors
 - Plot evolution of gender ratio, ethnical diversity and age distribution of the actors over the decades
 - Plot evolution of movie box office revenue in the US
 
