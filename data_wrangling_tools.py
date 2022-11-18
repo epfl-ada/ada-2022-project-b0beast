@@ -106,7 +106,7 @@ def merge_characters_movies(characters, movies):
 def merge_movies_imdb(movies, imdb):
     df = pd.merge(movies, imdb, left_on='name', right_on='original_title', how='left')
 
-    # drop movies that have been duplicated during the merge TODO see it
+    # drop movies that have been duplicated during the merge
     df = df.drop_duplicates(subset=['name', 'vote_count', 'vote_average'])
 
     # fill the box_office revenue with the imdb revenue if it's missing
