@@ -48,13 +48,18 @@ This dataset contains information on 45,000 movies released on or before July 20
 - Plot evolution of gender ratio, ethnical diversity and age distribution of the actors over the decades
 - Plot evolution of movie box office revenue in the US
 
-**Step 3: Searching for further patterns regarding the movie box office revenue (in preparation for step 4)**
-- Decide which features will be useful (**TODO: Add list of useful features**)
-- Process the features to be interpretable by the Machine Learning model (**TODO: Add processing steps (e.g. dummy variables)**)
+**Step 3: Searching for further patterns regarding the movie box office revenue**
+- Divide the data into two groups: With box office revenue, and without.
+- Decide which features will be useful: release date, runtime, languages, countries, genres.
+- Process the features to be interpretable by the Machine Learning model:
+    - Treat outliers
+    - Normalize continuous data
+    - Apply one-hot encoding to labeled data
+- Train and validate several models and compare them on movies with box office revenue
+- For compatible models, extract weights and display features that play a big role in box office revenue.
+- Predict box office revenue for movies missing it
 
-**Step 4: Train the regressor/classifier on movie box office revenue data**
-
-**Step 5: Create a datastory presenting the results**
+**Step 4: Create a datastory presenting the results**
 
 ## Proposed timeline
 
