@@ -75,6 +75,19 @@ def clean_jsons(df_input, features=['countries', 'genres', 'languages']):
     return df
 
 
+def load_imdb(imdb_file, columns=['original_title', 'revenue', 'budget', 'vote_average', 'vote_count']):
+    imdb = pd.read_csv(imdb_file, usecols=columns)
+
+    # remove wrongly formatted rows (only 3)
+    imdb = imdb.drop(imdb[imdb['budget'].str.contains('.jpg')].index)
+
+    # convert numerical columns to float
+    imdb['revenue'] = imdb['revenue'].astype(float).apply(lambda x: np.nan if x == 0.0 else x)
+    imdb['budget'] = imdb['budget'].astype(float).apply(lambda x: np.nan if x == 0.0 else x)
+
+    return imdb
+
+
 def merge_characters_movies(characters, movies):
     # Movies and characters
     df = pd.merge(left=characters, right=movies, on='wiki_movie_id', how='left', suffixes=('_c', '_m'))
@@ -86,6 +99,19 @@ def merge_characters_movies(characters, movies):
 
     # change order of columns
     df = df[['wiki_movie_id','freebase_movie_id','movie_name','release_date','box_office_revenue','runtime','genres','languages','countries','char_name','a_name','a_gender','a_ethnicity','a_dob','a_age_at_release','a_height','freebase_char/a_map','freebase_char_id','freebase_a_id','a_ethnicity_freebase_id']]
+
+    return df
+
+
+def merge_movies_imdb(movies, imdb):
+    df = pd.merge(movies, imdb, left_on='name', right_on='original_title', how='left')
+
+    # drop movies that have been duplicated during the merge TODO see it
+    df = df.drop_duplicates(subset=['name', 'vote_count', 'vote_average'])
+
+    # fill the box_office revenue with the imdb revenue if it's missing
+    df['box_office_revenue'] = df['box_office_revenue'].fillna(df['revenue'].copy())
+    df = df.drop(columns=['revenue', 'original_title'])
 
     return df
 
@@ -103,5 +129,28 @@ def generate_clean_df(character_file, ethnicity_file, movie_file):
 
     # merge
     df = merge_characters_movies(characters, movies)
+
+    return df
+
+
+def generate_clean_df_with_imdb(character_file, ethnicity_file, movie_file, imdb_file):
+    # characters
+    characters = load_characters(character_file)
+    ethnicities = load_ethnicities(ethnicity_file)
+    characters = add_characters_ethnicities(characters, ethnicities)
+
+    # movies
+    movies = load_movies(movie_file)
+    movies = clean_unknowns(movies)
+    movies = clean_jsons(movies)
+
+    # imdb movies
+    imdb = load_imdb(imdb_file)
+
+    # merge movies and imdb movies
+    df = merge_movies_imdb(movies, imdb)
+
+    # merge movies and characters
+    df = merge_characters_movies(characters, df)
 
     return df
