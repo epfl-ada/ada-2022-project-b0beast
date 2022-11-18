@@ -75,11 +75,12 @@ def clean_jsons(df_input, features=['countries', 'genres', 'languages']):
     return df
 
 
-def load_imdb(imdb_file, columns=['original_title', 'revenue', 'budget', 'vote_average', 'vote_count']):
+def load_imdb(imdb_file, columns=['original_title', 'revenue', 'budget', 'vote_average', 'vote_count', 'release_date']):
     imdb = pd.read_csv(imdb_file, usecols=columns)
 
     # remove wrongly formatted rows (only 3)
     imdb = imdb.drop(imdb[imdb['budget'].str.contains('.jpg')].index)
+    imdb['release_date'] = pd.to_datetime(imdb['release_date'], format='%Y-%m-%d', errors='coerce')
 
     # convert numerical columns to float
     imdb['revenue'] = imdb['revenue'].astype(float).apply(lambda x: np.nan if x == 0.0 else x)
@@ -104,15 +105,14 @@ def merge_characters_movies(characters, movies):
 
 
 def merge_movies_imdb(movies, imdb):
-    df = pd.merge(movies, imdb, left_on='name', right_on='original_title', how='left')
-
-    # drop movies that have been duplicated during the merge
-    df = df.drop_duplicates(subset=['name', 'vote_count', 'vote_average'])
+    df = pd.merge(movies, imdb, left_on=[movies['name'], movies['release_date'].dt.year], 
+        right_on=[imdb['original_title'], imdb['release_date'].dt.year], how='left')
+    df = df.rename({'release_date_x': 'release_date'}, axis=1)
 
     # fill the box_office revenue with the imdb revenue if it's missing
     df['box_office_revenue'] = df['box_office_revenue'].fillna(df['revenue'].copy())
-    df = df.drop(columns=['revenue', 'original_title'])
-
+    df = df.drop(columns=['revenue', 'original_title', 'key_0', 'key_1', 'release_date_y'])
+    
     return df
 
 
