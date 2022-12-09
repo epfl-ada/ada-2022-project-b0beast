@@ -64,13 +64,13 @@ def clean_jsons(df_input, features=['countries', 'genres', 'languages']):
         Replace json dictionnaries for countries, genres and languages
     """
 
-    def extract_feature(json):
+    def extract_feature(json_):
         """
             Replace json dictionnaries with list of their values
         """
-        if json is np.nan:
+        if json_ is np.nan:
             return np.nan
-        return list(ast.literal_eval(json).values())
+        return list(ast.literal_eval(json_).values())
 
     df = df_input.copy()
     
