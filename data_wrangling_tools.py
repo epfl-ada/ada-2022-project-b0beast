@@ -2,7 +2,14 @@ import pandas as pd
 import numpy as np
 import ast
 
+#
+# DATASET LOADING
+#
+
 def load_characters(character_file):
+    """
+        TODO fill it
+    """
     character_columns = ['wiki_movie_id', 'freebase_movie_id', 'm_release_date', 'name', 'a_dob', 'a_gender', 'a_height', 'a_ethnicity_freebase_id', 'a_name', 'a_age_at_release', 'freebase_char/a_map', 'freebase_char_id', 'freebase_a_id']
     characters = pd.read_csv(character_file, sep='\t', names=character_columns, index_col=False)
 
@@ -16,12 +23,18 @@ def load_characters(character_file):
 
 
 def load_ethnicities(ethnicity_file, etchnicity_clusters={1: 'White', 2: 'Black', 3: 'Asian', 4: 'Latino', 5: 'Native / Indigenous people'}):
+    """
+        TODO fill it
+    """
     ethnicities = pd.read_csv(ethnicity_file, sep='\t', header=None, names=['freebase_ethnicity_id', 'ethnicity_name', 'cluster_id'])
     ethnicities['ethnicity_cluster_name'] = ethnicities['cluster_id'].map(etchnicity_clusters)
     return ethnicities
 
 
 def add_characters_ethnicities(characters, ethnicities):
+    """
+        TODO fill it
+    """
     df = characters.copy()
     df = pd.merge(left=characters, right=ethnicities, left_on='a_ethnicity_freebase_id', right_on='freebase_ethnicity_id', how='left')
     df = df.drop(['a_ethnicity_freebase_id', 'freebase_ethnicity_id', 'ethnicity_name', 'cluster_id'], axis=1)
@@ -31,6 +44,9 @@ def add_characters_ethnicities(characters, ethnicities):
 
 
 def load_movies(movies_file):
+    """
+        TODO fill it
+    """
     movies_columns = ['wiki_movie_id', 'freebase_movie_id', 'name', 'release_date', 'box_office_revenue', 'runtime', 'languages', 'countries', 'genres']
     movies = pd.read_csv(movies_file, sep='\t', names=movies_columns) 
 
@@ -81,6 +97,9 @@ def clean_jsons(df_input, features=['countries', 'genres', 'languages']):
 
 
 def load_kaggle(kaggle_file, columns=['original_title', 'revenue', 'budget', 'vote_average', 'vote_count', 'release_date']):
+    """
+        TODO fill it
+    """
     kaggle = pd.read_csv(kaggle_file, usecols=columns)
 
     # remove wrongly formatted rows (only 3)
@@ -97,6 +116,9 @@ def load_kaggle(kaggle_file, columns=['original_title', 'revenue', 'budget', 'vo
 
 
 def merge_characters_movies(characters, movies):
+    """
+        TODO fill it
+    """
     # Movies and characters
     df = pd.merge(left=characters, right=movies, on='wiki_movie_id', how='left', suffixes=('_c', '_m'))
 
@@ -112,6 +134,9 @@ def merge_characters_movies(characters, movies):
 
 
 def merge_movies_kaggle(movies, kaggle):
+    """
+        TODO fill it
+    """
     df = pd.merge(movies, kaggle, left_on=[movies['name'], movies['release_date'].dt.year], 
         right_on=[kaggle['original_title'], kaggle['release_date'].dt.year], how='left')
     df = df.rename({'release_date_x': 'release_date'}, axis=1)
@@ -124,6 +149,9 @@ def merge_movies_kaggle(movies, kaggle):
 
 
 def generate_clean_df(character_file, ethnicity_file, movie_file):
+    """
+        TODO fill it
+    """
     # characters
     characters = load_characters(character_file)
     ethnicities = load_ethnicities(ethnicity_file)
@@ -141,6 +169,9 @@ def generate_clean_df(character_file, ethnicity_file, movie_file):
 
 
 def generate_clean_df_with_kaggle(character_file, ethnicity_file, movie_file, kaggle_file):
+    """
+        TODO fill it
+    """
     # characters
     characters = load_characters(character_file)
     ethnicities = load_ethnicities(ethnicity_file)
@@ -161,3 +192,23 @@ def generate_clean_df_with_kaggle(character_file, ethnicity_file, movie_file, ka
     df = merge_characters_movies(characters, df)
 
     return df
+
+
+#
+# DATA ANALYSIS
+#
+
+def filter_with_countries(df, target_countries, mode):
+    """
+        TODO fill it
+    """
+    # TODO drop na on every columns ?
+    if mode == 'all':
+        return df[df["countries"].apply(lambda x: all(country in x for country in target_countries))]
+    elif mode == 'any':
+        return df[df["countries"].apply(lambda x: any(country in x for country in target_countries))]
+    elif mode == 'only':
+        return df[df["countries"].apply(lambda x: set(x) == set(target_countries))]
+    else:
+        raise ValueError('mode must be one of [all, any, only]')
+
