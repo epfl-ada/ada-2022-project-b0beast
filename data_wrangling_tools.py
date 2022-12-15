@@ -22,12 +22,15 @@ def load_characters(character_file):
     return characters
 
 
-def load_ethnicities(ethnicity_file, etchnicity_clusters={1: 'White', 2: 'Black', 3: 'Asian', 4: 'Latino', 5: 'Native / Indigenous people'}):
+def load_ethnicities(ethnicity_file, etchnicity_clusters):
     """
         TODO fill it
     """
-    ethnicities = pd.read_csv(ethnicity_file, sep='\t', header=None, names=['freebase_ethnicity_id', 'ethnicity_name', 'cluster_id'])
+    ethnicities = pd.read_csv(ethnicity_file, sep='\t', header=None, names=['freebase_ethnicity_id', 'ethnicity_name', 'cluster_id', 'is_hispanic'])
+
     ethnicities['ethnicity_cluster_name'] = ethnicities['cluster_id'].map(etchnicity_clusters)
+    ethnicities['is_hispanic'] = ethnicities['is_hispanic'].map({'-': 0, '+': 1}).astype(int)
+
     return ethnicities
 
 
@@ -38,7 +41,7 @@ def add_characters_ethnicities(characters, ethnicities):
     df = characters.copy()
     df = pd.merge(left=characters, right=ethnicities, left_on='a_ethnicity_freebase_id', right_on='freebase_ethnicity_id', how='left')
     df = df.drop(['a_ethnicity_freebase_id', 'freebase_ethnicity_id', 'ethnicity_name', 'cluster_id'], axis=1)
-    df = df.rename(columns={'ethnicity_cluster_name': 'a_ethnicity'})
+    df = df.rename(columns={'ethnicity_cluster_name': 'a_ethnicity', 'is_hispanic': 'a_is_hispanic'})
 
     return df
 
@@ -148,13 +151,13 @@ def merge_movies_kaggle(movies, kaggle):
     return df
 
 
-def generate_clean_df(character_file, ethnicity_file, movie_file):
+def generate_clean_df(character_file, ethnicity_file, movie_file, etchnicity_clusters):
     """
         TODO fill it
     """
     # characters
     characters = load_characters(character_file)
-    ethnicities = load_ethnicities(ethnicity_file)
+    ethnicities = load_ethnicities(ethnicity_file, etchnicity_clusters)
     characters = add_characters_ethnicities(characters, ethnicities)
 
     # movies
@@ -168,13 +171,13 @@ def generate_clean_df(character_file, ethnicity_file, movie_file):
     return df
 
 
-def generate_clean_df_with_kaggle(character_file, ethnicity_file, movie_file, kaggle_file):
+def generate_clean_df_with_kaggle(character_file, ethnicity_file, movie_file, kaggle_file, etchnicity_clusters):
     """
         TODO fill it
     """
     # characters
     characters = load_characters(character_file)
-    ethnicities = load_ethnicities(ethnicity_file)
+    ethnicities = load_ethnicities(ethnicity_file, etchnicity_clusters)
     characters = add_characters_ethnicities(characters, ethnicities)
 
     # movies
