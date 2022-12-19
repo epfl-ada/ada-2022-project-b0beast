@@ -1,16 +1,17 @@
-# What makes a movie successful?
+# Does Diversity Pay Off?
 **Examining the relation between characteristics of movies and their box office revenue with an emphasis on factors like diversity and gender**
 
 ## Abstract
-
-The movie business is a multi-billion-dollar industry. Therefore, it would be very beneficial to know what sells and what does not, which is why we want to examine which characteristics of movies and their characters are causing high movie box office revenue. In order to add to this mainly capitalistic driven topic some more societal relevance, during the examination of these characteristics we lay an emphasis on factors like ethnical diversity, gender ratio, and the age distribution between men and women in the cast and how it changed over the years. Because movies can be seen as a reflection of their time, the results of this analysis can act as an indicator for changes and advancements in society over time.
-
+After in 2015 all 20 oscar acting nominations were awared to white people, the #OscarsSoWhite hastag, criticising the lack of diveristy in the film industry, went viral. But should the film industry comply with these demands purely for ethical reasons, or do capitalistically motivated actors in the film industry also benefit from a more diverse cast? To investigate whether a more diverse cast attracts a larger audience and thus achieves more financial success, we examine the box office revenue of the films in the ["CMU Movie Summary Corpus"](http://www.cs.cmu.edu/~ark/personas/) dataset. As a measure of diversity, we focus on ethnicity, gender, and age. In particular, we are interested in whether moviegoers' preference or rejection for movies with a more diverse cast has changed over the last 100 years.
+ 
+ 
 ## Research Questions
 
 -	Which characteristics of movies are causing high movie box office revenue?
 -	Which characteristics of movies are causing low movie box office revenue?
 -	Are there differences in these characteristics between movies from the US and movies from the rest of the world?
 -	Did ethnical diversity in successful movies change over time?
+-	Does ethnical diversity correlate with the box office revenue?
 -	Did the gender ratio of the cast in successful movies change over time?
 - Did the age distribution of men and women of the cast in successful movies change over time?
 - What could have caused these changes?
@@ -19,7 +20,15 @@ The movie business is a multi-billion-dollar industry. Therefore, it would be ve
 ## Proposed additional datasets
 
 In addition to the CMU dataset, we want to add "movies_metadata.csv" from the ["The Movies Dataset"](https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset) from Kaggle.
-This dataset contains information on 45,000 movies and it will add **TODO: add number** previously unknown values for the movie box office revenue. It also introduces new features which will be very interesting and beneficial for our further analysis, like for example the budget of a movie. A detailed description of the format and all further relevant information can be found on Kaggle.
+This dataset contains information on 45,000 movies released on or before July 2017. By doing a left join with the existing dataset we managed to add 1074 previously unknown values for the movie box office revenue. That's an increase by 12,78% to a total of 9475 known box office revenue values. It also introduces new features which will be very interesting and beneficial for our further analysis, like for example the budget of a movie. A detailed description of the format and all further relevant information can be found on Kaggle.
+
+## Files
+- data_exploration.ipynb:: Ananlysis on the dataset
+- data_wrangling.ipynb:: Load datasets, merge and clean
+- gen_ethnicities.ipynb:: Get ethnicities from wikidata using sparql query
+- data_wrangling_tools.py:: Functions to easily load the cleaned datasets
+- gen/ethnicities.tsv::  Cointains all ethnicities and freebase ID's
+- gen/reports:: Folder which cointains reports created with [pandas profiling](https://pandas-profiling.ydata.ai)
 
 ## Methods
 
@@ -38,13 +47,18 @@ This dataset contains information on 45,000 movies and it will add **TODO: add n
 - Plot evolution of gender ratio, ethnical diversity and age distribution of the actors over the decades
 - Plot evolution of movie box office revenue in the US
 
-**Step 3: Searching for further patterns regarding the movie box office revenue (in preparation for step 4)**
-- Decide which features will be useful (**TODO: Add list of useful features**)
-- Process the features to be interpretable by the Machine Learning model (**TODO: Add processing steps (e.g. dummy variables)**)
+**Step 3: Searching for further patterns regarding the movie box office revenue**
+- Divide the data into two groups: With box office revenue, and without.
+- Decide which features will be useful: release date, runtime, languages, countries, genres.
+- Process the features to be interpretable by the Machine Learning model:
+    - Treat outliers
+    - Normalize continuous data
+    - Apply one-hot encoding to labeled data
+- Train and validate several models and compare them on movies with box office revenue
+- For compatible models, extract weights and display features that play a big role in box office revenue.
+- Predict box office revenue for movies missing it
 
-**Step 4: Train the regressor/classifier on movie box office revenue data**
-
-**Step 5: Create a datastory presenting the results**
+**Step 4: Create a datastory presenting the results**
 
 ## Proposed timeline
 
