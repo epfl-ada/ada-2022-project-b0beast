@@ -25,6 +25,14 @@ def load_characters(character_file):
 def load_ethnicities(ethnicity_file, etchnicity_clusters):
     """
         TODO fill it
+
+        Clusters:
+        {1: 'White', 
+         2: 'Black / African American', 
+         3: 'Asian', 
+         4: 'American Indian / Alaska Native', 
+         5: 'Native Hawaiian / Other Pacific Islander',
+         6: 'Other'}
     """
     ethnicities = pd.read_csv(ethnicity_file, sep='\t', header=None, names=['freebase_ethnicity_id', 'ethnicity_name', 'cluster_id', 'is_hispanic'])
 
@@ -32,6 +40,7 @@ def load_ethnicities(ethnicity_file, etchnicity_clusters):
     ethnicities['is_hispanic'] = ethnicities['is_hispanic'].map({'-': 0, '+': 1}).astype(int)
 
     return ethnicities
+
 
 
 def add_characters_ethnicities(characters, ethnicities):
@@ -46,7 +55,7 @@ def add_characters_ethnicities(characters, ethnicities):
     return df
 
 
-def load_movies(movies_file):
+def load_cmu_movies(movies_file):
     """
         TODO fill it
     """
@@ -99,7 +108,7 @@ def clean_jsons(df_input, features=['countries', 'genres', 'languages']):
     return df
 
 
-def load_kaggle(kaggle_file, columns=['original_title', 'revenue', 'budget', 'vote_average', 'vote_count', 'release_date']):
+def load_kaggle_movies(kaggle_file, columns=['original_title', 'revenue', 'budget', 'vote_average', 'vote_count', 'release_date']):
     """
         TODO fill it
     """
@@ -136,7 +145,7 @@ def merge_characters_movies(characters, movies):
     return df
 
 
-def merge_movies_kaggle(movies, kaggle):
+def merge_cmu_kaggle_movies(movies, kaggle):
     """
         TODO fill it
     """
@@ -151,7 +160,61 @@ def merge_movies_kaggle(movies, kaggle):
     return df
 
 
-def generate_clean_df(character_file, ethnicity_file, movie_file, etchnicity_clusters):
+def load_inflation(inflation_file):
+    """
+        TODO fill it
+    """
+
+    inflation = pd.read_csv(inflation_file, index_col='year')
+    inflation = inflation.rename(columns={'amount': 'amount_1900'})	
+
+    reference_year = 2022
+    inflation_reference_year = inflation.loc[reference_year, 'amount_1900']
+
+    inflation['amount_2022'] = inflation['amount_1900'].apply(lambda x: inflation_reference_year / x)
+
+    return inflation
+
+
+def add_inflation_data(movies, inflation):
+    def inflation_adjustment(row, column):
+        if np.isnan(row[column]):
+            return np.nan
+            
+        return row[column] * inflation.loc[row['release_date'].year, 'amount_2022']
+    
+    movies['box_office_inflation'] = movies.apply(lambda x: inflation_adjustment(x, 'box_office_revenue'), axis=1)
+    movies['budget_inflation'] = movies.apply(lambda x: inflation_adjustment(x, 'budget'), axis=1)
+
+    return movies
+
+
+def add_missing_release_date(movies):
+    missing_release_dates = {
+        'The Impossible': '2008-07-18',
+        'The Outing': '2001-01-01',
+        'Into the Spider\'s Web': '2007-08-26',
+        'Melissa P.': '2005-01-01',
+        'The Lamp': '2000-01-01',
+        'The Bear': '2000-01-01',
+        'Meatballs III: Summer Job': '1987-01-01',
+        'The Steel Trap': '2000-01-01',
+        'Angels Die Hard': '2000-01-01',
+        'American Cyborg: Steel Warrior': '1993-01-01', 
+        'Shattered Image': '1992-01-01',
+        'The Ghost of Slumber Mountain': '2000-01-01',
+        'Iron Warrior': '1989-01-01'
+    }
+
+    for movie_name, release_date in missing_release_dates.items():
+        movies.loc[movies['name'] == movie_name, 'release_date'] = pd.to_datetime(release_date)
+
+    return movies
+
+
+def generate_clean_df(character_file, ethnicity_file, movies_file, 
+        kaggle_file, inflation_file, etchnicity_clusters, 
+        target_countries= ['United States of America']):
     """
         TODO fill it
     """
@@ -161,38 +224,30 @@ def generate_clean_df(character_file, ethnicity_file, movie_file, etchnicity_clu
     characters = add_characters_ethnicities(characters, ethnicities)
 
     # movies
-    movies = load_movies(movie_file)
-    movies = clean_unknowns(movies)
-    movies = clean_jsons(movies)
+    cmu_movies = load_cmu_movies(movies_file)
+    cmu_movies = clean_unknowns(cmu_movies)
+    cmu_movies = clean_jsons(cmu_movies)
 
-    # merge
-    df = merge_characters_movies(characters, movies)
+    # keep only U.S. movies
+    cmu_movies = filter_with_countries(cmu_movies, target_countries, 'any')
 
-    return df
-
-
-def generate_clean_df_with_kaggle(character_file, ethnicity_file, movie_file, kaggle_file, etchnicity_clusters):
-    """
-        TODO fill it
-    """
-    # characters
-    characters = load_characters(character_file)
-    ethnicities = load_ethnicities(ethnicity_file, etchnicity_clusters)
-    characters = add_characters_ethnicities(characters, ethnicities)
-
-    # movies
-    movies = load_movies(movie_file)
-    movies = clean_unknowns(movies)
-    movies = clean_jsons(movies)
+    # TODO: update this method to add something more clean
+    add_missing_release_date(cmu_movies)
 
     # kaggle movies
-    kaggle = load_kaggle(kaggle_file)
+    kaggle_movies = load_kaggle_movies(kaggle_file)
 
     # merge movies and kaggle movies
-    df = merge_movies_kaggle(movies, kaggle)
+    movies = merge_cmu_kaggle_movies(cmu_movies, kaggle_movies)
+
+    # inflation
+    inflation = load_inflation(inflation_file)
+
+    # add inflation data
+    movies = add_inflation_data(movies, inflation)
 
     # merge movies and characters
-    df = merge_characters_movies(characters, df)
+    df = merge_characters_movies(characters, movies)
 
     return df
 
