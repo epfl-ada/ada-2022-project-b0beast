@@ -17,20 +17,23 @@ In addition to the CMU dataset, we want to add "movies_metadata.csv" from the ["
 This dataset contains information on 45,000 movies released on or before July 2017. By doing a left join with the existing dataset we managed to add 1074 previously unknown values for the movie box office revenue. That's an increase by 12,78% to a total of 9475 known box office revenue values. It also introduces new features which will be very interesting and beneficial for our further analysis, like for example the budget of a movie. A detailed description of the format and all further relevant information can be found on Kaggle.
 
 ## Files
-- main.ipynb:: Contains data wrangling, data analysis and graph generations
-- data_exploration.ipynb:: Analysis on the dataset
-- data_wrangling.ipynb:: Load datasets, merge and clean
-- ml.ipynb::
-- gen_ethnicities.ipynb:: Get ethnicities from wikidata using sparql query
-- data_wrangling_tools.py:: Functions to easily load the cleaned datasets
-- ml_tools.py::
-- website.py
-- gen/ethnicities.tsv::  Cointains all ethnicities and freebase ID's
+- main.ipynb:: The main notebook. Contains data wrangling, data analysis, graph generations and explanations.
+- machine_learning_training.ipynb:: Prepare the data, train the machine learning model and export it for the machine learning website.
+- website.py:: The Steamlit website source code that loads the machine learning model and outputs box office revenue predictions.
+- gen_ethnicities.ipynb:: Get ethnicities from wikidata using sparql query.
+- data_wrangling_tools.py:: Functions to easily load the cleaned datasets.
+- ml_tools.py:: Useful functions shared by the machine learning files.
+- requirements.txt:: pip requirement file for the machine learning website
+- model/:: Trained machine learning model and python pickle files for the machine learning website
+
+- data/:: Folder for the for the raw datasets
+- gen/ethnicities.tsv:: Cointains all ethnicities and freebase ID's
+- gen/plots:: Folder containing plots exported for the data story website.
 - gen/reports:: Folder which cointains reports created with [pandas profiling](https://pandas-profiling.ydata.ai)
 
 ## Methods
 
-**Step 1: Data Wrangling (see data_wrangling.ipynb)**
+**Step 1: Data Wrangling (see data_wrangling_tools.py and main.ipynb)**
 - Extract data from ethnicities, characters, and movie datasets
 - Transform dates in the data from strings to datetime objects
 - Remove Freebase ID from features in JSON-format (e.g. language, countries, genres)
@@ -39,7 +42,7 @@ This dataset contains information on 45,000 movies released on or before July 20
 - Cluster ethnicites into five groups (for later usage)
 - Merge the data (including the additional dataset)
 
-**Step 2: Data Exploration (see data_exploration.ipynb)**
+**Step 2: Data Exploration (see main.ipynb)**
 - Ensure that we have the required amount of valid data needed for our further analysis
 - Find patterns in the data regarding gender, ethnicities, and age of the actors
 - Plot evolution of gender ratio, ethnical diversity and age distribution of the actors over the decades
@@ -58,11 +61,17 @@ This dataset contains information on 45,000 movies released on or before July 20
 
 **Step 4: Create a datastory presenting the results**
 
+**Step 5: (bonus) Train a machine learning model to predict box office revenue**
+- Clean and augment the data with one-hot encoding on relevant features
+- Create a simple deep neural network
+- Train the deep neural network on a dataset of around 5000 movies
+- Upload the resulting model on an interactive (external) website for users to play with
+
 ## Organization within the team
 
 Colin: Exploratory Data Analysis, Data Cleaning, Data Preprocessing, Data Visualization
 
-Matthieu: Machine Learning
+Matthieu: Machine Learning model and predictions
 
 Hendrik: Fighting the confounders and implementing statistical tests
 
