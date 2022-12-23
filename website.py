@@ -1,22 +1,9 @@
-import sys
-import os
-import pickle
-import ast
-import datetime
-
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
 import streamlit as st
 import tensorflow as tf
 
 from data_wrangling_tools import *
-
-# Neural Networks
-from sklearn.linear_model import LinearRegression
-from sklearn.preprocessing import StandardScaler, RobustScaler, Normalizer
-from sklearn.model_selection import train_test_split
 
 
 from warnings import simplefilter
@@ -245,4 +232,5 @@ st.write(pd.DataFrame(input, index=[0]))
 
 # Load model
 model = tf.keras.models.load_model("model.h5")
+st.write(f"Model name: {model.name}")
 #y_pred = model.predict(x_test)
