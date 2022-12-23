@@ -18,7 +18,7 @@ ETHNICITY_CLUSTERS = {
 
 def load_characters(character_file):
     """
-        TODO fill it
+        Load character dataset
     """
     character_columns = [
         "wiki_movie_id",
@@ -54,7 +54,7 @@ def load_characters(character_file):
 
 def load_ethnicities(ethnicity_file, etchnicity_clusters=ETHNICITY_CLUSTERS):
     """
-        TODO fill it
+        Load ethnicities dataset and add clusters
 
         Clusters:
         {1: 'White', 
@@ -83,7 +83,7 @@ def load_ethnicities(ethnicity_file, etchnicity_clusters=ETHNICITY_CLUSTERS):
 
 def add_characters_ethnicities(characters, ethnicities):
     """
-        TODO fill it
+        Add ethnicities name in the characters dataframe
     """
     df = characters.copy()
     df = pd.merge(
@@ -119,7 +119,7 @@ def add_characters_ethnicities(characters, ethnicities):
 
 def load_cmu_movies(movies_file):
     """
-        TODO fill it
+        Load movies from the CMU movies dataset
     """
     movies_columns = [
         "wiki_movie_id",
@@ -194,7 +194,7 @@ def load_kaggle_movies(
     ],
 ):
     """
-        TODO fill it
+        Load the Kaggle dataset
     """
     kaggle = pd.read_csv(kaggle_file, usecols=columns)
 
@@ -249,7 +249,8 @@ def add_missing_release_date(movies):
 
 def merge_characters_movies(characters, movies):
     """
-        TODO fill it
+        Merge the characters and the movies dataset.
+        Left join on movies using wiki_movie_id
     """
     # Movies and characters
     df = pd.merge(
@@ -305,7 +306,10 @@ def merge_characters_movies(characters, movies):
 
 def merge_cmu_kaggle_movies(movies, kaggle):
     """
-        TODO fill it
+        Merge the CMU movies dataset and the Kaggle movies dataset
+        based on the movies name.
+        Add missing box office information to the CMU movies dataset if they are
+        available in the Kaggle dataset.
     """
     df = pd.merge(
         movies,
@@ -335,7 +339,7 @@ def generate_clean_df(
     target_countries=["United States of America"],
 ):
     """
-        TODO fill it
+        Load, merge and clean all necessary datasets
     """
     # characters
     characters = load_characters(character_file)
@@ -350,7 +354,7 @@ def generate_clean_df(
     # keep only U.S. movies
     cmu_movies = filter_with_countries(cmu_movies, target_countries, "any")
 
-    # TODO: update this method to add something more clean
+    # add the missing date for specific entries
     add_missing_release_date(cmu_movies)
 
     # kaggle movies
@@ -378,7 +382,7 @@ def generate_clean_df(
 
 def load_inflation(inflation_file):
     """
-        TODO fill it
+        Load inflation data
     """
 
     inflation = pd.read_csv(inflation_file, index_col="year")
@@ -395,6 +399,9 @@ def load_inflation(inflation_file):
 
 
 def add_inflation_data(movies, inflation):
+    """
+        Append the inflation data as new columns in the movies dataset
+    """
     def inflation_adjustment(row, column):
         if np.isnan(row[column]):
             return np.nan
@@ -418,7 +425,7 @@ def add_inflation_data(movies, inflation):
 
 def add_gender_stats(df, movies):
     """
-    
+        Compute and append the gender stats as new columns in the movies dataset
     """
 
     def compute_men_women_ratio(x):
@@ -475,6 +482,9 @@ def add_gender_stats(df, movies):
 
 
 def add_age_height_weight_stats(df, movies):
+    """
+        Compute and append the age and height stats as new columns in the movies dataset
+    """
     num_columns = ["a_age_at_release", "a_height"]
 
     movies_stats = df.groupby("wiki_movie_id")[num_columns].agg(
@@ -495,6 +505,9 @@ def add_age_height_weight_stats(df, movies):
 
 
 def add_ethnicity_stats(df, movies, ethnicity_clusters=ETHNICITY_CLUSTERS):
+    """
+        Compute and append the ethnicity stats as new columns in the movies dataset
+    """
     def compute_ehtnicites_ratio(x):
         ethnicities = x["a_ethnicity"]
 
@@ -545,6 +558,9 @@ def add_ethnicity_stats(df, movies, ethnicity_clusters=ETHNICITY_CLUSTERS):
 
 
 def add_movies_stats(characters_movies_df, movies):
+    """
+        Add gender, age, height and ethnicity stats to the movies dataset
+    """
     movies_res = movies.copy()
     movies_res = add_gender_stats(characters_movies_df, movies_res)
     movies_res = add_age_height_weight_stats(characters_movies_df, movies_res)
@@ -560,9 +576,12 @@ def add_movies_stats(characters_movies_df, movies):
 
 def filter_with_countries(df, target_countries, mode):
     """
-        TODO fill it
+        Filter countries produced in the target_countries list.
+        The mode parameter can be: 
+            'all' if all target countries need to be present
+            'any' if one of the target countries need to be present
+            'only' if only the target countries need to be present
     """
-    # TODO drop na on every columns ?
     if mode == "all":
         return df[
             df["countries"].apply(
