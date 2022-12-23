@@ -1,202 +1,94 @@
+import pickle
+
 import pandas as pd
 import numpy as np
 import streamlit as st
 import tensorflow as tf
 
 from data_wrangling_tools import *
+from ml_tools import *
 
 
 from warnings import simplefilter
 simplefilter(action="ignore", category=pd.errors.PerformanceWarning)
 
-st.title("Does diversity pay off? Try it out!")
+st.title("Does diversity pay off? Try it out! \nMake your own movie and see how much it will earn!")
+
+# load genres from pickle
+with open('model/genres.pkl', 'rb') as f:
+    genres = pickle.load(f)
+
+selected_genres = st.multiselect('Selecte genres', genres, genres[0:7])
+
+# load actors from pickle
+with open('model/actors.pkl', 'rb') as f:
+    actors = pickle.load(f)
+
+selected_actors = st.multiselect('Selecte actors', actors, actors[0:7])
+
+
+# load normalizing data from pickle
+with open('model/mins.pkl', 'rb') as f:
+    mins = pickle.load(f)
+
+with open('model/maxs.pkl', 'rb') as f:
+    maxs = pickle.load(f)
+
+with open('model/means.pkl', 'rb') as f:
+    means = pickle.load(f)
+
+with open('model/stds.pkl', 'rb') as f:
+    stds = pickle.load(f)
+
+with open('model/columns.pkl', 'rb') as f:
+    columns = pickle.load(f)
+
+columns.remove("box_office_inflation")
+
 # Select release year
-release_year = st.slider('Select release year', 2000, 2019, 2010)
+release_year = st.slider('Release year', mins["release_date"], maxs["release_date"], int(means["release_date"]))
 
 # Select budget
-budget = st.slider('Select budget (Million $)', 0, 300, 100)
+budget = st.slider('Budget (million $)', int(mins["budget_inflation"] / 1e6), int(maxs["budget_inflation"] / 1e6), int(means["budget_inflation"] / 1e6))
 
 # Select runtime
-runtime = st.slider('Select runtime (minutes)', 0, 300, 120)
+runtime = st.slider('Runtime', int(mins["runtime"]), int(maxs["runtime"]), int(means["runtime"]))
 
 # Select white ratio
-white_ratio = st.slider('Select white ratio', 0.0, 1.0, 0.5)
+white_ratio = st.slider('White ratio', 0.0, 1.0, float(means["white_ratio"]))
 
 # Select black african american ratio
-black_african_american_ratio = st.slider('Select black african american ratio', 0.0, 1.0, 0.5)
+black_african_american_ratio = st.slider('Black African American ratio', 0.0, 1.0, float(means["black_african_american_ratio"]))
 
 # Select asian ratio
-asian_ratio = st.slider('Select asian ratio', 0.0, 1.0, 0.5)
+asian_ratio = st.slider('Asian ratio', 0.0, 1.0, float(means["asian_ratio"]))
 
 # Select native american ratio
-native_american_ratio = st.slider('Select native american ratio', 0.0, 1.0, 0.5)
+native_american_ratio = st.slider('Native American ratio', 0.0, 1.0, float(means["american_indian_alaska_native_ratio"]))
 
-# Select hispanic ratio
-hawaiian_ratio = st.slider('Select hawaiian ratio', 0.0, 1.0, 0.5)
+# Select hawaiian ratio
+hawaiian_ratio = st.slider('Hawaiian ratio', 0.0, 1.0, float(means["native_hawaiian_other_pacific_islander_ratio"]))
 
 # Select other ratio
-other_ratio = st.slider('Select other ratio', 0.0, 1.0, 0.5)
+other_ratio = st.slider('Other ratio', 0.0, 1.0, float(means["other_ratio"]))
 
 # Select male ratio
-male_ratio = st.slider('Select male ratio' , 0.0, 1.0, 0.5)
+male_ratio = st.slider('Male ratio' , 0.0, 1.0, float(means["m_ratio"]))
 
 # Select female ratio
-female_ratio = st.slider('Select female ratio', 0.0, 1.0, 0.5)
+female_ratio = st.slider('Female ratio', 0.0, 1.0, float(means["f_ratio"]))
 
 # Select actor age mean
-mean_actor_age = st.slider('Select mean actor age', 0, 80, 40)
-
+mean_actor_age = st.slider('Mean actor age', int(mins["a_age_at_release_mean"]), int(maxs["a_age_at_release_mean"]), int(means["a_age_at_release_mean"]))
 
 # Select actor age std
-std_actor_age = st.slider('Select std actor age', 0, 10, 5)
-
+std_actor_age = st.slider('Std actor age', float(mins["a_age_at_release_std"]), float(maxs["a_age_at_release_std"]), float(means["a_age_at_release_std"]))
 
 # Select actor height mean
-mean_actor_height = st.slider('Select mean actor height', 1.5, 2.1, 1.8)
-
+mean_actor_height = st.slider('Mean actor height', float(mins["a_height_mean"]), float(maxs["a_height_mean"]), float(means["a_height_mean"]))
 
 # # Select actor height std
-std_actor_height = st.slider('Select std actor height', 0.0, 0.4, 0.1)
-
-# Select genres
-genres = [
-    'Drama',
-    'Comedy',
-    'Thriller',
-    'Action',
-    'Romance Film',
-    'Action/Adventure',
-    'Adventure',
-    'Crime Fiction',
-    'Fantasy',
-    'Family Film',
-    'Romantic comedy',
-    'Science Fiction',
-    'Period piece',
-    'Mystery',
-    'Film adaptation',
-    'Crime Thriller',
-    'Indie',
-    'Horror',
-    'Comedy-drama',
-    'Romantic drama',
-    'Animation',
-    'Teen',
-    'Psychological thriller',
-    'War film',
-    "Children's/Family",
-    'Parody',
-    'Black comedy',
-    'Musical',
-    'Coming of age',
-    'Buddy film',
-]
-selected_genres = st.multiselect('Selecte genres', genres, genres[0:3])
-
-# Select actors
-actors = [
-    "Samuel L. Jackson",
-    "Tom Hanks",
-    "Gary Oldman",
-    "Eddie Murphy",
-    "Alan Rickman",
-    "Johnny Depp",
-    "Robbie Coltrane",
-    "Robert Downey Jr",
-    "Morgan Freeman",
-    "Orlando Bloom",
-    "Maggie Smith",
-    "John Cleese",
-    "Tom Cruise",
-    "Will Smith",
-    "Cameron Diaz",
-    "Liam Neeson",
-    "Tobey Maguire",
-    "Warwick Davis",
-    "Harry Shearer",
-    "Ben Stiller",
-    "Stellan Skarsgård",
-    "Owen Wilson",
-    "Scarlett Johansson",
-    "John Rhys-Davies",
-    "Emma Watson",
-    "Hank Azaria",
-    "Daniel Radcliffe",
-    "Jamie Waylett",
-    "Bonnie Wright",
-    "Matt Damon",
-    "Richard Griffiths",
-    "Leonardo DiCaprio",
-    "Christian Bale",
-    "Mark Williams",
-    "Timothy Spall",
-    "Shia LaBeouf",
-    "Julia Roberts",
-    "Helena Bonham Carter",
-    "Jason Isaacs",
-    "Giovanni Ribisi",
-    "Nicolas Cage",
-    "Jack Black",
-    "Julie Walters",
-    "Arnold Schwarzenegger",
-    "Angelina Jolie",
-    "Paul Bettany",
-    "Dustin Hoffman",
-    "Brendan Gleeson",
-    "Sylvester Stallone",
-    "Elijah Wood",
-    "Mike Myers",
-    "Zoe Saldana",
-    "Kevin McNally",
-    "Michael Gambon",
-    "Robert De Niro",
-    "Emma Thompson",
-    "John Leguizamo",
-    "Jim Carrey",
-    "Brad Garrett",
-    "Mark Ruffalo",
-    "Denis Leary",
-    "Harrison Ford",
-    "Bill Nighy",
-    "Chris Rock",
-    "James Franco",
-    "Chris Evans",
-    "Gwyneth Paltrow",
-    "Michelle Rodriguez",
-    "Queen Latifah",
-    "Seth Rogen",
-    "Sam Worthington",
-    "David Cross",
-    "Jon Voight",
-    "Jonathan Pryce",
-    "Julie Andrews",
-    "Viggo Mortensen",
-    "Jada Pinkett Smith",
-    "Ian Holm",
-    "Liv Tyler",
-    "George Clooney",
-    "John Travolta",
-    "Anne Hathaway",
-    "Alec Baldwin",
-    "Michael Clarke Duncan",
-    "Fiona Shaw",
-    "Jim Broadbent",
-    "Laz Alonso",
-    "Tyrese Gibson",
-    "Peter Jackson",
-    "Ray Winstone",
-    "David Thewlis",
-    "Hugh Jackman",
-    "Wes Studi",
-    "Anthony Hopkins",
-    "Kirsten Dunst",
-    "Pierce Brosnan",
-    "Lawrence Makoare",
-    "Keanu Reeves",
-    "Danny DeVito",
-    "Stan Lee",
-]
-selected_actors = st.multiselect('Selecte actors', actors, actors[0:3])
+std_actor_height = st.slider('Std actor height', float(mins["a_height_std"]), float(maxs["a_height_std"]), float(means["a_height_std"]))
 
 input = {}
 input["release_date"] = release_year
@@ -205,7 +97,7 @@ input["runtime"] = runtime
 input["white_ratio"] = white_ratio
 input["black_african_american_ratio"] = black_african_american_ratio
 input["asian_ratio"] = asian_ratio
-input["american_indian_alaska_native_ratio"]: native_american_ratio
+input["american_indian_alaska_native_ratio"]= native_american_ratio
 input["native_hawaiian_other_pacific_islander_ratio"] = hawaiian_ratio
 input["other_ratio"] = other_ratio
 input["m_ratio"] = male_ratio
@@ -227,10 +119,33 @@ for actor in actors:
     else:
         input[f"actor:{actor}"] = 0.0
 
+df_in = pd.DataFrame(input, index=[0])
+
 st.write("Current input: ")
-st.write(pd.DataFrame(input, index=[0]))
+st.write(df_in)
+
+df_norm = normalize(df_in, columns, mins, maxs)
+#df_norm = standardize(df_norm, columns, means, stds)
+
+st.write("Normalized input: ")
+st.write(df_norm)
 
 # Load model
-model = tf.keras.models.load_model("model.h5")
-st.write(f"Model name: {model.name}")
-#y_pred = model.predict(x_test)
+model = tf.keras.models.load_model("model/model.h5")
+
+y_pred = model.predict(df_norm)
+pred = y_pred[:, 0]
+
+# Denormalize
+df_pred = pd.DataFrame({"pred": pred})
+df_pred = denormalize_column(df_pred, "pred", mins["box_office_inflation"], maxs["box_office_inflation"])
+
+prediction = int(df_pred.iloc[0, 0])
+
+pos_prediction = max(prediction, 0)
+
+st.title(f"Predicted box office revenue:")
+print()
+st.title(f"{pos_prediction:_}$".replace("_", "'"))
+if prediction < 0:
+    st.write(f"(Actually {prediction:_}$)".replace("_", "'"))
