@@ -60,6 +60,7 @@ This dataset contains information on 45,000 movies released on or before July 20
 - Predict box office revenue for movies missing it
 
 **Step 4: Create a datastory presenting the results**
+- [https://janepfl.github.io/](https://janepfl.github.io/)
 
 **Step 5: (bonus) Train a machine learning model to predict box office revenue**
 - Clean and augment the data with one-hot encoding on relevant features
