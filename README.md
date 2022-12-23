@@ -7,9 +7,10 @@ After in 2015 all 20 oscar acting nominations were awarded to white people, the 
 ## Research Questions
 
 - Which characteristics of movies are correlated with the movie box office revenue?
--	Did ethnical diversity in successful movies change over time?
--	Did the gender ratio of the cast in successful movies change over time?
-- Did the age distribution of men and women of the cast in successful movies change over time?
+- Does ethnical diversity correlate with the box office revenue?
+-	Did ethnical diversity in movies change over time?
+-	Did the gender ratio of the cast in movies change over time?
+- Did the age distribution of actors in movies change over time?
 
 ## Additional datasets
 
