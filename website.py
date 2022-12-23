@@ -1,3 +1,5 @@
+# A simple web app to predict the box office revenue of a movie based on the input of the user
+
 import pickle
 
 import pandas as pd
@@ -13,18 +15,25 @@ from warnings import simplefilter
 simplefilter(action="ignore", category=pd.errors.PerformanceWarning)
 
 st.title("Does diversity pay off? Try it out! \nMake your own movie and see how much it will earn!")
+"""
+This movie box office revenue predictor is not meant to be used as a precise tool, but more as a fun way to interact with the data
+and see how the different features of a movie affect its predicted box office revenue. The model is trained on a dataset of around 5000 movies, and
+manages to predict the box office revenue of a movie with some degree of success. However, the model is not perfect, and the predictions
+are not meant to be taken too seriously. Movie revenue is a very complex topic, and there are many factors that affect it which are not / cannot
+be taken into account in this model. For example, the model does not take into account the quality of the movie, which is a very important factor.
+"""
 
 # load genres from pickle
 with open('model/genres.pkl', 'rb') as f:
     genres = pickle.load(f)
 
-selected_genres = st.multiselect('Selecte genres', genres, genres[0:7])
+selected_genres = st.multiselect('Selecte genres', genres, genres[0:5])
 
 # load actors from pickle
 with open('model/actors.pkl', 'rb') as f:
     actors = pickle.load(f)
 
-selected_actors = st.multiselect('Selecte actors', actors, actors[0:7])
+selected_actors = st.multiselect('Selecte actors', actors, actors[0:4])
 
 
 # load normalizing data from pickle
@@ -90,6 +99,7 @@ mean_actor_height = st.slider('Mean actor height', float(mins["a_height_mean"]),
 # # Select actor height std
 std_actor_height = st.slider('Std actor height', float(mins["a_height_std"]), float(maxs["a_height_std"]), float(means["a_height_std"]))
 
+# Build input dictionary
 input = {}
 input["release_date"] = release_year
 input["budget_inflation"] = budget * 1e6
@@ -121,14 +131,7 @@ for actor in actors:
 
 df_in = pd.DataFrame(input, index=[0])
 
-st.write("Current input: ")
-st.write(df_in)
-
 df_norm = normalize(df_in, columns, mins, maxs)
-#df_norm = standardize(df_norm, columns, means, stds)
-
-st.write("Normalized input: ")
-st.write(df_norm)
 
 # Load model
 model = tf.keras.models.load_model("model/model.h5")
@@ -138,14 +141,16 @@ pred = y_pred[:, 0]
 
 # Denormalize
 df_pred = pd.DataFrame({"pred": pred})
-df_pred = denormalize_column(df_pred, "pred", mins["box_office_inflation"], maxs["box_office_inflation"])
+df_pred = denormalize_column(df_pred, "pred", means["box_office_inflation"], stds["box_office_inflation"])
 
 prediction = int(df_pred.iloc[0, 0])
 
+# Clamp prediction to 0
 pos_prediction = max(prediction, 0)
 
+# Display prediction
 st.title(f"Predicted box office revenue:")
-print()
+
 st.title(f"{pos_prediction:_}$".replace("_", "'"))
 if prediction < 0:
     st.write(f"(Actually {prediction:_}$)".replace("_", "'"))
