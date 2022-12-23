@@ -2,8 +2,17 @@ import pandas as pd
 import numpy as np
 import ast
 
+ETHNICITY_CLUSTERS = {
+    1: "White",
+    2: "Black / African American",
+    3: "Asian",
+    4: "American Indian / Alaska Native",
+    5: "Native Hawaiian / Other Pacific Islander",
+    6: "Other",
+}
+
 #
-# DATASET LOADING
+# CHARACTERS
 #
 
 
@@ -43,7 +52,7 @@ def load_characters(character_file):
     return characters
 
 
-def load_ethnicities(ethnicity_file, etchnicity_clusters):
+def load_ethnicities(ethnicity_file, etchnicity_clusters=ETHNICITY_CLUSTERS):
     """
         TODO fill it
 
@@ -101,6 +110,11 @@ def add_characters_ethnicities(characters, ethnicities):
     )
 
     return df
+
+
+#
+# MOVIES
+#
 
 
 def load_cmu_movies(movies_file):
@@ -203,6 +217,36 @@ def load_kaggle_movies(
     return kaggle
 
 
+def add_missing_release_date(movies):
+    missing_release_dates = {
+        "The Impossible": "2008-07-18",
+        "The Outing": "2001-01-01",
+        "Into the Spider's Web": "2007-08-26",
+        "Melissa P.": "2005-01-01",
+        "The Lamp": "2000-01-01",
+        "The Bear": "2000-01-01",
+        "Meatballs III: Summer Job": "1987-01-01",
+        "The Steel Trap": "2000-01-01",
+        "Angels Die Hard": "2000-01-01",
+        "American Cyborg: Steel Warrior": "1993-01-01",
+        "Shattered Image": "1992-01-01",
+        "The Ghost of Slumber Mountain": "2000-01-01",
+        "Iron Warrior": "1989-01-01",
+    }
+
+    for movie_name, release_date in missing_release_dates.items():
+        movies.loc[movies["name"] == movie_name, "release_date"] = pd.to_datetime(
+            release_date
+        )
+
+    return movies
+
+
+#
+# MERGE HELPERS
+#
+
+
 def merge_characters_movies(characters, movies):
     """
         TODO fill it
@@ -275,120 +319,13 @@ def merge_cmu_kaggle_movies(movies, kaggle):
     return df
 
 
-def load_inflation(inflation_file):
-    """
-        TODO fill it
-    """
-
-    inflation = pd.read_csv(inflation_file, index_col="year")
-    inflation = inflation.rename(columns={"amount": "amount_1900"})
-
-    reference_year = 2022
-    inflation_reference_year = inflation.loc[reference_year, "amount_1900"]
-
-    inflation["amount_2022"] = inflation["amount_1900"].apply(
-        lambda x: inflation_reference_year / x
-    )
-
-    return inflation
-
-
-def add_inflation_data(movies, inflation):
-    def inflation_adjustment(row, column):
-        if np.isnan(row[column]):
-            return np.nan
-
-        return row[column] * inflation.loc[row["release_date"].year, "amount_2022"]
-
-    movies["box_office_inflation"] = movies.apply(
-        lambda x: inflation_adjustment(x, "box_office_revenue"), axis=1
-    )
-    movies["budget_inflation"] = movies.apply(
-        lambda x: inflation_adjustment(x, "budget"), axis=1
-    )
-
-    return movies
-
-
-def add_missing_release_date(movies):
-    missing_release_dates = {
-        "The Impossible": "2008-07-18",
-        "The Outing": "2001-01-01",
-        "Into the Spider's Web": "2007-08-26",
-        "Melissa P.": "2005-01-01",
-        "The Lamp": "2000-01-01",
-        "The Bear": "2000-01-01",
-        "Meatballs III: Summer Job": "1987-01-01",
-        "The Steel Trap": "2000-01-01",
-        "Angels Die Hard": "2000-01-01",
-        "American Cyborg: Steel Warrior": "1993-01-01",
-        "Shattered Image": "1992-01-01",
-        "The Ghost of Slumber Mountain": "2000-01-01",
-        "Iron Warrior": "1989-01-01",
-    }
-
-    for movie_name, release_date in missing_release_dates.items():
-        movies.loc[movies["name"] == movie_name, "release_date"] = pd.to_datetime(
-            release_date
-        )
-
-    return movies
-
-
-def add_gender_stats(df, movies):
-    """
-    
-    """
-    def compute_men_women_ratio(x):
-        genders = x['a_gender']
-        nb_actors = x['a_name'].count()
-        nb_male = genders[genders == 'M'].count()
-        nb_female = genders[genders == 'F'].count()
-        nb_nan_gender = genders.isna().sum()
-
-        nb_known_gender = nb_known_gender=nb_male+nb_female
-        m_f_ratio = nb_male / nb_female if nb_female > 0 else 1 if nb_male > 0 else 0
-        m_ratio = nb_male / nb_known_gender if nb_known_gender > 0 else 0
-        f_ratio = nb_female / nb_known_gender  if nb_known_gender > 0 else 0
-        nan_ratio = nb_nan_gender / x.shape[0]
-
-        return pd.Series(index=['nb_actors', 'nb_male', 'nb_female', 'nb_nan_gender', 'm_ratio', 'f_ratio', 'M_F_ratio', 'nan_ratio'], data=[nb_actors, nb_male, nb_female, nb_nan_gender, m_ratio, f_ratio, m_f_ratio, nan_ratio])
-
-    # compute stats
-    df_gender = df.groupby('wiki_movie_id').apply(compute_men_women_ratio)
-
-    df_gender['nb_actors'] = df_gender['nb_actors'].astype(int)
-    df_gender['nb_male'] = df_gender['nb_male'].astype(int)
-    df_gender['nb_female'] = df_gender['nb_female'].astype(int)
-    df_gender['nb_nan_gender'] = df_gender['nb_nan_gender'].astype(int)
-
-    return pd.merge(left=movies, right=df_gender, on='wiki_movie_id', how='left', suffixes=('_m', '_g'))
-
-
-def add_ethnicities_ratio(df, movies):
-    return ...
-
-
-def add_age_height_weight_stats(df, movies):
-    num_columns = ['a_age_at_release', 'a_height']
-
-    movies_stats = df.groupby('wiki_movie_id')[num_columns].agg({
-        'a_age_at_release': ['mean', 'std'], 
-        'a_height': ['mean', 'std']
-        })
-
-    movies_stats.columns = ["_".join(col)for col in movies_stats.columns.to_flat_index()]
-
-    return pd.merge(left=movies, right=movies_stats, on='wiki_movie_id', how='left', suffixes=('_m', '_s'))
-
-
 def generate_clean_df(
     character_file,
     ethnicity_file,
     movies_file,
     kaggle_file,
     inflation_file,
-    etchnicity_clusters,
+    etchnicity_clusters=ETHNICITY_CLUSTERS,
     target_countries=["United States of America"],
 ):
     """
@@ -426,6 +363,188 @@ def generate_clean_df(
     df = merge_characters_movies(characters, movies)
 
     return df
+
+
+#
+# INFLATION
+#
+
+
+def load_inflation(inflation_file):
+    """
+        TODO fill it
+    """
+
+    inflation = pd.read_csv(inflation_file, index_col="year")
+    inflation = inflation.rename(columns={"amount": "amount_1900"})
+
+    reference_year = 2022
+    inflation_reference_year = inflation.loc[reference_year, "amount_1900"]
+
+    inflation["amount_2022"] = inflation["amount_1900"].apply(
+        lambda x: inflation_reference_year / x
+    )
+
+    return inflation
+
+
+def add_inflation_data(movies, inflation):
+    def inflation_adjustment(row, column):
+        if np.isnan(row[column]):
+            return np.nan
+
+        return row[column] * inflation.loc[row["release_date"].year, "amount_2022"]
+
+    movies["box_office_inflation"] = movies.apply(
+        lambda x: inflation_adjustment(x, "box_office_revenue"), axis=1
+    )
+    movies["budget_inflation"] = movies.apply(
+        lambda x: inflation_adjustment(x, "budget"), axis=1
+    )
+
+    return movies
+
+
+#
+# MOVIES STATS
+#
+
+
+def add_gender_stats(df, movies):
+    """
+    
+    """
+
+    def compute_men_women_ratio(x):
+        genders = x["a_gender"]
+        nb_actors = x["a_name"].count()
+        nb_male = genders[genders == "M"].count()
+        nb_female = genders[genders == "F"].count()
+        nb_nan_gender = genders.isna().sum()
+
+        nb_known_gender = nb_known_gender = nb_male + nb_female
+        m_f_ratio = nb_male / nb_female if nb_female > 0 else 1 if nb_male > 0 else 0
+        m_ratio = nb_male / nb_known_gender if nb_known_gender > 0 else 0
+        f_ratio = nb_female / nb_known_gender if nb_known_gender > 0 else 0
+        nan_ratio = nb_nan_gender / x.shape[0]
+
+        return pd.Series(
+            index=[
+                "nb_actors",
+                "nb_male",
+                "nb_female",
+                "nb_nan_gender",
+                "m_ratio",
+                "f_ratio",
+                "M_F_ratio",
+                "nan_ratio",
+            ],
+            data=[
+                nb_actors,
+                nb_male,
+                nb_female,
+                nb_nan_gender,
+                m_ratio,
+                f_ratio,
+                m_f_ratio,
+                nan_ratio,
+            ],
+        )
+
+    # compute stats
+    df_gender = df.groupby("wiki_movie_id").apply(compute_men_women_ratio)
+
+    df_gender["nb_actors"] = df_gender["nb_actors"].astype(int)
+    df_gender["nb_male"] = df_gender["nb_male"].astype(int)
+    df_gender["nb_female"] = df_gender["nb_female"].astype(int)
+    df_gender["nb_nan_gender"] = df_gender["nb_nan_gender"].astype(int)
+
+    return pd.merge(
+        left=movies,
+        right=df_gender,
+        on="wiki_movie_id",
+        how="left",
+        suffixes=("_m", "_g"),
+    )
+
+
+def add_age_height_weight_stats(df, movies):
+    num_columns = ["a_age_at_release", "a_height"]
+
+    movies_stats = df.groupby("wiki_movie_id")[num_columns].agg(
+        {"a_age_at_release": ["mean", "std"], "a_height": ["mean", "std"]}
+    )
+
+    movies_stats.columns = [
+        "_".join(col) for col in movies_stats.columns.to_flat_index()
+    ]
+
+    return pd.merge(
+        left=movies,
+        right=movies_stats,
+        on="wiki_movie_id",
+        how="left",
+        suffixes=("_m", "_s"),
+    )
+
+
+def add_ethnicity_stats(df, movies, ethnicity_clusters=ETHNICITY_CLUSTERS):
+    def compute_ehtnicites_ratio(x):
+        ethnicities = x["a_ethnicity"]
+
+        eth_stats = {}
+        nb_known_ethnicities = ethnicities.notna().sum()  # use a counter
+
+        for ethnicity in ethnicity_clusters.values():
+            add_undercore = (
+                lambda column: "_".join(column.replace("/", "").split(" "))
+                .replace("__", "_")
+                .lower()
+            )
+            eth_stats[f"{add_undercore(ethnicity)}_hispanic_ratio"] = (
+                ethnicities[
+                    (ethnicities == ethnicity) & (x["a_is_hispanic"] == 1)
+                ].count()
+                / nb_known_ethnicities
+                if nb_known_ethnicities != 0
+                else np.nan
+            )
+            eth_stats[f"{add_undercore(ethnicity)}_not_hispanic_ratio"] = (
+                ethnicities[
+                    (ethnicities == ethnicity) & (x["a_is_hispanic"] == 0)
+                ].count()
+                / nb_known_ethnicities
+                if nb_known_ethnicities != 0
+                else np.nan
+            )
+
+            # count the value of both hispanic and not hispanic together
+            eth_stats[f"{add_undercore(ethnicity)}_ratio"] = (
+                ethnicities[ethnicities == ethnicity].count() / nb_known_ethnicities
+                if nb_known_ethnicities != 0
+                else np.nan
+            )
+
+        return pd.Series(eth_stats)
+
+    df_ethnicity = df.groupby("wiki_movie_id").apply(compute_ehtnicites_ratio)
+
+    return pd.merge(
+        left=movies,
+        right=df_ethnicity,
+        on="wiki_movie_id",
+        how="left",
+        suffixes=("_m", "_g"),
+    )
+
+
+def add_movies_stats(characters_movies_df, movies):
+    movies_res = movies.copy()
+    movies_res = add_gender_stats(characters_movies_df, movies_res)
+    movies_res = add_age_height_weight_stats(characters_movies_df, movies_res)
+    movies_res = add_ethnicity_stats(characters_movies_df, movies_res)
+
+    return movies_res
 
 
 #
